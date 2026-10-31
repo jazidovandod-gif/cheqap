@@ -69,15 +69,23 @@ Lectura honesta:
 - **Se repitió con otro modelo y da lo mismo.** Con `qwen/qwen3.8-27b` en Groq (`results/tabla_qwen.md`) el juez acierta 9 de 30, también al nivel del azar. No es un modelo concreto el que falla.
 - **Coincide con lo publicado.** En el artículo de [AmericasNLI](https://arxiv.org/abs/2104.08726) (Tabla 4, versión arXiv v2), XLM-R en aymara saca 36,1 % y 37,3 % en cero disparos (azar: 33,3 %). Con adaptación al idioma (preentrenamiento continuo) sube a 43,5–43,9 %; traducir al español antes (translate-test) da 39,7 %; entrenar con datos traducidos (translate-train) llega a 50,0 %. Incluso los métodos específicos para aymara están lejos de un resultado confiable. Que dos LLM generales queden en 33 % no es un fallo del verificador: es el estado del problema.
 - **Límite del control.** El lote AmericasNLI trae premisa e hipótesis en aymara, sin el original en español, así que no reproduce el flujo del producto (PDF en español y solo la afirmación en aymara). No se pudo probar ese flujo con datos de terceros ni con ítems propios: el equipo no tiene hablante.
-- **Tres modelos sobre los mismos 18 pares** (`python scripts/comparar_modelos_anli.py`; solo 18 porque el plan gratuito de Gemini permite 20 llamadas diarias por modelo, y `gemini-3.8-flash` estuvo saturado):
+- **Cinco modelos sobre los 30 pares** (`python scripts/comparar_modelos_anli.py`). El azar acierta 10. «Verde falso» es dar por respaldada una afirmación que no lo es, que es el error más peligroso de un verificador:
 
-  | modelo | exactitud | verdaderas reconocidas | contradicciones | neutras |
-  |---|---|---|---|---|
-  | gpt-oss-120b (Groq) | 8 / 18 | 0 / 6 | 2 / 6 | 6 / 6 |
-  | qwen3.8-27b (Groq) | 8 / 18 | 1 / 6 | 3 / 6 | 4 / 6 |
-  | gemini-3.5-flash-lite | 9 / 18 | 1 / 6 | 4 / 6 | 4 / 6 |
+  | modelo | exactitud | verdaderas reconocidas | contradicciones | neutras | verde falso |
+  |---|---|---|---|---|---|
+  | gpt-oss-120b (Groq) | 10 / 30 | 0 / 10 | 2 / 10 | 8 / 10 | 1 / 20 |
+  | qwen3.8-27b (Groq) | 9 / 30 | 1 / 10 | 3 / 10 | 5 / 10 | 0 / 20 |
+  | gemma-4-31b-it (Adaption) | 15 / 30 | 2 / 10 | 3 / 10 | 10 / 10 | 0 / 20 |
+  | glm-5.2 (Adaption) | 13 / 30 | 1 / 10 | 3 / 10 | 9 / 10 | 0 / 20 |
+  | deepseek-v4-flash (Adaption) | 16 / 30 | 3 / 10 | 4 / 10 | 9 / 10 | 1 / 20 |
 
-  Con 18 pares la diferencia no es significativa: acertar 9 de 18 ocurre por azar con probabilidad 0,11. El 6/6 en neutras de gpt-oss no es mérito, es que casi siempre responde «no respaldada». Se probó el modelo pequeño de Gemini porque los grandes estaban saturados o sin cuota gratuita.
+  Además, `gemini-3.5-flash-lite` se corrió solo en 18 pares (9 / 18, 1 / 6 verdaderas reconocidas, 0 / 12 verdes falsos; la cuota gratuita de Gemini es de 20 llamadas diarias por modelo y `gemini-3.8-flash` estuvo saturado). `qwen3.5-397b` en Adaption no se pudo medir: el servidor devolvió 504 tras unos 3 minutos por llamada.
+
+  Lectura honesta:
+  - **Ningún modelo reconoce de forma fiable lo verdadero**: entre 0 y 3 de 10.
+  - **Nadie da verdes falsos de forma notable** (0 o 1 de 20). En aymara el sistema falla hacia el lado seguro: casi nunca confirma algo falso, pero tampoco confirma lo cierto. Por eso en aymara la salida correcta es «no verificable».
+  - **Las exactitudes de 13–16 / 30 no son una mejora real.** Un clasificador que responda siempre «no respaldada» acierta 10 / 30. Los modelos que suben a 15–16 lo hacen sobre todo acertando más neutras, no reconociendo verdaderas. Además se probaron 8 modelos sobre los mismos 30 pares: con tantas pruebas, un valor aislado como p = 0,02 (deepseek) no resiste una corrección por comparaciones múltiples.
+  - La regla de cita textual anuló solo 1 respuesta «respaldada» (en gemma). No explica estos resultados.
 
 ## Límites
 

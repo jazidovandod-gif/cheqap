@@ -55,7 +55,7 @@ def llamar_modelo(prompt: str) -> str:
         try:
             return _llamar_una_vez(prompt)
         except Exception as e:  # noqa: BLE001 - se re-lanza si no es temporal
-            temporal = any(c in str(e) for c in ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED"))
+            temporal = any(c in str(e) for c in ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "504", "timed out", "Timeout"))
             if not temporal or intento == 5:
                 raise
             time.sleep(espera)
@@ -74,7 +74,7 @@ def _llamar_una_vez(prompt: str) -> str:
     if proveedor == "adaption":
         from adaption import Adaption
 
-        cliente = Adaption()  # lee ADAPTION_API_KEY
+        cliente = Adaption(timeout=300.0)  # lee ADAPTION_API_KEY; los modelos que razonan tardan
         return cliente.responses.create(model=modelo, input=prompt).output_text or ""
     if proveedor == "openai":
         from openai import OpenAI
