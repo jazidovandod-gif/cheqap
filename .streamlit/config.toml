@@ -1,0 +1,21 @@
+[theme]
+base = "light"
+primaryColor = "#5B3E96"
+backgroundColor = "#F1F2ED"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#22203A"
+borderColor = "#CFD0C7"
+showWidgetBorder = true
+baseRadius = "6px"
+buttonRadius = "6px"
+linkColor = "#5B3E96"
+redColor = "#B42318"
+orangeColor = "#B7791F"
+greenColor = "#1B7F3B"
+grayColor = "#6B7280"
+violetColor = "#5B3E96"
+font = "Archivo:https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
+headingFont = "Archivo:https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap"
+
+[client]
+toolbarMode = "minimal"
