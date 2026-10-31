@@ -5,14 +5,21 @@ Clave = sha256(espacio + entrada). Archivo = results/cache/<espacio>/<hash>.json
 
 import hashlib
 import json
+import os
 from pathlib import Path
 from typing import Callable
 
 RAIZ = Path(__file__).resolve().parent.parent / "results" / "cache"
 
 
-def _ruta(espacio: str, entrada: str) -> Path:
-    h = hashlib.sha256(entrada.encode("utf-8")).hexdigest()[:24]
+def etiqueta_modelo() -> str:
+    """Proveedor y modelo activos. Van en la clave: cambiar de modelo nunca reutiliza respuestas de otro."""
+    return f"{os.getenv('JUEZ_PROVEEDOR', 'gemini')}|{os.getenv('JUEZ_MODELO', 'gemini-3.5-flash')}"
+
+
+def _ruta(espacio: str, entrada: str, etiqueta: str | None = None) -> Path:
+    clave = f"{etiqueta or etiqueta_modelo()}|{entrada}"
+    h = hashlib.sha256(clave.encode("utf-8")).hexdigest()[:24]
     return RAIZ / espacio / f"{h}.json"
 
 
