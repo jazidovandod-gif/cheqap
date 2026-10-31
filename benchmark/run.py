@@ -123,6 +123,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lote", choices=["es", "ay", "anli", "todos"], default="todos")
     ap.add_argument("--sin-juez", action="store_true")
+    ap.add_argument("--por-etiqueta", type=int, default=0, help="AmericasNLI: usar solo K pares por etiqueta (0 = todos)")
     ap.add_argument("--sufijo", default="", help="guarda en results/tabla_<sufijo>.md para no pisar otra corrida")
     args = ap.parse_args()
 
@@ -134,7 +135,16 @@ def main():
             if args.lote in (lote, "todos"):
                 filas += correr_lote_pdf(_leer(DATOS / f"{lote}.jsonl"), parrafos, texto_norm, args.sin_juez)
     if args.lote in ("anli", "todos"):
-        filas += correr_lote_anli(_leer(DATOS / "americasnli_aym.jsonl"), args.sin_juez)
+        items_anli = _leer(DATOS / "americasnli_aym.jsonl")
+        if args.por_etiqueta:
+            vistos: dict[str, int] = defaultdict(int)
+            recortados = []
+            for it in items_anli:
+                if vistos[it["label"]] < args.por_etiqueta:
+                    vistos[it["label"]] += 1
+                    recortados.append(it)
+            items_anli = recortados
+        filas += correr_lote_anli(items_anli, args.sin_juez)
 
     res = resumir(filas)
     md = tabla_md(res)

@@ -67,8 +67,17 @@ Lectura honesta:
 - **Los dos revisores juntos no mejoran al juez solo en este set.** Las reglas atrapan 4 errores (plazos, fechas de decretos, número de artículo) y el juez ya los atrapaba. Su valor aquí es que funcionan sin red ni modelo, no que suban la cifra.
 - **Aymara: resultado negativo.** En 30 pares de AmericasNLI, con este modelo, todas las columnas aciertan 10 de 30, lo mismo que el azar. «Errores detectados 19/20» no significa que funcione: el juez marca casi todo como error, y de 10 pares donde la hipótesis se sigue de la premisa, ninguno salió respaldado. La regla de cita textual no es la causa (ninguna etiqueta se anuló por cita falsa); lo que falla es que el modelo no entiende el texto en aymara. Se puede revisar con `python scripts/analizar_anli.py`.
 - **Se repitió con otro modelo y da lo mismo.** Con `qwen/qwen3.8-27b` en Groq (`results/tabla_qwen.md`) el juez acierta 9 de 30, también al nivel del azar. No es un modelo concreto el que falla.
+- **Coincide con lo publicado.** En el artículo de [AmericasNLI](https://arxiv.org/abs/2104.08726) (Tabla 4, versión arXiv v2), XLM-R en aymara saca 36,1 % y 37,3 % en cero disparos (azar: 33,3 %). Con adaptación al idioma (preentrenamiento continuo) sube a 43,5–43,9 %; traducir al español antes (translate-test) da 39,7 %; entrenar con datos traducidos (translate-train) llega a 50,0 %. Incluso los métodos específicos para aymara están lejos de un resultado confiable. Que dos LLM generales queden en 33 % no es un fallo del verificador: es el estado del problema.
 - **Límite del control.** El lote AmericasNLI trae premisa e hipótesis en aymara, sin el original en español, así que no reproduce el flujo del producto (PDF en español y solo la afirmación en aymara). No se pudo probar ese flujo con datos de terceros ni con ítems propios: el equipo no tiene hablante.
-- No se probó Gemini para el aymara: el plan gratuito permite 20 llamadas por día por modelo y el lote tiene 30.
+- **Tres modelos sobre los mismos 18 pares** (`python scripts/comparar_modelos_anli.py`; solo 18 porque el plan gratuito de Gemini permite 20 llamadas diarias por modelo, y `gemini-3.8-flash` estuvo saturado):
+
+  | modelo | exactitud | verdaderas reconocidas | contradicciones | neutras |
+  |---|---|---|---|---|
+  | gpt-oss-120b (Groq) | 8 / 18 | 0 / 6 | 2 / 6 | 6 / 6 |
+  | qwen3.8-27b (Groq) | 8 / 18 | 1 / 6 | 3 / 6 | 4 / 6 |
+  | gemini-3.5-flash-lite | 9 / 18 | 1 / 6 | 4 / 6 | 4 / 6 |
+
+  Con 18 pares la diferencia no es significativa: acertar 9 de 18 ocurre por azar con probabilidad 0,11. El 6/6 en neutras de gpt-oss no es mérito, es que casi siempre responde «no respaldada». Se probó el modelo pequeño de Gemini porque los grandes estaban saturados o sin cuota gratuita.
 
 ## Límites
 
