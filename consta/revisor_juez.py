@@ -1,4 +1,4 @@
-"""Revisor 2: un solo modelo devuelve etiqueta + cita. La cita se valida textual en el PDF.
+﻿"""Revisor 2: un solo modelo devuelve etiqueta + cita. La cita se valida textual en el PDF.
 
 Responsable: B. Listo a las 12:30.
 
@@ -6,13 +6,14 @@ Regla central (no negociable): si la cita no aparece en el PDF normalizado, la e
 "respaldada" se anula y baja a "no_respaldada", con motivo "cita no encontrada en la fuente".
 
 Proveedor por variable de entorno:
-  JUEZ_PROVEEDOR=gemini   usa GEMINI_API_KEY y JUEZ_MODELO (p. ej. gemini-2.0-flash)
+  JUEZ_PROVEEDOR=gemini   usa GEMINI_API_KEY y JUEZ_MODELO (p. ej. gemini-3.5-flash)
   JUEZ_PROVEEDOR=openai   usa OPENAI_API_KEY y JUEZ_MODELO
 """
 
 import json
 import os
 import re
+import time
 from dataclasses import dataclass
 
 from .cache import con_cache
@@ -47,8 +48,23 @@ class Veredicto:
 
 
 def llamar_modelo(prompt: str) -> str:
+    """Llama al modelo con reintentos ante errores temporales (503 alta demanda, 429 límite)."""
+    espera = 4.0
+    for intento in range(6):
+        try:
+            return _llamar_una_vez(prompt)
+        except Exception as e:  # noqa: BLE001 - se re-lanza si no es temporal
+            temporal = any(c in str(e) for c in ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED"))
+            if not temporal or intento == 5:
+                raise
+            time.sleep(espera)
+            espera *= 2
+    raise RuntimeError("inalcanzable")
+
+
+def _llamar_una_vez(prompt: str) -> str:
     proveedor = os.getenv("JUEZ_PROVEEDOR", "gemini")
-    modelo = os.getenv("JUEZ_MODELO", "gemini-2.0-flash")
+    modelo = os.getenv("JUEZ_MODELO", "gemini-3.5-flash")
     if proveedor == "gemini":
         from google import genai
 
