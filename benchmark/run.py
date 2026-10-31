@@ -123,6 +123,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lote", choices=["es", "ay", "anli", "todos"], default="todos")
     ap.add_argument("--sin-juez", action="store_true")
+    ap.add_argument("--sufijo", default="", help="guarda en results/tabla_<sufijo>.md para no pisar otra corrida")
     args = ap.parse_args()
 
     filas: list[dict] = []
@@ -139,8 +140,9 @@ def main():
     md = tabla_md(res)
     print(md)
     RESULTADOS.mkdir(exist_ok=True)
-    (RESULTADOS / "tabla.md").write_text(md + "\n", encoding="utf-8")
-    (RESULTADOS / "detalle.jsonl").write_text("\n".join(json.dumps(f, ensure_ascii=False) for f in filas) + "\n", encoding="utf-8")
+    s = f"_{args.sufijo}" if args.sufijo else ""
+    (RESULTADOS / f"tabla{s}.md").write_text(md + "\n", encoding="utf-8")
+    (RESULTADOS / f"detalle{s}.jsonl").write_text("\n".join(json.dumps(f, ensure_ascii=False) for f in filas) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

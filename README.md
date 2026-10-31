@@ -66,7 +66,9 @@ Lectura honesta:
 - **Español.** El baseline por palabras compartidas no detecta ningún error sutil (0 de 11). El juez con cita textual detecta 10 de 11 y no marca como error ninguna de las 25 afirmaciones verdaderas. El que se escapa es `es-005`, una negación («no podrán realizar el corte»): el juez la dio por respaldada.
 - **Los dos revisores juntos no mejoran al juez solo en este set.** Las reglas atrapan 4 errores (plazos, fechas de decretos, número de artículo) y el juez ya los atrapaba. Su valor aquí es que funcionan sin red ni modelo, no que suban la cifra.
 - **Aymara: resultado negativo.** En 30 pares de AmericasNLI, con este modelo, todas las columnas aciertan 10 de 30, lo mismo que el azar. «Errores detectados 19/20» no significa que funcione: el juez marca casi todo como error, y de 10 pares donde la hipótesis se sigue de la premisa, ninguno salió respaldado. La regla de cita textual no es la causa (ninguna etiqueta se anuló por cita falsa); lo que falla es que el modelo no entiende el texto en aymara. Se puede revisar con `python scripts/analizar_anli.py`.
-- No se probó otro modelo para el aymara por el límite diario del plan gratuito de Gemini.
+- **Se repitió con otro modelo y da lo mismo.** Con `qwen/qwen3.8-27b` en Groq (`results/tabla_qwen.md`) el juez acierta 9 de 30, también al nivel del azar. No es un modelo concreto el que falla.
+- **Límite del control.** El lote AmericasNLI trae premisa e hipótesis en aymara, sin el original en español, así que no reproduce el flujo del producto (PDF en español y solo la afirmación en aymara). No se pudo probar ese flujo con datos de terceros ni con ítems propios: el equipo no tiene hablante.
+- No se probó Gemini para el aymara: el plan gratuito permite 20 llamadas por día por modelo y el lote tiene 30.
 
 ## Límites
 
