@@ -1,25 +1,28 @@
-# Declaraci√≥n de material previo
+# DeclaraciÛn de material previo
 
-El sprint punt√∫a el avance durante el bloque de trabajo (09:00 a 16:00 del 31 de octubre de 2026). Esto es lo que exist√≠a antes.
+El sprint punt˙a el avance durante el bloque de trabajo (09:00 a 16:00 del 31 de octubre de 2026). Esto es lo que existÌa antes.
+
+## Equipo
+
+- Leonardo Dur·n Cuenca
+- Liz Mariel Caballero Salazar
+- Jazid Andrey Ovando Dur·n
+- Miguel Angel Vega Moreno
 
 ## Antes de las 09:00
 
-- La idea: verificar afirmaciones de un chatbot contra un PDF y medirlo con un benchmark en espa√±ol y aymara.
-- Un plan escrito (este `docs/PLAN.md` en su primera versi√≥n, sin c√≥digo).
-- Ning√∫n archivo de c√≥digo, ning√∫n √≠tem etiquetado, ning√∫n resultado.
+- La idea: verificar afirmaciones de un chatbot contra un PDF y medirlo con un benchmark en espaÒol y aymara.
+- Un plan escrito (este `docs/PLAN.md` en su primera versiÛn, sin cÛdigo).
+- Ning˙n archivo de cÛdigo, ning˙n Ìtem etiquetado, ning˙n resultado.
 
 ## Hecho durante el sprint
 
-Completar al cierre:
-
-- C√≥digo en `consta/`, `app/`, `benchmark/`.
-- √çtems etiquetados en `data/benchmark/` (commit `____`).
-- Resultados en `results/` (commit `____`).
+- CÛdigo en `consta/`, `app/`, `benchmark/` y `scripts/`.
+- Õtems etiquetados en `data/benchmark/` (commit `ac84069`, anterior a cualquier resultado).
+- Resultados en `results/` (commit `dfba193` para el espaÒol sin juez; `262cca5` para la primera tabla con juez).
 
 ## Material de terceros usado
 
-- PDF fuente: Ley N¬∞ 453, Ley general de los derechos de las usuarias y los usuarios y de las consumidoras y los consumidores (15 p√°ginas). Copia del Compendio del Servicio de Evaluaci√≥n de Aduanas: https://sea.gob.bo/digesto/CompendioII/J/77_L_453.pdf. Texto oficial: Gaceta Oficial del Estado Plurinacional, https://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/147245. Nota: la cabecera del compendio dice ¬´5 de Febrero de 2013¬ª, pero el texto de la ley dice que fue promulgada el 4 de diciembre de 2013; el benchmark no usa esa fecha.
-- AmericasNLI, corte `aym`, 30 pares del split `dev`. Ebrahimi et al., ACL 2022. Revisar licencia del dataset antes de redistribuir las filas; si no permite, dejar solo el script que las descarga.
-- Librer√≠as: ver `requirements.txt`.
-
-- Datos de terceros: AmericasNLI (Ebrahimi et al., ACL 2022), split dev, idioma aym: 30 pares como prueba (data/benchmark/americasnli_aym.jsonl) y las 713 filas restantes solo para derivar la regla de negaciÛn y como ejemplos en el prompt (data/benchmark/americasnli_aym_resto.jsonl). Nunca se mezclan.
+- PDF fuente: Ley N∞ 453, Ley general de los derechos de las usuarias y los usuarios y de las consumidoras y los consumidores (15 p·ginas). Copia del Compendio del Servicio de EvaluaciÛn de Aduanas: https://sea.gob.bo/digesto/CompendioII/J/77_L_453.pdf. Texto oficial: Gaceta Oficial del Estado Plurinacional, https://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/147245. Nota: la cabecera del compendio dice ´5 de Febrero de 2013ª, pero el texto de la ley dice que fue promulgada el 4 de diciembre de 2013; el benchmark no usa esa fecha.
+- AmericasNLI (Ebrahimi et al., ACL 2022), split dev, idioma aym: 30 pares como prueba (`data/benchmark/americasnli_aym.jsonl`) y las 713 filas restantes solo para derivar las reglas y como ejemplos en el prompt (`data/benchmark/americasnli_aym_resto.jsonl`). Nunca se mezclan. Revisar la licencia del dataset antes de redistribuir las filas; si no permite, dejar solo el script que las descarga.
+- LibrerÌas: ver `requirements.txt`.
