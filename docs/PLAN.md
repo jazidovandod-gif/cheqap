@@ -89,6 +89,7 @@ Estos son los cambios que subirían la nota frente a la versión original de la 
 
 ## 8. Qué cambiaría de la idea original
 
+- **Decidido a las 11:51: no hay hablante de aymara en el equipo.** Solo se usa AmericasNLI como control; `ay.jsonl` queda vacío y se declara como límite. Ignorar las filas «ítems `ay`» del reloj.
 - El benchmark en aymara con frases propias es el punto débil si no hay hablante en la mesa. Por eso AmericasNLI entra como control desde el diseño, y los 8 ítems propios se hacen con la persona que se encuentre; si son 4, son 4.
 - La línea de base por palabras es necesaria para el tramo "de qué partieron", pero sola no alcanza para contribución. El revisor de reglas es barato, determinista y atrapa el 80% de los errores inyectados; es la columna que hace visible el aporte.
 - La cita textual validada es la regla que más confianza le da al jurado y cuesta 10 líneas. Va primero, antes de afinar el prompt del juez.
