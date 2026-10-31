@@ -107,6 +107,7 @@ Todo reproducible con `python -m benchmark.run --lote anli --anli-modo <modo>` y
 | gemma-4-31b-it, prompt aymara + 4 ejemplos al azar + reglas | 17 / 30 | 3 / 10 | 1 / 20 |
 | gemma-4-31b-it, prompt aymara + 9 ejemplos similares + reglas | 17 / 30 | 3 / 10 | 1 / 20 |
 | qwen3.8-27b, prompt aymara + 9 ejemplos similares + reglas | 16 / 30 | 2 / 10 | 1 / 20 |
+| glm-5.2, prompt aymara + 9 ejemplos similares + reglas | 14 / 30 | 2 / 10 | 2 / 20 |
 | gemma-4-31b-it, prompt original (punto de partida) | 15 / 30 | 2 / 10 | 0 / 20 |
 | gpt-oss-120b, prompt original (punto de partida) | 10 / 30 | 0 / 10 | 1 / 20 |
 
