@@ -7,7 +7,8 @@ Regla central (no negociable): si la cita no aparece en el PDF normalizado, la e
 
 Proveedor por variable de entorno:
   JUEZ_PROVEEDOR=gemini   usa GEMINI_API_KEY y JUEZ_MODELO (p. ej. gemini-3.5-flash)
-  JUEZ_PROVEEDOR=openai   usa OPENAI_API_KEY y JUEZ_MODELO
+  JUEZ_PROVEEDOR=openai   usa OPENAI_API_KEY y JUEZ_MODELO (y OPENAI_BASE_URL para Groq, etc.)
+  JUEZ_PROVEEDOR=adaption usa ADAPTION_API_KEY y JUEZ_MODELO (p. ej. qwen3.5-397b)
 """
 
 import json
@@ -70,6 +71,11 @@ def _llamar_una_vez(prompt: str) -> str:
 
         cliente = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
         return cliente.models.generate_content(model=modelo, contents=prompt).text or ""
+    if proveedor == "adaption":
+        from adaption import Adaption
+
+        cliente = Adaption()  # lee ADAPTION_API_KEY
+        return cliente.responses.create(model=modelo, input=prompt).output_text or ""
     if proveedor == "openai":
         from openai import OpenAI
 
