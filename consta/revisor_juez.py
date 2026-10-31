@@ -38,6 +38,37 @@ PÁRRAFOS:
 """
 
 
+PROMPT_JUEZ_AY = """Eres un verificador que entiende aymara (aymar aru). Tienes una AFIRMACIÓN y un TEXTO FUENTE, ambos en aymara.
+Primero traduce mentalmente los dos al español, con cuidado con las negaciones (jani, janiw, janiwa = no; -ti al final del verbo refuerza la negación) y con los sufijos de persona y tiempo.
+Luego decide una sola etiqueta:
+- "respaldada": si el texto fuente es cierto, la afirmación tiene que ser cierta.
+- "contradicha": si el texto fuente es cierto, la afirmación tiene que ser falsa.
+- "no_respaldada": la afirmación podría ser cierta o falsa; el texto fuente no alcanza para saberlo.
+Si la afirmación repite la idea del texto fuente con otras palabras, es "respaldada", no "no_respaldada".
+{ejemplos}
+Devuelve SOLO un JSON con: {{"etiqueta": "...", "cita": "frase copiada EXACTAMENTE del texto fuente, sin cambiar una letra", "motivo": "una oración en español con tu traducción de ambos", "tramo": "palabras de la afirmación que chocan con la fuente, o null"}}
+Si la etiqueta es "no_respaldada", "cita" puede ser null.
+
+AFIRMACIÓN:
+{afirmacion}
+
+TEXTO FUENTE:
+{parrafos}
+"""
+
+_MAPA_ANLI = {"entailment": "respaldada", "neutral": "no_respaldada", "contradiction": "contradicha"}
+
+
+def formatear_ejemplos(filas: list[dict]) -> str:
+    """Filas con premise/hypothesis/label (AmericasNLI). Nunca deben ser las del lote de prueba."""
+    if not filas:
+        return ""
+    partes = ["\nEJEMPLOS RESUELTOS (fuente / afirmación / etiqueta):"]
+    for f in filas:
+        partes.append(f'- Fuente: "{f["premise"]}" | Afirmación: "{f["hypothesis"]}" -> {_MAPA_ANLI[f["label"]]}')
+    return "\n".join(partes) + "\n"
+
+
 @dataclass
 class Veredicto:
     etiqueta: str
@@ -93,9 +124,19 @@ def _parsear(salida: str) -> dict:
         return {}
 
 
-def juzgar(afirmacion: str, candidatos: list[Parrafo], texto_fuente_norm: str) -> Veredicto:
+def juzgar(
+    afirmacion: str,
+    candidatos: list[Parrafo],
+    texto_fuente_norm: str,
+    lengua: str = "es",
+    ejemplos: list[dict] | None = None,
+) -> Veredicto:
+    """lengua="ay" usa el prompt que sabe aymara; `ejemplos` añade casos resueltos al prompt."""
     parrafos_txt = "\n\n".join(f"[pág. {p.pagina}] {p.texto}" for p in candidatos)
-    prompt = PROMPT_JUEZ.format(afirmacion=afirmacion, parrafos=parrafos_txt)
+    if lengua == "ay":
+        prompt = PROMPT_JUEZ_AY.format(afirmacion=afirmacion, parrafos=parrafos_txt, ejemplos=formatear_ejemplos(ejemplos or []))
+    else:
+        prompt = PROMPT_JUEZ.format(afirmacion=afirmacion, parrafos=parrafos_txt)
     salida = con_cache("juez", prompt, lambda: llamar_modelo(prompt))
     datos = _parsear(salida)
 

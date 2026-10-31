@@ -19,6 +19,12 @@ class Cheqap:
         reglas = revisor_reglas.revisar(af.trabajo, candidatos)
         juez = revisor_juez.juzgar(af.trabajo, candidatos, self.texto_norm)
         res = combinar.combinar(af.original, reglas, juez)
+        if lengua == "ay":
+            # Medido: la traducción de trabajo no reconoce la mayoría de las palabras y el juez queda
+            # cerca del azar (README, Resultados). No se da verde ni rojo en aymara.
+            desconocidas = af.trabajo.count("[")
+            total = max(1, len(af.trabajo.split()))
+            return combinar.no_verificable(af.original, af.trabajo, desconocidas, total, res)
         return res
 
     def verificar_respuesta(self, respuesta: str, lengua: str = "es") -> list[combinar.Resultado]:

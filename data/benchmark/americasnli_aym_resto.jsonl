@@ -1,0 +1,713 @@
+{"premise": "Jupax sanwa: Mamita, utankastwa.", "hypothesis": "Yatiñ utan awtux jaytawayki ukxpachaw mamaytapar jawsanxa.", "label": "neutral"}
+{"premise": "Jupax sanwa: Mamita, utankastwa.", "hypothesis": "Jupax janiw mä ars arskänti", "label": "contradiction"}
+{"premise": "Jupax sanwa: Mamita, utankastwa.", "hypothesis": "Utar purinxtwa sasaw mamaparux sanxa", "label": "entailment"}
+{"premise": "Janiw kunar sarataps yatkänti, ukatx yatiyañapanwa Washington markarux kawki chiqarus sari", "hypothesis": "Janiw kuna pachas Washington markankayati, kunawsatix uk saram sapxitux chhaqtwa ukawx jiqhatä sasina", "label": "neutral"}
+{"premise": "Janiw kunar sarataps yatkänti, ukatx yatiyañapanwa Washington markarux kawki chiqarus sari", "hypothesis": "Washington mark sarakasax kuntix lurka ukx yatiyatwa", "label": "contradiction"}
+{"premise": "Janiw kunar sarataps yatkänti, ukatx yatiyañapanwa Washington markarux kawki chiqarus sari", "hypothesis": "Janiw sum yatkayatti kuntix lurka uka, ukatx sar Washinton marakaru, kawkirutix chhillapkit yatiyañataki", "label": "entailment"}
+{"premise": "Jupax janiw atkant sarañanxa", "hypothesis": "Jupaw nayraqatx jawillt'atanxa ukjamarus lurawinakatx kust'ayapuninwa", "label": "contradiction"}
+{"premise": "Jupax janiw atkant sarañanxa", "hypothesis": "Janiw ukankañapatak jaysatakanti", "label": "entailment"}
+{"premise": "Jupax janiw atkant sarañanxa", "hypothesis": "Museo jist'arañatakix janiw sarañapat jaysatakanti.", "label": "neutral"}
+{"premise": "Nayax walikiyatwa, ¡ukhamarus ukax ukakinwa!", "hypothesis": "Kunawsatix iyaw sasax jistxa, ukhaw tukuyxi", "label": "entailment"}
+{"premise": "Nayax walikiyatwa, ¡ukhamarus ukax ukakinwa!", "hypothesis": "Janiw jistwa ukatx mayamp mayampiw jitt'awayi.", "label": "contradiction"}
+{"premise": "Nayax walikiyatwa, ¡ukhamarus ukax ukakinwa!", "hypothesis": "Kunasatix iyaw jistxa, uka uruw jaqichasiñan sasaw amtawayapta", "label": "neutral"}
+{"premise": "Ukankayatxa askicht'añatakikiwa", "hypothesis": "Sum nayraqatpach amuyayatxa", "label": "contradiction"}
+{"premise": "Ukankayatxa askicht'añatakikiwa", "hypothesis": "Qullqix kawkharus saratayn uk amuyañ yant'askayatxa", "label": "neutral"}
+{"premise": "Ukankayatxa askicht'añatakikiwa", "hypothesis": "Amuyañ yant'askayatxa", "label": "entailment"}
+{"premise": "Ukatx, ist'ita, janchi masisar tumpt'añ jaytawayapxataynawa kunalaykutix jupanakax janq'unakaniw sasaw amtawayapxanxa", "hypothesis": "Sapuruw tumpir sarasipkanxa", "label": "contradiction"}
+{"premise": "Ukatx, ist'ita, janchi masisar tumpt'añ jaytawayapxataynawa kunalaykutix jupanakax janq'unakaniw sasaw amtawayapxanxa", "hypothesis": "Wila masirux jaytawayxapxanwa tumpañxa kunawsatix qalltki janchi tuq uñisisiñax ukhata", "label": "neutral"}
+{"premise": "Awichan kullakapan ukhamarak chachapat kunjams Augusta markar janq'utjam uñt'ayasisin sarawayxapxan, uk arusirinxa.", "hypothesis": "Awichan kullakapax janq'u kastanwa ukatx Texa markaruw sarawayxi.", "label": "contradiction"}
+{"premise": "Awichan kullakapan ukhamarak chachapat kunjams Augusta markar janq'utjam uñt'ayasisin sarawayxapxan, uk arusirinxa.", "hypothesis": "Awichan kullakapax janiw janq'u kastakanti.", "label": "entailment"}
+{"premise": "Awichan kullakapan ukhamarak chachapat kunjams Augusta markar janq'utjam uñt'ayasisin sarawayxapxan, uk arusirinxa.", "hypothesis": "Awichan kullakapax janiw janq'u kastakanti ukatx yatiqañ utar sarañatakix janq'uñ munanxa", "label": "neutral"}
+{"premise": "Ukatx, yatxtawa, jupax ukhamanwa, kunaymanana, qullichir jaqin wawapjama kunalaykutix walja urakin qullqin jaqin wawapjama", "hypothesis": "Awkipax aka jakawinx janiw kunanikansa.", "label": "contradiction"}
+{"premise": "Ukatx, yatxtawa, jupax ukhamanwa, kunaymanana, qullichir jaqin wawapjama kunalaykutix walja urakin qullqin jaqin wawapjama", "hypothesis": "Awkipax 2000 acres ukha yapuchañ uraqininwa", "label": "neutral"}
+{"premise": "Ukatx, yatxtawa, jupax ukhamanwa, kunaymanana, qullichir jaqin wawapjama kunalaykutix walja urakin qullqin jaqin wawapjama", "hypothesis": "Awkipax walja uraqinakaninwa.", "label": "entailment"}
+{"premise": "Ukampirus nayan irnaqawijax parakayitanak ukampirus qhispiyir chaliku uskuñanwa kunawsatix khumuntatakan ukhamarak thuqtawaykan anqax mark tuqiru.", "hypothesis": "Janiw irnaqawinikayatti, ukampirus utaruw taqi kajunanak imxta", "label": "contradiction"}
+{"premise": "Ukampirus nayan irnaqawijax parakayitanak ukampirus qhispiyir chaliku uskuñanwa kunawsatix khumuntatakan ukhamarak thuqtawaykan anqax mark tuqiru.", "hypothesis": "Japón markaruw kajanak apayxta", "label": "neutral"}
+{"premise": "Ukampirus nayan irnaqawijax parakayitanak ukampirus qhispiyir chaliku uskuñanwa kunawsatix khumuntatakan ukhamarak thuqtawaykan anqax mark tuqiru.", "hypothesis": "Apayxtwa", "label": "entailment"}
+{"premise": "Kunjamatix, mmm….., chinuntataxayatwa.", "hypothesis": "Mayamp sum uñxatxa walikiskit chinuntataxa", "label": "neutral"}
+{"premise": "Kunjamatix, mmm….., chinuntataxayatwa.", "hypothesis": "Ukhampuninwa kunwsatix kunjams jaranuqupx ukhaxa", "label": "contradiction"}
+{"premise": "Kunjamatix, mmm….., chinuntataxayatwa.", "hypothesis": "Ukjamanwa kunjam katjatakayat ukhaxa", "label": "entailment"}
+{"premise": "Ukhamarus jupax warmiraranwa, ukjamaxaya, anqanjam uñjasiyatxa. Ukhamarus yatxtawa, janiw kusakanti, ukampirus ukjamaw nayra sarnaqawijaxa.", "hypothesis": "Chiqa chuymaniyatwa ukhamarus suma jaqiyatwa", "label": "contradiction"}
+{"premise": "Ukhamarus jupax warmiraranwa, ukjamaxaya, anqanjam uñjasiyatxa. Ukhamarus yatxtawa, janiw kusakanti, ukampirus ukjamaw nayra sarnaqawijaxa.", "hypothesis": "Uñisiyatwa kunalaykutix wali jach'a jach' tukutanwa", "label": "neutral"}
+{"premise": "Ukhamarus jupax warmiraranwa, ukjamaxaya, anqanjam uñjasiyatxa. Ukhamarus yatxtawa, janiw kusakanti, ukampirus ukjamaw nayra sarnaqawijaxa.", "hypothesis": "Jupax janiw jupan llumk'upakanti.", "label": "entailment"}
+{"premise": "Kunawsatix jaktxa, kunawsatix tultut jaktxa apsuñ qalltañapatakixa, awiyunan pä yanakaw ch'iqatuqin chullutatawayatana", "hypothesis": "Taqi yanakaw awiyunan jan llawq'atakanti", "label": "contradiction"}
+{"premise": "Kunawsatix jaktxa, kunawsatix tultut jaktxa apsuñ qalltañapatakixa, awiyunan pä yanakaw ch'iqatuqin chullutatawayatana", "hypothesis": "Ch'amanw apsuñaxa.", "label": "neutral"}
+{"premise": "Chiqpachanx janiw amuykanti.", "hypothesis": "Jupatakix janiw askikanti kunalaykutix janiw amuyañ atkanti yaqha anqa arunaka jan yatisisax.", "label": "neutral"}
+{"premise": "Chiqpachanx janiw amuykanti.", "hypothesis": "Ukhamanwa, jupax janiw amuykanti", "label": "entailment"}
+{"premise": "Chiqpachanx janiw amuykanti.", "hypothesis": "Jupax chiqsapuniw kuntix arusktan uk yatinxa.", "label": "contradiction"}
+{"premise": "Inas jupax taqiniru jischina ukhamarus nayax janiw ukaratux sum ist'katatti.", "hypothesis": "Janiw ist'kti kunasatix yaqhipanakaru jiskan ukxa.", "label": "entailment"}
+{"premise": "Inas jupax taqiniru jischina ukhamarus nayax janiw ukaratux sum ist'katatti.", "hypothesis": "Jupax taqi kun jiskan uk ist'xa", "label": "contradiction"}
+{"premise": "Inas jupax taqiniru jischina ukhamarus nayax janiw ukaratux sum ist'katatti.", "hypothesis": "Maynimp kunaw ukapachax aruskipaskana.", "label": "neutral"}
+{"premise": "Paya, kimsa awiyunanakak ukankayatan ukhax chhaqaytanxa , antis , way, mä yant'akiwa", "hypothesis": "Mä paya awiyunanakaw chhaqapxi kunalaykutix jan wali pachanwa.", "label": "neutral"}
+{"premise": "Paya, kimsa awiyunanakak ukankayatan ukhax chhaqaytanxa , antis , way, mä yant'akiwa", "hypothesis": "Mä paya awiyunakiw chhaqixa", "label": "entailment"}
+{"premise": "Paya, kimsa awiyunanakak ukankayatan ukhax chhaqaytanxa , antis , way, mä yant'akiwa", "hypothesis": "Janipuniw mä awiyuns chhaqayktanti", "label": "contradiction"}
+{"premise": "Wakisiw kunaksay naya layku luram", "hypothesis": "Janiw kuna yanaps munkti.", "label": "contradiction"}
+{"premise": "Wakisiw kunaksay naya layku luram", "hypothesis": "Mä jach'a irnaqaw lurañaw wakisi.", "label": "neutral"}
+{"premise": "Wakisiw kunaksay naya layku luram", "hypothesis": "Nayax mä luratpach muntxa", "label": "entailment"}
+{"premise": "Yaqhakast, parakayistanaka ukhamarak mä jaltir jamach'in ukham kims kutirjama, mä pachanx 22.000 millanak jali.", "hypothesis": "Mä pachanx 20.000 millanak mä ukhx jali", "label": "entailment"}
+{"premise": "Yaqhakast, parakayistanaka ukhamarak mä jaltir jamach'in ukham kims kutirjama, mä pachanx 22.000 millanak jali.", "hypothesis": "Mä pachanx 10.000 millanak ukhak jali", "label": "contradiction"}
+{"premise": "Yaqhakast, parakayistanaka ukhamarak mä jaltir jamach'in ukham kims kutirjama, mä pachanx 22.000 millanak jali.", "hypothesis": "Jet ukax mä pachanx 20.000 millas ukhx jali", "label": "neutral"}
+{"premise": "Rudolph Anderson utjkan ukapacha, U2 ukatx mä kimsa qhanañchañawa", "hypothesis": "Rudolph Anderson juparux janiw kawqhan jikqhatañjamakansa, ukampirus mä U2 ukhakiw utjistanxa", "label": "contradiction"}
+{"premise": "Rudolph Anderson utjkan ukapacha, U2 ukatx mä kimsa qhanañchañawa", "hypothesis": "Rudolph Anderson jupax U2 kimsan taypinkanwa.", "label": "entailment"}
+{"premise": "Uka manqhankaskakinwa", "hypothesis": "Jupax jan kun jaytasapuniw sarawayxi.", "label": "contradiction"}
+{"premise": "Uka manqhankaskakinwa", "hypothesis": "Jupax jak'pachankaskakinwa", "label": "entailment"}
+{"premise": "Uka manqhankaskakinwa", "hypothesis": "Sarkxaspas ukham amuyapxayatxa, ukatx qhiparakiwa", "label": "neutral"}
+{"premise": "Ukampirus, uh, ukatx mistpan sam.", "hypothesis": "Janiw ukatx juchikiñ munkti", "label": "contradiction"}
+{"premise": "Ukampirus, uh, ukatx mistpan sam.", "hypothesis": "Uñakipaw akxa", "label": "entailment"}
+{"premise": "Ukampirus, uh, ukatx mistpan sam.", "hypothesis": "Aka lurat yatiyawx uñakipawa", "label": "neutral"}
+{"premise": "Ukampirus, makiw, jawsanipxitu jalanaqaskir uñtañataki.", "hypothesis": "Amuyatatx awiyunax uñch'ukiñapuninwa.", "label": "neutral"}
+{"premise": "Ukampirus, makiw, jawsanipxitu jalanaqaskir uñtañataki.", "hypothesis": "Amuyatatx kunatix tuyunaqki ukar uñtañatakipachanwa.", "label": "entailment"}
+{"premise": "Ukampirus, makiw, jawsanipxitu jalanaqaskir uñtañataki.", "hypothesis": "Janiw anq uñtapxatat sapxituwa", "label": "contradiction"}
+{"premise": "Jupax laphi jat'ina ukatx ch'allaruw uskunxa, nina aqtayasinx ukat phichkatanwa mä qillxaru ukatx qillx akham unxtayanxa.", "hypothesis": "Jupax wali sutjatapuninawa kuns phichhatirjama, ukatx mawk'it yant'akinwa.", "label": "contradiction"}
+{"premise": "Jupax laphi jat'ina ukatx ch'allaruw uskunxa, nina aqtayasinx ukat phichkatanwa mä qillxaru ukatx qillx akham unxtayanxa.", "hypothesis": "Jupax laphx phichhantaspanwa", "label": "entailment"}
+{"premise": "Jupax laphi jat'ina ukatx ch'allaruw uskunxa, nina aqtayasinx ukat phichkatanwa mä qillxaru ukatx qillx akham unxtayanxa.", "hypothesis": "Jupax mä jutir amuy qillqt'anxa ukat phichkatasmakiniwa.", "label": "neutral"}
+{"premise": "Um, Concord tuqiw Ramona jupar jawsañama. Uphisinakaspas ukham amuyasina. Chiqpachanx mä kliyintimpiw mark maysajan ukankaski. Monroe ukankasipktwa. Jupax Concord tuqinkaskiwa.", "hypothesis": "Ramonax Concord ukan taqpach jakawipanx jakasiwayanxa.", "label": "neutral"}
+{"premise": "Um, Concord tuqiw Ramona jupar jawsañama. Uphisinakaspas ukham amuyasina. Chiqpachanx mä kliyintimpiw mark maysajan ukankaski. Monroe ukankasipktwa. Jupax Concord tuqinkaskiwa.", "hypothesis": "Ramanx janiw kunapachas Concord ukankanti", "label": "contradiction"}
+{"premise": "Um, Concord tuqiw Ramona jupar jawsañama. Uphisinakaspas ukham amuyasina. Chiqpachanx mä kliyintimpiw mark maysajan ukankaski. Monroe ukankasipktwa. Jupax Concord tuqinkaskiwa.", "hypothesis": "Ramonax Concord ukankiwa", "label": "entailment"}
+{"premise": "Ukax mayakipuniw nayatakixa, 16n maraw irnaqaw tuqin sarantawayta yaqha kast lurawinakampi.", "hypothesis": "Yaqha kast lurawinak tuqinx walja maranakaw ukanktxa", "label": "entailment"}
+{"premise": "Ukax mayakipuniw nayatakixa, 16n maraw irnaqaw tuqin sarantawayta yaqha kast lurawinakampi.", "hypothesis": "Janiw kunasas mä irnaqawinikayatti", "label": "contradiction"}
+{"premise": "Ukax mayakipuniw nayatakixa, 16n maraw irnaqaw tuqin sarantawayta yaqha kast lurawinakampi.", "hypothesis": "Wali munat irnaqawijax yaqha kast lurawinakanwa.", "label": "neutral"}
+{"premise": "Ukatjamak amtastxa.", "hypothesis": "Janipuniw amtaskt kunipansa", "label": "contradiction"}
+{"premise": "Ukatjamak amtastxa.", "hypothesis": "Ukjamakiw amuyatatx amtañajatakixa", "label": "entailment"}
+{"premise": "Ukaw wal chuymar puriytamxa", "hypothesis": "Wali kuspin chuymar puriytamxa", "label": "contradiction"}
+{"premise": "Ukaw wal chuymar puriytamxa", "hypothesis": "Jan walpin chuymar uñjaytamxa", "label": "entailment"}
+{"premise": "Ukaw wal chuymar puriytamxa", "hypothesis": "Mä pachat sumaptawayasktaxa", "label": "neutral"}
+{"premise": "Janiw ukhar qhiparañamakiti.", "hypothesis": "Utarutix sarxañ munstax sarxasmawa", "label": "neutral"}
+{"premise": "Janiw ukhar qhiparañamakiti.", "hypothesis": "Sarxasmawa", "label": "entailment"}
+{"premise": "Janiw ukhar qhiparañamakiti.", "hypothesis": "¡Akawx chiqarupuniw qhiparañamaxa!", "label": "contradiction"}
+{"premise": "Ukapuninwa… uka urux wali sutjasiñapuninwa", "hypothesis": "Uka urux samart'añatakipuniwa", "label": "contradiction"}
+{"premise": "Ukapuninwa… uka urux wali sutjasiñapuninwa", "hypothesis": "Kunawsatix jach'a ch'amak thay markar purinkan ukax sustjasiñajampuninwa", "label": "neutral"}
+{"premise": "Ukapuninwa… uka urux wali sutjasiñapuninwa", "hypothesis": "Uka urux sustjapunituwa", "label": "entailment"}
+{"premise": "Aka, walikiw, ukhamipanxa… wilusirarax yapxattawayiwa, yapxatawayiwa ukampirus yapxatawayiw anqaxar puriñkama.", "hypothesis": "Sapakutpachax wali mäkipuniwa", "label": "entailment"}
+{"premise": "Aka, walikiw, ukhamipanxa… wilusirarax yapxattawayiwa, yapxatawayiwa ukampirus yapxatawayiw anqaxar puriñkama.", "hypothesis": "Janis tukuskasp ukham uñicht'ayasinxa", "label": "contradiction"}
+{"premise": "Aka, walikiw, ukhamipanxa… wilusirarax yapxattawayiwa, yapxatawayiwa ukampirus yapxatawayiw anqaxar puriñkama.", "hypothesis": "Wilusirarax mayxt'ayitunwa", "label": "neutral"}
+{"premise": "Ukampis, walikiw, ukampirus, akanakaw kimsanix, chuy, uphisinapan jilir irpiri Kennedy Washington ukamp May jiniralamp U2 pilutunakax jupanakamp chikanawa.", "hypothesis": "Jiniral May ukjamarak pilutunakampix uphisinapar tumpasax sumanjamak ukankt'anawayapxi", "label": "neutral"}
+{"premise": "Ukampis, walikiw, ukampirus, akanakaw kimsanix, chuy, uphisinapan jilir irpiri Kennedy Washington ukamp May jiniralamp U2 pilutunakax jupanakamp chikanawa.", "hypothesis": "Jiniral May jupax janiw kunawsas Jilir irpiri Kennedyn uphisinaparux saririkanti", "label": "contradiction"}
+{"premise": "Ukampis, walikiw, ukampirus, akanakaw kimsanix, chuy, uphisinapan jilir irpiri Kennedy Washington ukamp May jiniralamp U2 pilutunakax jupanakamp chikanawa.", "hypothesis": "Akaw jiliri irpiri Kennedy uphisinapan jiniral May ukjamarak U2 ukankir kimsa pilutumpixa", "label": "entailment"}
+{"premise": "Janir t'axllitatkasax, ¿Kunats jan sitasm milk'imp chukulatimp umxatt'am sasa?", "hypothesis": "Janiw milk'i umkiristi.", "label": "contradiction"}
+{"premise": "Janir t'axllitatkasax, ¿Kunats jan sitasm milk'imp chukulatimp umxatt'am sasa?", "hypothesis": "Milk'imp chukulatimp umxat'añ muniristwa.", "label": "entailment"}
+{"premise": "Janir t'axllitatkasax, ¿Kunats jan sitasm milk'imp chukulatimp umxatt'am sasa?", "hypothesis": "Milk'imp chukulatimp mawk'it umxat'añ kusaspawa ukjamarak pantasin yatisisin juyart'ayitaspawa .", "label": "neutral"}
+{"premise": "Ukat ukampirus, mapit taqikunas qallantatawa, ukhatpach arktasmaxa.", "hypothesis": "Arktasmaw taqikun qallantatipanxa", "label": "entailment"}
+{"premise": "Ukat ukampirus, mapit taqikunas qallantatawa, ukhatpach arktasmaxa.", "hypothesis": "Base de datos ukar mantasmaw kunawsatix yatiyawinak phuqhañchatax ukhaxa.", "label": "neutral"}
+{"premise": "Ukat ukampirus, mapit taqikunas qallantatawa, ukhatpach arktasmaxa.", "hypothesis": "Jichpach suyt'asma.", "label": "contradiction"}
+{"premise": "Ukampirus, uñtam, lup'im.", "hypothesis": "Sapakutipuniw lupt'xa.", "label": "neutral"}
+{"premise": "Ukampirus, uñtam, lup'im.", "hypothesis": "Janiw kunakis kunast lupt'añ munt ukaxa.", "label": "contradiction"}
+{"premise": "Ukampirus, uñtam, lup'im.", "hypothesis": "Nayax yatwa kunats lup'iña ukxa.", "label": "entailment"}
+{"premise": "Joel juparux jupanakaw apasxapxi, ukatx awichajax utaxanx llakinaw siwa, kunalaykutix, yatxtawa, taqiniw Joel juparux jisk'arjam uñjapxanxa.", "hypothesis": "Taqiniw utanx llakitapxäna kulaykutix Joelitxjamax amtasina", "label": "entailment"}
+{"premise": "Joel juparux jupanakaw apasxapxi, ukatx awichajax utaxanx llakinaw siwa, kunalaykutix, yatxtawa, taqiniw Joel juparux jisk'arjam uñjapxanxa.", "hypothesis": "¡Taqiniw wali k'uchikipxana!", "label": "contradiction"}
+{"premise": "Joel juparux jupanakaw apasxapxi, ukatx awichajax utaxanx llakinaw siwa, kunalaykutix, yatxtawa, taqiniw Joel juparux jisk'arjam uñjapxanxa.", "hypothesis": "Joelux jiwxiwa ukatx llakiskayapuniwa", "label": "neutral"}
+{"premise": "Ma jaltax ukanwa, utjanwa 158n jalxtatanaka ukatx t'aqanuqutanwa, mayamp junthapiña, t'aqanuquña ukhamarak jan mayamp pantasiñaniti.", "hypothesis": "Jaratatañanwa ukatx mayamp q'iwthapiñanwa.", "label": "entailment"}
+{"premise": "Ma jaltax ukanwa, utjanwa 158n jalxtatanaka ukatx t'aqanuqutanwa, mayamp junthapiña, t'aqanuquña ukhamarak jan mayamp pantasiñaniti.", "hypothesis": "Awiyunanakax jaratatañanwa ukatx mayamp q'iwthapisin apthapiñanwa.", "label": "neutral"}
+{"premise": "Ma jaltax ukanwa, utjanwa 158n jalxtatanaka ukatx t'aqanuqutanwa, mayamp junthapiña, t'aqanuquña ukhamarak jan mayamp pantasiñaniti.", "hypothesis": "Janiw mayamp llamkt'ayañ munapkanti.", "label": "contradiction"}
+{"premise": "Janiw mayamp Kimsir SS ukar mantañ munkti ukatsti Kimsir Escuadrón Yanapt'irinwa", "hypothesis": "Janiw Kimsiri SS ukar suyt'añ atkayatt'i.", "label": "contradiction"}
+{"premise": "Janiw mayamp Kimsir SS ukar mantañ munkti ukatsti Kimsir Escuadrón Yanapt'irinwa", "hypothesis": "Janiw Kimsiri SS ukakañ munkti.", "label": "entailment"}
+{"premise": "Janiw mayamp Kimsir SS ukar mantañ munkti ukatsti Kimsir Escuadrón Yanapt'irinwa", "hypothesis": "Kimsiri SS Escuadrón ukaxa jan wali utjiriwa.", "label": "neutral"}
+{"premise": "Janiw ukampirus mä wasarjamakanti; Jaltañajanx artimisaw utjanxa.", "hypothesis": "Qhuya chiqanwa.", "label": "contradiction"}
+{"premise": "Janiw ukampirus mä wasarjamakanti; Jaltañajanx artimisaw utjanxa.", "hypothesis": "Jan wali quranakaw utjan uka chiqanxa.", "label": "entailment"}
+{"premise": "Janiw ukampirus mä wasarjamakanti; Jaltañajanx artimisaw utjanxa.", "hypothesis": "Qurumir tankir qullinakaw pista pantxan utjanxa.", "label": "neutral"}
+{"premise": "Mä pachaw jan mayamp kuns arskanti, ukar jayrasiyasaw sarayitu ukhamarus janiw yatkti kunawsas wakiskiri.", "hypothesis": "Nayax llakitaw lup'iskayatwa kunalaykutix kuna pacharus ukx yatkayati.", "label": "entailment"}
+{"premise": "Mä pachaw jan mayamp kuns arskanti, ukar jayrasiyasaw sarayitu ukhamarus janiw yatkti kunawsas wakiskiri.", "hypothesis": "Uñacht'awinak jan uñxirist uk llakitax lup'iskayata kunalaykutix jan kuna pacharutaps yatkayätti.", "label": "neutral"}
+{"premise": "Mä pachaw jan mayamp kuns arskanti, ukar jayrasiyasaw sarayitu ukhamarus janiw yatkti kunawsas wakiskiri.", "hypothesis": "Janiw kuna llakitakayatsa, kunasay utjaskpan", "label": "contradiction"}
+{"premise": "Jupax Grecia markatawa ukjamarak mä jisk'a Grecia Tokalleka markatawa, Awyayalaruw jutana, 1969n jan ukax 1970nk uka maranakjamakïnwa, ukatx makiw jaqichasi.", "hypothesis": "Jupax Griego jan Inklis aru arsur jaqinwa", "label": "neutral"}
+{"premise": "Jupax Grecia markatawa ukjamarak mä jisk'a Grecia Tokalleka markatawa, Awyayalaruw jutana, 1969n jan ukax 1970nk uka maranakjamakïnwa, ukatx makiw jaqichasi.", "hypothesis": "Mä Griego Jaqiwa", "label": "entailment"}
+{"premise": "Ramonar mayamp jawsañaxanawakunalaykutix mä jiskt'aw utjitana …walikiwa…tukt'ayayita.. mä jisk't'aw utjitana kuntix lurkan ukata.", "hypothesis": "Janiw jayraskayat Ramonar jawsañxa.", "label": "contradiction"}
+{"premise": "Ramonar mayamp jawsañaxanawakunalaykutix mä jiskt'aw utjitana …walikiwa…tukt'ayayita.. mä jisk't'aw utjitana kuntix lurkan ukata.", "hypothesis": "Akatx janiw kunawsas jiskt'añ utjkanti.", "label": "neutral"}
+{"premise": "Ramonar mayamp jawsañaxanawakunalaykutix mä jiskt'aw utjitana …walikiwa…tukt'ayayita.. mä jisk't'aw utjitana kuntix lurkan ukata.", "hypothesis": "Ramonarux jiskt'añ munayatxa.", "label": "entailment"}
+{"premise": "Jisk'a lurawinakaw wali sum kuntix lurkix uk amuyayanxa.", "hypothesis": "Kuns lurt'a saskayatwa", "label": "entailment"}
+{"premise": "Jisk'a lurawinakaw wali sum kuntix lurkix uk amuyayanxa.", "hypothesis": "Yatintañawjatak mä pustir lurä saskayatwa ukjamarus machaq qillqintirinäkaw yanapt'apxitu.", "label": "neutral"}
+{"premise": "Walikiwa, ukawjanx janiw qhitis yanapiri utjkiti.", "hypothesis": "Janiw nayapach lurirjamäkti", "label": "neutral"}
+{"premise": "Walikiwa, ukawjanx janiw qhitis yanapiri utjkiti.", "hypothesis": "Ukawjanx walja jaqinakaw yanapt'irix utji.", "label": "contradiction"}
+{"premise": "Walikiwa, ukawjanx janiw qhitis yanapiri utjkiti.", "hypothesis": "Ukawjanx janiw khiti jaqi yanapt'iris utjkiti", "label": "entailment"}
+{"premise": "CIAx uñch'kiñ apaqi ukatx qhipurpachaw Naciones Unidas ukar apawäyi.", "hypothesis": "CIAx ONU ukaruw uñch'ukiñx apaniwayi.", "label": "entailment"}
+{"premise": "CIAx uñch'kiñ apaqi ukatx qhipurpachaw Naciones Unidas ukar apawäyi.", "hypothesis": "CIAx waruqatx jupanakatakiw imasi.", "label": "contradiction"}
+{"premise": "CIAx uñch'kiñ apaqi ukatx qhipurpachaw Naciones Unidas ukar apawäyi.", "hypothesis": "CIAx lup'inaw ONUx makis uñjañ munkaspa ukjama.", "label": "neutral"}
+{"premise": "Nayax sayatwa, llakitatax qhanañchañ munayatxa kunalaykutix janiw taqpach yatiyaw munkayat ukax ujkanti.", "hypothesis": "Ukirx janiw ist'añ munkayät sasäw jistxa.", "label": "contradiction"}
+{"premise": "Nayax sayatwa, llakitatax qhanañchañ munayatxa kunalaykutix janiw taqpach yatiyaw munkayat ukax ujkanti.", "hypothesis": "Juk'amp yatxatawiw munasi sasaw sayatxa kuntix irnaqawin lurkä uk amtañataki", "label": "neutral"}
+{"premise": "Nayax sayatwa, llakitatax qhanañchañ munayatxa kunalaykutix janiw taqpach yatiyaw munkayat ukax ujkanti.", "hypothesis": "Juk'amp yatxatañaw munasi sasaw sayatxa.", "label": "entailment"}
+{"premise": "Ukat jan jach'a yatiqañ utatx mistkti, janiw kunawsas, janiw mä panks ullarkti pankanak ullarañaxäkan ukja.", "hypothesis": "Janiw jach'a yatiqañx tukuykti.", "label": "entailment"}
+{"premise": "Ukat jan jach'a yatiqañ utatx mistkti, janiw kunawsas, janiw mä panks ullarkti pankanak ullarañaxäkan ukja.", "hypothesis": "Qillqayasisin Jach'a Yatiqañ Utx tukuyta", "label": "contradiction"}
+{"premise": "Ukat jan jach'a yatiqañ utatx mistkti, janiw kunawsas, janiw mä panks ullarkti pankanak ullarañaxäkan ukja.", "hypothesis": "2002n Jach'a Yatiqañ Utx jaytawaytxa", "label": "neutral"}
+{"premise": "Mmm, ukhamax markatak sarxapxatäyna, ukat jupaxa, janiw mayamp kullakap uñxataynati", "hypothesis": "Texas markaruw sarxatayna ukatx janiw mayamp kullakap uñxataynati", "label": "neutral"}
+{"premise": "Mmm, ukhamax markatak sarxapxatäyna, ukat jupaxa, janiw mayamp kullakap uñxataynati", "hypothesis": "Jutir urunakanx janiw mayamps kullakap uñxanti.", "label": "entailment"}
+{"premise": "Mmm, ukhamax markatak sarxapxatäyna, ukat jupaxa, janiw mayamp kullakap uñxataynati", "hypothesis": "Taqi urunakaw kullakapar uñjanxa.", "label": "contradiction"}
+{"premise": "Ukampirus awichax sartasinjanwa, saraqaniñanjamaw saraqänina, thakhi tuqiruw sarawayixa ukatx ukjaruw sayt'at qhipari.", "hypothesis": "Grannyx Pocheruw qhipari.", "label": "contradiction"}
+{"premise": "Ukampirus awichax sartasinjanwa, saraqaniñanjamaw saraqänina, thakhi tuqiruw sarawayixa ukatx ukjaruw sayt'at qhipari.", "hypothesis": "Grannyx 100pies ukx utatpach sarawayi.", "label": "neutral"}
+{"premise": "Ukampirus awichax sartasinjanwa, saraqaniñanjamaw saraqänina, thakhi tuqiruw sarawayixa ukatx ukjaruw sayt'at qhipari.", "hypothesis": "Awichax utat jayarst'awayiwa", "label": "entailment"}
+{"premise": "Jichhurux awkixan nayra jakawipat arst'awaya ukatx kunawsatix Estados Unidos markar sarawayjix may may kast sarawinak utjirinakaw uñicht'ayätani.", "hypothesis": "Janiw awkixat arst'añ munkti.", "label": "contradiction"}
+{"premise": "Jichhurux awkixan nayra jakawipat arst'awaya ukatx kunawsatix Estados Unidos markar sarawayjix may may kast sarawinak utjirinakaw uñicht'ayätani.", "hypothesis": "Jayat jutir jaqitjam awkixan sarnaqawip sawayama.", "label": "entailment"}
+{"premise": "Jichhurux awkixan nayra jakawipat arst'awaya ukatx kunawsatix Estados Unidos markar sarawayjix may may kast sarawinak utjirinakaw uñicht'ayätani.", "hypothesis": "Mexico markat awkijan jutxatapat kunati makiwayxan ukxat sawayäma.", "label": "neutral"}
+{"premise": "Sarawinakan chiqakiskanwa, ukampirus thiyankirinakax p'iqt'ayirikisipkanwa.", "hypothesis": "Taqpach ukawjax urwanukiskanwa.", "label": "contradiction"}
+{"premise": "Sarawinakan chiqakiskanwa, ukampirus thiyankirinakax p'iqt'ayirikisipkanwa.", "hypothesis": "Jilpach uka chiqawjanx juk'a chanin utanakaw jilpachanxa.", "label": "neutral"}
+{"premise": "Sarawinakan chiqakiskanwa, ukampirus thiyankirinakax p'iqt'ayirikisipkanwa.", "hypothesis": "Jilpachax uka chiqanx thiya tuqin jakasirinakawa.", "label": "entailment"}
+{"premise": "Ukat ukhamarus sarxir ist'wa, kuntix lurañaxakan ukx niya tukuyasktwa.", "hypothesis": "Kuntix jichhurux lurañaxakix uk luraskta", "label": "entailment"}
+{"premise": "Ukat ukhamarus sarxir ist'wa, kuntix lurañaxakan ukx niya tukuyasktwa.", "hypothesis": "Chharmant irnakañatak churapkitu uka wakiskir lurañanak lurasktha.", "label": "neutral"}
+{"premise": "Ukat ukhamarus sarxir ist'wa, kuntix lurañaxakan ukx niya tukuyasktwa.", "hypothesis": "Janiw phiñaskat akanak lurasinxa.", "label": "contradiction"}
+{"premise": "Ukatx jikxatapxanwa mä uta jan ukax mä qutu uta kunapansay, ukan jaqasiñataki, ukax jikxatasinwa Broad Street uka thiya chiqawjana.", "hypothesis": "Broad Street ukanx mä jank'u utan jakasipxanxa.", "label": "neutral"}
+{"premise": "Ukatx jikxatapxanwa mä uta jan ukax mä qutu uta kunapansay, ukan jaqasiñataki, ukax jikxatasinwa Broad Street uka thiya chiqawjana.", "hypothesis": "Jupanakax Broad Street ukan jakasipxanxa.", "label": "entailment"}
+{"premise": "Ukatx jikxatapxanwa mä uta jan ukax mä qutu uta kunapansay, ukan jaqasiñataki, ukax jikxatasinwa Broad Street uka thiya chiqawjana.", "hypothesis": "Main Street campañ aljañ utan jakasipxanxa.", "label": "contradiction"}
+{"premise": "Jan katillumpix janiw phallkaspati.", "hypothesis": "Katilluw luri phallañapatakixa.", "label": "entailment"}
+{"premise": "Jan katillumpix janiw phallkaspati.", "hypothesis": "Phallayirix wumpa phallayi.", "label": "neutral"}
+{"premise": "Jan katillumpix janiw phallkaspati.", "hypothesis": "Katillux janiw utjkit illapt'añataki", "label": "contradiction"}
+{"premise": "Ukatxa, kunawsas uka jaqirux utar sarjam sapxanxa, jupax sanwa: ¿jupampit utar sarjaxä?", "hypothesis": "Janiraw kawkirus sarkaspat sasaw sapxänxa.", "label": "contradiction"}
+{"premise": "Ukatxa, kunawsas uka jaqirux utar sarjam sapxanxa, jupax sanwa: ¿jupampit utar sarjaxä?", "hypothesis": "Uka chachamp ikintañapaw sasaw sapxänxa.", "label": "neutral"}
+{"premise": "Ukatxa, kunawsas uka jaqirux utar sarjam sapxanxa, jupax sanwa: ¿jupampit utar sarjaxä?", "hypothesis": "Uka chachamp sarxañapaw sasaw sapxänxa.", "label": "entailment"}
+{"premise": "Ukatx awkisax janiw uywanakakit sasa sañat jisirinawa.", "hypothesis": "Awkisax jan uywanakaw sas sutiyapxamti jisirinawa", "label": "entailment"}
+{"premise": "Ukatx awkisax janiw uywanakakit sasa sañat jisirinawa.", "hypothesis": "Awkisax uywanakaw sirinawa.", "label": "contradiction"}
+{"premise": "Ukatx awkisax janiw uywanakakit sasa sañat jisirinawa.", "hypothesis": "Awkisaw wawitanakaw sirinawa, janiw uywanakxa.", "label": "neutral"}
+{"premise": "Janiw wayuskitut jan kuns akat yatkt ukaxa", "hypothesis": "Yatwa jan akatakix chuymaman munatapxa.", "label": "neutral"}
+{"premise": "Janiw wayuskitut jan kuns akat yatkt ukaxa", "hypothesis": "¡Amuyatatx amuyumx mayjt'ayañamawa ukatx akar chuym uskuñamawa!", "label": "contradiction"}
+{"premise": "Janiw wayuskitut jan kuns akat yatkt ukaxa", "hypothesis": "Janiw jan yatktat ukatx ukax llakisiykituti.", "label": "entailment"}
+{"premise": "Ukampirus janiw uñjkti kunjams suyiriskat ukxa nayax kuns luririskatxa.", "hypothesis": "Janiw amuykti kunats jichhurux k'achachat lurkt uk tukuyax uk suykta ukja.", "label": "neutral"}
+{"premise": "Ukampirus janiw uñjkti kunjams suyiriskat ukxa nayax kuns luririskatxa.", "hypothesis": "Janiw amuykt kunast jupax lup'i nayan tukuyañaxatakixa.", "label": "entailment"}
+{"premise": "Ukampirus janiw uñjkti kunjams suyiriskat ukxa nayax kuns luririskatxa.", "hypothesis": "Aka arumax yatiyatwa jan tukuyañatajxa", "label": "contradiction"}
+{"premise": "Janiw kunawsas uñkti, ukatx janiw kunats yatkti, mawk'it wakiskir arsuñatakikisa kuntix lurakayata ukampirus kunanisa uk yatiñatakikisa.", "hypothesis": "Lunisax janiw kuns jaqix lurkan ukx uñkti.", "label": "neutral"}
+{"premise": "Janiw kunawsas uñkti, ukatx janiw kunats yatkti, mawk'it wakiskir arsuñatakikisa kuntix lurakayata ukampirus kunanisa uk yatiñatakikisa.", "hypothesis": "¡Taq uñjtxa!", "label": "contradiction"}
+{"premise": "Mä jiskt'anak lurapjanxa, jaysayatwa ukatx sapxituwa: q'ipim apthapisim ukatx mak sarxam kunawsatix Washinton markar purinkta ukhax kawk sarañamanas uk sarawayam.", "hypothesis": "Utar qhiparañamaw sasaw sapxitänxa.", "label": "contradiction"}
+{"premise": "Mä jiskt'anak lurapjanxa, jaysayatwa ukatx sapxituwa: q'ipim apthapisim ukatx mak sarxam kunawsatix Washinton markar purinkta ukhax kawk sarañamanas uk sarawayam.", "hypothesis": "Malitanakam apthapisim sapxitanawa.", "label": "entailment"}
+{"premise": "Mä jiskt'anak lurapjanxa, jaysayatwa ukatx sapxituwa: q'ipim apthapisim ukatx mak sarxam kunawsatix Washinton markar purinkta ukhax kawk sarañamanas uk sarawayam.", "hypothesis": "Mä janq'u malit aptaniwayät sapxitänwa.", "label": "neutral"}
+{"premise": "Mä U2 awiyunw katxapxtha, ukampirus janiw atipkti, janiw warmisanakarus, wawanakarus ukhamarus yaqhanakarusa, sapkiristti kunakitix ukja.", "hypothesis": "Janiw qhitirus U2 ukaw tuyuqtanix sasaxa.", "label": "neutral"}
+{"premise": "Mä U2 awiyunw katxapxtha, ukampirus janiw atipkti, janiw warmisanakarus, wawanakarus ukhamarus yaqhanakarusa, sapkiristti kunakitix ukja.", "hypothesis": "Taqiniruw sapxt kunatix utjki ukja.", "label": "contradiction"}
+{"premise": "Mä U2 awiyunw katxapxtha, ukampirus janiw atipkti, janiw warmisanakarus, wawanakarus ukhamarus yaqhanakarusa, sapkiristti kunakitix ukja.", "hypothesis": "Janiw U2 ukatx arsuyañat mayt'apkituti.", "label": "entailment"}
+{"premise": "Ukhamaw, amparamax jan jark'atakasp, ukhax amparanakamax phisqa kuti jach'aspawa, ukhax t'akhikiw uñjasismaxa.", "hypothesis": "Janiw janchi lip'ichimanx turkakiptawix utjkaniti.", "label": "contradiction"}
+{"premise": "Ukhamaw, amparamax jan jark'atakasp, ukhax amparanakamax phisqa kuti jach'aspawa, ukhax t'akhikiw uñjasismaxa.", "hypothesis": "Amparamax isit mistusp ukhax ukch'at jilatataspawa.", "label": "entailment"}
+{"premise": "Ukhamaw, amparamax jan jark'atakasp, ukhax amparanakamax phisqa kuti jach'aspawa, ukhax t'akhikiw uñjasismaxa.", "hypothesis": "Amparamax phaxsinkasm ukhax walpin jilaspaxa ukjamarus isit jilsutasp ukjaxa.", "label": "neutral"}
+{"premise": "¿Utjit mä amuyux kunats jupax jan sisktamxä?", "hypothesis": "Yatwa janiw mä amuyu utjkit jan sañapataki.", "label": "contradiction"}
+{"premise": "¿Utjit mä amuyux kunats jupax jan sisktamxä?", "hypothesis": "¿Kunats jupax jan jiskiristamxa?", "label": "entailment"}
+{"premise": "¿Utjit mä amuyux kunats jupax jan sisktamxä?", "hypothesis": "¿Kunats jupax wawat jan arjaykiristamxa?", "label": "neutral"}
+{"premise": "Nueva York markat qalltaninxa jilalupan yaqhip wila masipar tumpt'añataki, ukatx ukaruw qhiparjanxa ukat janiw kunjam kutt'aniñs atkxanti, ukatx jupax jupanakampiw qhiparjanxa.", "hypothesis": "Jupax janiw kunawsas wila masipar tumpt'kanti.", "label": "contradiction"}
+{"premise": "Nueva York markat qalltaninxa jilalupan yaqhip wila masipar tumpt'añataki, ukatx ukaruw qhiparjanxa ukat janiw kunjam kutt'aniñs atkxanti, ukatx jupax jupanakampiw qhiparjanxa.", "hypothesis": "Brooklynn markaruw wila masinakapamp qhiparxäna.", "label": "neutral"}
+{"premise": "Nueva York markat qalltaninxa jilalupan yaqhip wila masipar tumpt'añataki, ukatx ukaruw qhiparjanxa ukat janiw kunjam kutt'aniñs atkxanti, ukatx jupax jupanakampiw qhiparjanxa.", "hypothesis": "Jupax Nueva York ukaruw qhiparjanxa.", "label": "entailment"}
+{"premise": "Janiw, qhara urasanx mä kutikinwa, jupax uphisinaruw kutinix sanwa.", "hypothesis": "Jupax kutt'aniw janiw kutt'ankat sax jiskanti.", "label": "contradiction"}
+{"premise": "Janiw, qhara urasanx mä kutikinwa, jupax uphisinaruw kutinix sanwa.", "hypothesis": "Juk'am jaypüruw kutt'ani sanwa.", "label": "entailment"}
+{"premise": "Janiw, qhara urasanx mä kutikinwa, jupax uphisinaruw kutinix sanwa.", "hypothesis": "Jupax Chika uru manq'ampiw uphisinar kutt'ani sanwa.", "label": "neutral"}
+{"premise": "U2 ukatap janiw yatipkayatti ukhamarak U2 ukatapx janiw khitis yatkänti", "hypothesis": "Kuntix alaxpachan uñjapkta ukx janiw kunjam sañs atipkayätti.", "label": "neutral"}
+{"premise": "U2 ukatap janiw yatipkayatti ukhamarak U2 ukatapx janiw khitis yatkänti", "hypothesis": "¡U2 ukatx taqikun yatipxayätxa!", "label": "contradiction"}
+{"premise": "1910n awichajax yuriwayi, mä jisk'a imillitaskayatwa.", "hypothesis": "1899n awichajax yuriwayi.", "label": "contradiction"}
+{"premise": "1910n awichajax yuriwayi, mä jisk'a imillitaskayatwa.", "hypothesis": "1910n 1ir julio phaxsin awichajax yuriwayi.", "label": "neutral"}
+{"premise": "¿Augusta markant ukxatx qhiparawayi??", "hypothesis": "¿Augusta markant qhiparawáyi?", "label": "entailment"}
+{"premise": "¿Augusta markant ukxatx qhiparawayi??", "hypothesis": "¿Jan walt'aw utjipant Augusta markan qhiparawäyi ?", "label": "neutral"}
+{"premise": "Ukhamipansa, sartasiwayiwa, chhuy niyapuniw utjapxitu, janiw jakhunak amtkti.", "hypothesis": "Janiw qawqhanins utjan uk amtkti.", "label": "entailment"}
+{"premise": "Ukhamipansa, sartasiwayiwa, chhuy niyapuniw utjapxitu, janiw jakhunak amtkti.", "hypothesis": "Janiw qawqha irnaqirinakaniyatansa uk amtkti.", "label": "neutral"}
+{"premise": "Ukhamipansa, sartasiwayiwa, chhuy niyapuniw utjapxitu, janiw jakhunak amtkti.", "hypothesis": "Chiqap jakhunakx taqinit yätxa.", "label": "contradiction"}
+{"premise": "Ukampirusä, jichhurux 6:30 ukha pacharuw utar purintxa ukat makiw urux sarawayxi.", "hypothesis": "Chiküru manqasiñ pacharuw utar kutinï sasaw amtawaytxa ukatx urpachaw samart'ä.", "label": "contradiction"}
+{"premise": "Ukampirusä, jichhurux 6:30 ukha pacharuw utar purintxa ukat makiw urux sarawayxi.", "hypothesis": "Jichhurux 6:30 pachätx janiw kuns lurawaykti.", "label": "entailment"}
+{"premise": "Ukampirusä, jichhurux 6:30 ukha pacharuw utar purintxa ukat makiw urux sarawayxi.", "hypothesis": "Jichhuru urpachx jilpachanx mä jan walty'aw fakturasyun tuqitak askichtxa.", "label": "neutral"}
+{"premise": "Ukatx jupax qunt'asinwa, ukatx, aruskipt'asipkakiwa, uñjasipkakinwa uka jaqiruxa, uka jaqix walpin walpin sarnaqranti.", "hypothesis": "Jupax jaqi jaltawayki ukxatx irnaqir masinakaparux arxayaskakïnwa.", "label": "neutral"}
+{"premise": "Ukatx jupax qunt'asinwa, ukatx, aruskipt'asipkakiwa, uñjasipkakinwa uka jaqiruxa, uka jaqix walpin walpin sarnaqranti.", "hypothesis": "Jupax arxayaskakinwa.", "label": "entailment"}
+{"premise": "Ukatx jupax qunt'asinwa, ukatx, aruskipt'asipkakiwa, uñjasipkakinwa uka jaqiruxa, uka jaqix walpin walpin sarnaqranti.", "hypothesis": "Jupax amukiw qhiparjanxa ukatx qillqañaparuw uñanti.", "label": "contradiction"}
+{"premise": "Ukatsti, chhuy, ukattix aptataspax, ukat juk'amp aptataspax, \"güis\" lursna ukhamarus p'iqis apaqtañjamak munitu.", "hypothesis": "Chispatix wal utjchixä, uka jak'anqirinakarux janiw walt'aykaspati.", "label": "neutral"}
+{"premise": "Ukatsti, chhuy, ukattix aptataspax, ukat juk'amp aptataspax, \"güis\" lursna ukhamarus p'iqis apaqtañjamak munitu.", "hypothesis": "Chispatix añchapunichixa, mä ruxukiriw uka chikaxa utji.", "label": "entailment"}
+{"premise": "Ukatsti, chhuy, ukattix aptataspax, ukat juk'amp aptataspax, \"güis\" lursna ukhamarus p'iqis apaqtañjamak munitu.", "hypothesis": "Ukax mä kutikiniw sartani.", "label": "contradiction"}
+{"premise": "Janiw wakiskir yatiyawix utjkituti.", "hypothesis": "Taqi wakiskir yatiyawiw utjitu.", "label": "contradiction"}
+{"premise": "Janiw wakiskir yatiyawix utjkituti.", "hypothesis": "Kuna kast awtu alañ amtañatakix juk'amp yatiñ muntxa.", "label": "neutral"}
+{"premise": "Janiw wakiskir yatiyawix utjkituti.", "hypothesis": "Ukatakix juk'amp yatxatañaw wakisi.", "label": "entailment"}
+{"premise": "Mäya paya pachanakat wasitat jawsanima, siwa.", "hypothesis": "kunawsatix utar purxa ukhaw jawsanirismax siwa.", "label": "neutral"}
+{"premise": "Mäya paya pachanakat wasitat jawsanima, siwa.", "hypothesis": "Nayaw kutt'ayanimax jawsañx sanwa.", "label": "entailment"}
+{"premise": "Mäya paya pachanakat wasitat jawsanima, siwa.", "hypothesis": "Aruskipañx tukuyxtwa sanwa.", "label": "contradiction"}
+{"premise": "Ukjamawa, ukanwa kunats sartx uk jiskt'apxitana.", "hypothesis": "Kunats ukaru sartx uk jiskt'apxitana.", "label": "entailment"}
+{"premise": "Ukjamawa, ukanwa kunats sartx uk jiskt'apxitana.", "hypothesis": "Kunats alasiñ utaru sartx uk jiskt'apxitanxa.", "label": "neutral"}
+{"premise": "Ukjamawa, ukanwa kunats sartx uk jiskt'apxitana.", "hypothesis": "Kunats utarux qhipartxa uk jiskt'apxitanxa.", "label": "contradiction"}
+{"premise": "Jalañatakix wal jichuntañaxawa.", "hypothesis": "Janiw kuna jichutañas wakiskanti.", "label": "contradiction"}
+{"premise": "Jalañatakix wal jichuntañaxawa.", "hypothesis": "Jan walt'awinak utjki ukx yatiqañaxanwa kunjam mäkipañsa.", "label": "neutral"}
+{"premise": "Jalañatakix wal jichuntañaxawa.", "hypothesis": "Qalltañaxanwa jichuntañataki.", "label": "entailment"}
+{"premise": "Walikiw, ukampirus, kutiwaytwa iskrituryuxaru.", "hypothesis": "Mayamp qunt'asiñatakix janiw sawaytwa.", "label": "contradiction"}
+{"premise": "Walikiw, ukampirus, kutiwaytwa iskrituryuxaru.", "hypothesis": "Qunuñaxaruw kutt'antxa.", "label": "entailment"}
+{"premise": "Walikiw, ukampirus, kutiwaytwa iskrituryuxaru.", "hypothesis": "Kutt'antwa ukjamarus qunt'astwa kunalaykutix jiphixaw qunt'asim situ.", "label": "neutral"}
+{"premise": "Chhuya, jamasatjamakinwa.", "hypothesis": "Khititix yatiyawx yatiqaspax, jist'antataspawa.", "label": "neutral"}
+{"premise": "Chhuya, jamasatjamakinwa.", "hypothesis": "Yatiyawix taqinitakinwa.", "label": "contradiction"}
+{"premise": "Chhuya, jamasatjamakinwa.", "hypothesis": "Wali ajllirt'atanwa", "label": "entailment"}
+{"premise": "Janiw axsarjayat qhiparañ munapkänti.", "hypothesis": "Katjayasipxataynawa jichhanak lunthatasisina.", "label": "neutral"}
+{"premise": "Janiw axsarjayat qhiparañ munapkänti.", "hypothesis": "Taqiniw axsarjatapxanx katjayasitat antutnuquñäpataki", "label": "contradiction"}
+{"premise": "Mäya paya pachaw apitanx kuntix munkayat uk jikxatañataki.", "hypothesis": "Mä k'atanakanak jikxatxa.", "label": "contradiction"}
+{"premise": "Mäya paya pachaw apitanx kuntix munkayat uk jikxatañataki.", "hypothesis": "Walja pachanakaw apitu, kunalaykutix pankax wali thurunwa ukjamarus janiw amuyañjamakanti.", "label": "neutral"}
+{"premise": "Mäya paya pachaw apitanx kuntix munkayat uk jikxatañataki.", "hypothesis": "Katjañatakix mawk'it qhipt'twa.", "label": "entailment"}
+{"premise": "Yanaptir lurawinakax yaqha kastaw jaypach aqañapatakixa 80000 pies ukj alaypach kamaranak pilutunakax amnaqapxi.", "hypothesis": "Pilutunakax suma kamaranakamp yant'atapxiwa.", "label": "entailment"}
+{"premise": "Yanaptir lurawinakax yaqha kastaw jaypach aqañapatakixa 80000 pies ukj alaypach kamaranak pilutunakax amnaqapxi.", "hypothesis": "Pilutunakax suma kamaranakamp mä patunk kuti yant'atapxañapawa.", "label": "neutral"}
+{"premise": "Yanaptir lurawinakax yaqha kastaw jaypach aqañapatakixa 80000 pies ukj alaypach kamaranak pilutunakax amnaqapxi.", "hypothesis": "Suma kamarax apaqataxanwa.", "label": "contradiction"}
+{"premise": "Ukatx, uf, chikawjaruw jaqir sarxapxänxa, ukhatx uf, ukatx mä uf, ukatx Augustanx ukjamakiskanw, uka chikawx jach'a Broad Street sutin kallix, chiqpachans chikachiqanx uka jach'a kallikiwa.", "hypothesis": "Augusta markx jaytawayxapxiw ukatx Atlantaruw sarjapxi.", "label": "contradiction"}
+{"premise": "Ukatx, uf, chikawjaruw jaqir sarxapxänxa, ukhatx uf, ukatx mä uf, ukatx Augustanx ukjamakiskanw, uka chikawx jach'a Broad Street sutin kallix, chiqpachans chikachiqanx uka jach'a kallikiwa.", "hypothesis": "Markan taypichiqan wali uñt'at Kalliparuw sarapxatayna.", "label": "entailment"}
+{"premise": "Ukatx, uf, chikawjaruw jaqir sarxapxänxa, ukhatx uf, ukatx mä uf, ukatx Augustanx ukjamakiskanw, uka chikawx jach'a Broad Street sutin kallix, chiqpachans chikachiqanx uka jach'a kallikiwa.", "hypothesis": "Manq'añ ukjamarak umañanak utjkix uka kalliruw sarapxatäyna.", "label": "neutral"}
+{"premise": "Ukanwa pantasitajaxa.", "hypothesis": "Jan pantasiñatakiw lurta", "label": "contradiction"}
+{"premise": "Ukanwa pantasitajaxa.", "hypothesis": "Furmularyunak apaykt ukhax pantastwa.", "label": "neutral"}
+{"premise": "Ukanwa pantasitajaxa.", "hypothesis": "Pantastwa.", "label": "entailment"}
+{"premise": "Jupax ukjamawa, ukampirus akhar uñtañamawa, jupaw kimsa yaqhakast chiqänak churitu atämirit uñtañataki.", "hypothesis": "Jupanx janiw mä amuyus kawkhar uñtañas utjkanati.", "label": "contradiction"}
+{"premise": "Jupax ukjamawa, ukampirus akhar uñtañamawa, jupaw kimsa yaqhakast chiqänak churitu atämirit uñtañataki.", "hypothesis": "Jupax karpitanakax qillqañ patxankaskiw sasaw sitanxa.", "label": "neutral"}
+{"premise": "Jupax ukjamawa, ukampirus akhar uñtañamawa, jupaw kimsa yaqhakast chiqänak churitu atämirit uñtañataki.", "hypothesis": "Jupax kawkhitats thaqañax uk sitanwa.", "label": "entailment"}
+{"premise": "Uh, Snake River ukawa, uh Snake River ukanx walja asirunakaniwa.", "hypothesis": "Sutipapanxa, Snake River ukanx janiw asirux utjkiti; ukham satäx asirjamaw ukata.", "label": "contradiction"}
+{"premise": "Uh, Snake River ukawa, uh Snake River ukanx walja asirunakaniwa.", "hypothesis": "Snake River walja janch'utatasir turtukanakaniwa.", "label": "neutral"}
+{"premise": "Uh, Snake River ukawa, uh Snake River ukanx walja asirunakaniwa.", "hypothesis": "Snake River ukanx asirunakax phuqharatapuniwa.", "label": "entailment"}
+{"premise": "Ukhamawa, qullqi mayt'aw kupiratiwaw utjitu.", "hypothesis": "Qullqi mayt'aw kupiratiwaw utjitu kawkirutix sarktxa.", "label": "entailment"}
+{"premise": "Ukhamawa, qullqi mayt'aw kupiratiwaw utjitu.", "hypothesis": "Qullqi mayt'aw kupiratiwajarux sapürjamaw uñjir sartxa.", "label": "neutral"}
+{"premise": "Ukhamawa, qullqi mayt'aw kupiratiwaw utjitu.", "hypothesis": "¿Kunas mä qullqi mayt'aw jaqthaptawixa?", "label": "contradiction"}
+{"premise": "Ukhampuniwa, wali luririwa, janiw mä kunakisa, yattawa, ukarux chuyma churatasmawa ukatx kuns suyasmawa, chiqpachanx janiw iyawsirjamakti.", "hypothesis": "Tunka pächanakaw sapürux akat jichuntañatakix churañama.", "label": "neutral"}
+{"premise": "Ukhampuniwa, wali luririwa, janiw mä kunakisa, yattawa, ukarux chuyma churatasmawa ukatx kuns suyasmawa, chiqpachanx janiw iyawsirjamakti.", "hypothesis": "Sumpach lurañatakix ukaruw chuymacht'añama.", "label": "entailment"}
+{"premise": "Ukhampuniwa, wali luririwa, janiw mä kunakisa, yattawa, ukarux chuyma churatasmawa ukatx kuns suyasmawa, chiqpachanx janiw iyawsirjamakti.", "hypothesis": "Janiw kunas jan chiqpachapun lurkat ukhax utjkaniti", "label": "contradiction"}
+{"premise": "Ukatx kuns chiqpachapun amuytxä wali yaqhakastañapatakixä, kuntix lurktanx ukawa, kawnir jaqinakatix jiwas lant sarki ukx turkañjamakiniwa sañ muntxa.", "hypothesis": "Chiqapunit mayx q'aymjamaspä, janiw wakiskanit kawnir jaqinakatix jiwas lant p'iqiñchapk ukanakax turkañjamakaniti, ukatx janiw turkakipañs lup'iñasakanti.", "label": "contradiction"}
+{"premise": "Ukatx kuns chiqpachapun amuytxä wali yaqhakastañapatakixä, kuntix lurktanx ukawa, kawnir jaqinakatix jiwas lant sarki ukx turkañjamakiniwa sañ muntxa.", "hypothesis": "Amuyatatx mä saykatawiniw kawnir jaqinakatix jiwas lant p'iqiñchapk uk turkañaxa, qhiparäx wali askjamaniwa.", "label": "neutral"}
+{"premise": "Ukatx kuns chiqpachapun amuytxä wali yaqhakastañapatakixä, kuntix lurktanx ukawa, kawnir jaqinakatix jiwas lant sarki ukx turkañjamakiniwa sañ muntxa.", "hypothesis": "Qhitinakatix jiwaslant p'iqiñchapk ukanakax turkañawa.", "label": "entailment"}
+{"premise": "Ukatx jichuntatatx wali chuymar purkirinakapxäspawa.", "hypothesis": "Kunawsatix jichuntañ tukuyapx ukhax kutxapxiw mayx tatañanaka.", "label": "contradiction"}
+{"premise": "Ukatx jichuntatatx wali chuymar purkirinakapxäspawa.", "hypothesis": "Jichuntkasinx makipuniw turkakiptawayäpxi.", "label": "neutral"}
+{"premise": "Ukatx jichuntatatx wali chuymar purkirinakapxäspawa.", "hypothesis": "Kunawsatix jichuntapk ukhax chuymar purt'kiripxaspawa.", "label": "entailment"}
+{"premise": "Ukatx tunaka patunka maranakaw sarantapxaspa, akax mawk'it laruñjamawa.", "hypothesis": "Yaqhakast amuyuw wali pachanakätakixa.", "label": "entailment"}
+{"premise": "Ukatx tunaka patunka maranakaw sarantapxaspa, akax mawk'it laruñjamawa.", "hypothesis": "Mä simanakiw", "label": "contradiction"}
+{"premise": "ukjamaw, utjiristaman mä jan kawlimp aqiri", "hypothesis": "Askicham, utjkayatam ukax jankawlimp aqiriwa", "label": "entailment"}
+{"premise": "ukjamaw, utjiristaman mä jan kawlimp aqiri", "hypothesis": "Utjkayatam ukax kawlimp aqirikipuniwa.", "label": "contradiction"}
+{"premise": "ukjamaw, utjiristaman mä jan kawlimp aqiri", "hypothesis": "Amuyatättxa, utjpachitanwa mayax kawlimp aqiri.", "label": "neutral"}
+{"premise": "¿Awkinakamp yatichirinakamp jistatï...?", "hypothesis": "¿Yatiqirinak jan ukax yatichirin yanapiripach lurpach jistäti?", "label": "contradiction"}
+{"premise": "¿Awkinakamp yatichirinakamp jistatï...?", "hypothesis": "¿Awkiti jan ukax yatichirichä?", "label": "entailment"}
+{"premise": "¿Awkinakamp yatichirinakamp jistatï...?", "hypothesis": "¿Kuns awkinakat yatichirinakat sasktä?", "label": "neutral"}
+{"premise": "Ukampirus, niyapunix may uñjiristwa, uh, V6 inas.", "hypothesis": "Amuyatatx mä V6 uk lurañjamakiw walixa.", "label": "neutral"}
+{"premise": "Ukampirus, niyapunix may uñjiristwa, uh, V6 inas.", "hypothesis": "V6x janjamakiw aytaskiristi.", "label": "contradiction"}
+{"premise": "Walikiwa, amuytwa amuytwa sum ukat janiw yatkti, chiqpachanx janiw kuntix amuyaskt ukx qullanakamp askichkti, nayax heterosexual ukhamatwa.", "hypothesis": "Nayax khanpachanx yanqha qullanak tuqitwa, janiw payachasiñax uka tuqit utjkituti.", "label": "contradiction"}
+{"premise": "Walikiwa, amuytwa amuytwa sum ukat janiw yatkti, chiqpachanx janiw kuntix amuyaskt ukx qullanakamp askichkti, nayax heterosexual ukhamatwa.", "hypothesis": "Yankha qulltix uñjapxitataxä, sumak mistux jichha.", "label": "neutral"}
+{"premise": "Walikiwa, amuytwa amuytwa sum ukat janiw yatkti, chiqpachanx janiw kuntix amuyaskt ukx qullanakamp askichkti, nayax heterosexual ukhamatwa.", "hypothesis": "Ukhamaspaw, ukampirus janiw chuyma tuq makipawaykti yanqha qulla tuqit uñakipt'asiñatakixa", "label": "entailment"}
+{"premise": "amuyt'am kunjams markpachat yatiyawinakax jisk'a markanakapar mayxt'ayï.", "hypothesis": "Jisk'a markanakaw llakisiyitu kuntix markpachat yatiyawinakaw jan walt'aykiti.", "label": "entailment"}
+{"premise": "amuyt'am kunjams markpachat yatiyawinakax jisk'a markanakapar mayxt'ayï.", "hypothesis": "Janiw mawk'it munkirist kunjams markpach yatiyawinakax jisk'a markanakat yatiyapxi.", "label": "contradiction"}
+{"premise": "amuyt'am kunjams markpachat yatiyawinakax jisk'a markanakapar mayxt'ayï.", "hypothesis": "Markpachat yatiyaw sarayirinakax jisk'a markanakatx qhiparatakaspas ukjam yatiyapxi.", "label": "neutral"}
+{"premise": "ukampirus janiw, nanakax sapürjamaw, yättawa, akan uñjtaw phalta, wlusa jan ukax tirnu jan ukax wistiru, walikiskiw utan irnaqañaxa manqhañchampis sarnaqasitakispawa.", "hypothesis": "Janiw utan irnaqt ukjax isiskti.", "label": "entailment"}
+{"premise": "ukampirus janiw, nanakax sapürjamaw, yättawa, akan uñjtaw phalta, wlusa jan ukax tirnu jan ukax wistiru, walikiskiw utan irnaqañaxa manqhañchampis sarnaqasitakispawa.", "hypothesis": "Janiw kunampis isiskti jump'irañ isipanxa kunawsatix utan irnaqataki ukjaxa", "label": "neutral"}
+{"premise": "ukampirus janiw, nanakax sapürjamaw, yättawa, akan uñjtaw phalta, wlusa jan ukax tirnu jan ukax wistiru, walikiskiw utan irnaqañaxa manqhañchampis sarnaqasitakispawa.", "hypothesis": "Kunawsatix utan irnaqt ukhax wistirunakampiw isisisktxa kunalaykutix jiwakiw uñjasta.", "label": "contradiction"}
+{"premise": "Ukjamaw, kawkjantix jakasiñax utjki ukax mawk'it jan qhanachkayawa.", "hypothesis": "Jakasiñatak mä chiqa utjki ukax mä samkax qhanakaspas ukjamawa.", "label": "neutral"}
+{"premise": "Ukjamaw, kawkjantix jakasiñax utjki ukax mawk'it jan qhanachkayawa.", "hypothesis": "Janiw kawkha chiqañ jakasiñas utjkitasp ukax qhanpachanx wakisirjamakiti.", "label": "contradiction"}
+{"premise": "Ukjamaw, kawkjantix jakasiñax utjki ukax mawk'it jan qhanachkayawa.", "hypothesis": "Wali jiwakiw kawkhantix utjki jakasiñasataki.", "label": "entailment"}
+{"premise": "Walikiw, walikiw, walikiw, yatxaptawa, janiw kurpurasyun qillqachat utjitasp ukas wakisirjamakiti.", "hypothesis": "Jasakispaw kurpurasyun qullqichatat uk yatxatañaxa.", "label": "neutral"}
+{"premise": "Walikiw, walikiw, walikiw, yatxaptawa, janiw kurpurasyun qillqachat utjitasp ukas wakisirjamakiti.", "hypothesis": "Kurpurasyunaruw qullqichapxatäyn säs yatiristx ukax phiñasiyitaspawa.", "label": "contradiction"}
+{"premise": "Walikiw, walikiw, walikiw, yatxaptawa, janiw kurpurasyun qillqachat utjitasp ukas wakisirjamakiti.", "hypothesis": "Kurpurasyunatix qullqichataspax, janiw phiñasiykitaspati.", "label": "entailment"}
+{"premise": "ukjamaw, jiwasankiw ukaxa janiw sum apasitakit jisk'a markanakan jakasirinakampixa.", "hypothesis": "Akawjanakanxa yäqhip pachäx kuniksyunax walikjamakiskiwa.", "label": "neutral"}
+{"premise": "ukjamaw, jiwasankiw ukaxa janiw sum apasitakit jisk'a markanakan jakasirinakampixa.", "hypothesis": "Janiw suma kuntaktunakax jikxatañjamakiti.", "label": "entailment"}
+{"premise": "ukjamaw, jiwasankiw ukaxa janiw sum apasitakit jisk'a markanakan jakasirinakampixa.", "hypothesis": "Aka chiqanx suma kuniksyunaw utjapxistu.", "label": "contradiction"}
+{"premise": "ukatx ukampirus aluwya karillax kusakiwa ukampirus janiw mä karinakaspati.", "hypothesis": "Janiw ch'iyar nayran frijoles ukanakax nayatak kusakiti.", "label": "contradiction"}
+{"premise": "ukatx ukampirus aluwya karillax kusakiwa ukampirus janiw mä karinakaspati.", "hypothesis": "Black Eyed Pea' ukx inas juk'amp jayp'ur uñakipiristxa.", "label": "neutral"}
+{"premise": "ukatx ukampirus aluwya karillax kusakiwa ukampirus janiw mä karinakaspati.", "hypothesis": "Black Eyed Pea ukax kust'atawa, kurpuratiwjamakiwa.", "label": "entailment"}
+{"premise": "ukampirus, maysatuqitxa, walja mapachis ukjamarak zarigüiyas kasta turtukanaks maq'astanxa.", "hypothesis": "Jan kuna aychjama.", "label": "contradiction"}
+{"premise": "ukampirus, maysatuqitxa, walja mapachis ukjamarak zarigüiyas kasta turtukanaks maq'astanxa.", "hypothesis": "Kunajamatix turtuka, mapachi ukjamarak kumatrija uywa jan mank'at aychanak manq'astxa.", "label": "entailment"}
+{"premise": "mä waxt'awjam jikjatan ukax, chiqpachanx, taqi chiq sarañawa.", "hypothesis": "Akatxa nayatak chuymar purt'kirix taqichiq sarañawa.", "label": "neutral"}
+{"premise": "mä waxt'awjam jikjatan ukax, chiqpachanx, taqi chiq sarañawa.", "hypothesis": "Taqichiq sarañx mä waxt'awjam jikxatanxa.", "label": "entailment"}
+{"premise": "mä waxt'awjam jikjatan ukax, chiqpachanx, taqi chiq sarañawa.", "hypothesis": "Janiw kuna waxt'aws jikjantanti.", "label": "contradiction"}
+{"premise": "Chhuy, chiqpachans janiw walikiti.", "hypothesis": "Janiw sumakit sasarakiw ist'arakxa.", "label": "neutral"}
+{"premise": "Chhuy, chiqpachans janiw walikiti.", "hypothesis": "Phirupiniwa.", "label": "entailment"}
+{"premise": "Chhuy, chiqpachans janiw walikiti.", "hypothesis": "Janiw kunatakis wallikiti.", "label": "contradiction"}
+{"premise": "Ukhamaw, walikjamakinwa.", "hypothesis": "Janiw, ukax amuyatatx janjamakiw walikiti ukjamarak jan amuyump luratawa.", "label": "contradiction"}
+{"premise": "Ukhamaw, walikjamakinwa.", "hypothesis": "Ukjamaw, nayatakjampuninwa", "label": "entailment"}
+{"premise": "Ukhamaw, walikjamakinwa.", "hypothesis": "Ukjamaw, mawk'it ch'amanawa, ukampirus, tuyarux, sumapuniw mistsu.", "label": "neutral"}
+{"premise": "Sapurunjamax tiyujan quta laqxa kawañapan jikisipxtxa ukatx mä paya uruw qhiparata.", "hypothesis": "Kawañar mä paya uru sarañani.", "label": "entailment"}
+{"premise": "Sapurunjamax tiyujan quta laqxa kawañapan jikisipxtxa ukatx mä paya uruw qhiparata.", "hypothesis": "Minnesota ukanx kawañar sarañani.", "label": "neutral"}
+{"premise": "Sapurunjamax tiyujan quta laqxa kawañapan jikisipxtxa ukatx mä paya uruw qhiparata.", "hypothesis": "Janiw kunawsas kawañarux sarapxirikti.", "label": "contradiction"}
+{"premise": "ukjamawa, kawnir kumpañiya ukampitix chikañchasitanxa wali k'uchikiw jikxatasiyata.", "hypothesis": "Janiw kupañiyax jupa ukanki ukax chuymar purkituti.", "label": "neutral"}
+{"premise": "ukjamawa, kawnir kumpañiya ukampitix chikañchasitanxa wali k'uchikiw jikxatasiyata.", "hypothesis": "Jupax janiw k'ayachkituti.", "label": "contradiction"}
+{"premise": "ukjamawa, kawnir kumpañiya ukampitix chikañchasitanxa wali k'uchikiw jikxatasiyata.", "hypothesis": "Jupax wali sumpin nayar kusisiyitu khitimpikatanatix uk yatxatañkamaxa.", "label": "entailment"}
+{"premise": "The firm Uk ullartatï.", "hypothesis": "¿Rixtap ullartatï?", "label": "entailment"}
+{"premise": "The firm Uk ullartatï.", "hypothesis": "¿Munasmat rixtax mä warakat mayt'irism ullarañatak ukja?", "label": "neutral"}
+{"premise": "Saya, ukjamarak imjapxasmachaktwa utjanwa mä jichhurjamax mä mara phuqhawi ina ch'usatjama.", "hypothesis": "Ina ch'usat lurat phuñchhawix chuymapar purt'kirinwa.", "label": "neutral"}
+{"premise": "Saya, ukjamarak imjapxasmachaktwa utjanwa mä jichhurjamax mä mara phuqhawi ina ch'usatjama.", "hypothesis": "Janiw mara phuqhawipatx kuns lurapkti.", "label": "contradiction"}
+{"premise": "Saya, ukjamarak imjapxasmachaktwa utjanwa mä jichhurjamax mä mara phuqhawi ina ch'usatjama.", "hypothesis": "Juparux ina ch'usat mä mara phuqhaw amtapta.", "label": "entailment"}
+{"premise": "Janiw yatkti Texat juttä, amuyatatx janiw yatkti, jan mayast aruspachanti, ukampirus, lup'ikipatatx illapasiñanak thaqatax janiw sum uñjatakiti.", "hypothesis": "Texa markanx illapasiñ thaqatax janiw markachirinakjamakiti.", "label": "entailment"}
+{"premise": "Janiw yatkti Texat juttä, amuyatatx janiw yatkti, jan mayast aruspachanti, ukampirus, lup'ikipatatx illapasiñanak thaqatax janiw sum uñjatakiti.", "hypothesis": "Janiw amuykti illapasiñ thaqatax Texas markankirinakarux phiñasiyatxa.", "label": "contradiction"}
+{"premise": "Janiw yatkti Texat juttä, amuyatatx janiw yatkti, jan mayast aruspachanti, ukampirus, lup'ikipatatx illapasiñanak thaqatax janiw sum uñjatakiti.", "hypothesis": "Texas markanx illapasiñ thaqañ kamachinakaw utjañapa.", "label": "neutral"}
+{"premise": "Chhuy - uh jupax kust'atawa jumax yattawa, jupax mä warmiwa khitimpis qunt'asikiniwa, qhitimpis anatakiniwa.", "hypothesis": "Jupax iyawakiw khitimp qunt'asiñatakis ukjamarak khitimp anatt'añatakisa.", "label": "entailment"}
+{"premise": "Chhuy - uh jupax kust'atawa jumax yattawa, jupax mä warmiwa khitimpis qunt'asikiniwa, qhitimpis anatakiniwa.", "hypothesis": "Jupax póquer ukjamarak blackjack anatañ yati, yaqhip pachax scrabble uk anati.", "label": "neutral"}
+{"premise": "Chhuy - uh jupax kust'atawa jumax yattawa, jupax mä warmiwa khitimpis qunt'asikiniwa, qhitimpis anatakiniwa.", "hypothesis": "Jupax janiw jan uñt'ki uka jak'ar qunt'asiñ munkiti.", "label": "contradiction"}
+{"premise": "Ukjamaya, jan wali lurawinakaw yapxattaspa, yattawa, jaqix mantaniw ukatx uñch'ukiñ luthatsuwaytamxa, ukatx aljiwa kunalaykutix janiw irnaqañ atxapxiti.", "hypothesis": "Jaqix irnaqaniw kunawsatix irnaqaw utjan ukjax.", "label": "neutral"}
+{"premise": "Ukjamaya, jan wali lurawinakaw yapxattaspa, yattawa, jaqix mantaniw ukatx uñch'ukiñ luthatsuwaytamxa, ukatx aljiwa kunalaykutix janiw irnaqañ atxapxiti.", "hypothesis": "Ukax yapxattayaspaw jan walt'awinak utjañapatakixa", "label": "entailment"}
+{"premise": "Ukjamaya, jan wali lurawinakaw yapxattaspa, yattawa, jaqix mantaniw ukatx uñch'ukiñ luthatsuwaytamxa, ukatx aljiwa kunalaykutix janiw irnaqañ atxapxiti.", "hypothesis": "Ukax juk'aptayaspaw jan walt'awinakxa", "label": "contradiction"}
+{"premise": "ukjamaw, walja kunanakaw utjanxa ukatx taqpachaw t'unjtawayi mä pachanaki.", "hypothesis": "Taqi kunanakapaw mä pachanak t'unjtawayi", "label": "entailment"}
+{"premise": "ukjamaw, walja kunanakaw utjanxa ukatx taqpachaw t'unjtawayi mä pachanaki.", "hypothesis": "Janiw kunanakapas t'unjtawaykiti.", "label": "contradiction"}
+{"premise": "ukjamaw, walja kunanakaw utjanxa ukatx taqpachaw t'unjtawayi mä pachanaki.", "hypothesis": "Yaqhip yänakatix t'unjtawaychix ukanakax wali chanin yänakanawa.", "label": "neutral"}
+{"premise": "Ukampirus, mmm, ukjamax walja kast manq'anak muniritasa ¿ih?", "hypothesis": "¿Walja kast manq'anakt muniritä?", "label": "entailment"}
+{"premise": "Ukampirus, mmm, ukjamax walja kast manq'anak muniritasa ¿ih?", "hypothesis": "Ist'asksmaw janiw machaq manq'anak mallt'añ munirikt jistawa", "label": "contradiction"}
+{"premise": "Ukampirus, mmm, ukjamax walja kast manq'anak muniritasa ¿ih?", "hypothesis": "Jumax musq'art'asiñamaw yaqha kast manq'anak mallt'asiñxa.", "label": "neutral"}
+{"premise": "Chhuy, ¿Kunjams Colorado Springs piryurikux markachirinakan yatiyawinakap uñjapxï?", "hypothesis": "¿Markachirinakan arsutapatx janit piryuriku lukalanakax wakiskiirjam uñjapkpachä?", "label": "neutral"}
+{"premise": "Chhuy, ¿Kunjams Colorado Springs piryurikux markachirinakan yatiyawinakap uñjapxï?", "hypothesis": "¿Kuns amuyta taqpach markat piryuriku yatiyirinakan ukjamarak anqax markanakar mistutapatxä?", "label": "contradiction"}
+{"premise": "Chhuy, ¿Kunjams Colorado Springs piryurikux markachirinakan yatiyawinakap uñjapxï?", "hypothesis": "¿Kunjams lukal piryurikux lukal yatiyawinakx yatiypachä, ukjat kamsasmsä?", "label": "entailment"}
+{"premise": "Yatkasma yaqha amuyuw añchit jutitu. Janiw sumpach apskti yaqhip jach'a imprisanakanxa yatichaw yatiqawitjam yaqhip pachax payllapxani.", "hypothesis": "Mä jach'a imprisatak irnaqañax waljamaspawa jach'a yatiqañ utataki qullq churapxitasp ukjaxa.", "label": "neutral"}
+{"premise": "Yatkasma yaqha amuyuw añchit jutitu. Janiw sumpach apskti yaqhip jach'a imprisanakanxa yatichaw yatiqawitjam yaqhip pachax payllapxani.", "hypothesis": "Janiw kuna kumpañiyas qullqimpi yatichaw yatiqawirux jach'akasas jisk'asas jupanakpach yanapapkiti.", "label": "contradiction"}
+{"premise": "Yatkasma yaqha amuyuw añchit jutitu. Janiw sumpach apskti yaqhip jach'a imprisanakanxa yatichaw yatiqawitjam yaqhip pachax payllapxani.", "hypothesis": "Yaqhip pachax kumpaniyanakax yatichäw yatiqäw tuqirux payllan yanapt'iwa.", "label": "entailment"}
+{"premise": "walikiwa, ¿kunats jan qalltä? Kunalaykutix juk'amp pachanakaw ukxat lup'iñatak utjayatam, janit jumatak askikchixa.", "hypothesis": "¿Kunats jan taqpachanir pankamx qhanacht'apxista?", "label": "neutral"}
+{"premise": "walikiwa, ¿kunats jan qalltä? Kunalaykutix juk'amp pachanakaw ukxat lup'iñatak utjayatam, janit jumatak askikchixa.", "hypothesis": "¿Kunats jumax nayraqat jan sarkta?", "label": "entailment"}
+{"premise": "walikiwa, ¿kunats jan qalltä? Kunalaykutix juk'amp pachanakaw ukxat lup'iñatak utjayatam, janit jumatak askikchixa.", "hypothesis": "Qhip sarasmana kunalaykutix janiw yatktat kunsa.", "label": "contradiction"}
+{"premise": "ajä, llakitjamt amuyasta jan ukax k'uchikitacha tiliwisyunan yatiyawinakampixa.", "hypothesis": "¿K'uchikitat yatiyawinak taqi chiqar purk ukatxä?", "label": "entailment"}
+{"premise": "ajä, llakitjamt amuyasta jan ukax k'uchikitacha tiliwisyunan yatiyawinakampixa.", "hypothesis": "Amuyatatx janiw jich yatiyawinak uñjkpachatati.", "label": "contradiction"}
+{"premise": "Ukhamawa, janiw sum lurkti, ¿kunas utjawayanxa maymar diciembre phaxsin jan atipañatakixä? ¿qawqha wututsä? ¿mä qawqha wututaksä?", "hypothesis": "Jark'aqatänwa kunalaykutix janiw jaqix voto jaquntir mistuñ munkanti.", "label": "neutral"}
+{"premise": "Ukhamawa, janiw sum lurkti, ¿kunas utjawayanxa maymar diciembre phaxsin jan atipañatakixä? ¿qawqha wututsä? ¿mä qawqha wututaksä?", "hypothesis": "Janiw walja voto jaquntawit qhiparatakanti.", "label": "entailment"}
+{"premise": "Ukhamawa, janiw sum lurkti, ¿kunas utjawayanxa maymar diciembre phaxsin jan atipañatakixä? ¿qawqha wututsä? ¿mä qawqha wututaksä?", "hypothesis": "Patakatx 99% ukjampiw atipt'awayi", "label": "contradiction"}
+{"premise": "Uh, mmm…, janiw, ukampirus jis utjiw Oaklaw pistan hinump jalañanaka.", "hypothesis": "Qaqilump jalañax wali larkayapuniwa.", "label": "neutral"}
+{"premise": "Uh, mmm…, janiw, ukampirus jis utjiw Oaklaw pistan hinump jalañanaka.", "hypothesis": "Utjiw qaqilump Oaklan pistan hinu ukamp jalañanaka", "label": "entailment"}
+{"premise": "Uh, mmm…, janiw, ukampirus jis utjiw Oaklaw pistan hinump jalañanaka.", "hypothesis": "Janiw Oaklawn pistan jalañanakax utjkiti", "label": "contradiction"}
+{"premise": "ukampirus yatwa yaqhipanakanxa, walxa yaqha chiqanakanx, janiw sumakiti.", "hypothesis": "Janiw jaya chiqanakan wali kusakiti.", "label": "entailment"}
+{"premise": "ukampirus yatwa yaqhipanakanxa, walxa yaqha chiqanakanx, janiw sumakiti.", "hypothesis": "Taqi kunas walikiskiw marka chiqanakanxa", "label": "neutral"}
+{"premise": "ukampirus yatwa yaqhipanakanxa, walxa yaqha chiqanakanx, janiw sumakiti.", "hypothesis": "Wali kusanakapuniwa marka chiqansa ukjamarak jaya chiqanakansa.", "label": "contradiction"}
+{"premise": "walikiw, ranuranjamaw makiwayapxani.", "hypothesis": "Jasak chullutatapxi.", "label": "neutral"}
+{"premise": "walikiw, ranuranjamaw makiwayapxani.", "hypothesis": "Anqaruw mistupxi.", "label": "entailment"}
+{"premise": "walikiw, ranuranjamaw makiwayapxani.", "hypothesis": "Tunanakaruw sarapxi.", "label": "contradiction"}
+{"premise": "patakatx pätunka ukjaw manuwixa.", "hypothesis": "¿Manuñax 20at jilaspatï?", "label": "neutral"}
+{"premise": "patakatx pätunka ukjaw manuwixa.", "hypothesis": "¿Manuñax 20% ukjatï?", "label": "entailment"}
+{"premise": "jichax walikiw ukax lunthatanakar axsarjayiriwa, ujir wisinux ukjamarak uka wisinutix anunichixä ukax mä axsarjayirirakiwa, kunlaykutix lunthatar anux achjaspawa.", "hypothesis": "Lunthatanakarux janiw anux kusakiti kunalaykutix ujurinakawa ukampirus achjatataspawa.", "label": "neutral"}
+{"premise": "jichax walikiw ukax lunthatanakar axsarjayiriwa, ujir wisinux ukjamarak uka wisinutix anunichixä ukax mä axsarjayirirakiwa, kunlaykutix lunthatar anux achjaspawa.", "hypothesis": "Lunthatanakarux janiw anux kusakiti.", "label": "entailment"}
+{"premise": "jichax walikiw ukax lunthatanakar axsarjayiriwa, ujir wisinux ukjamarak uka wisinutix anunichixä ukax mä axsarjayirirakiwa, kunlaykutix lunthatar anux achjaspawa.", "hypothesis": "Lunthatanakax yatipxiw anunak mäk amukt'atapxa", "label": "contradiction"}
+{"premise": "ukax larakayawa ukatx nayax amuytxa nayatakix kusaw larkay wakichawinakar jilpach sarañaxa.", "hypothesis": "Janiw larkay wakichawinakax munaskituti.", "label": "contradiction"}
+{"premise": "ukax larakayawa ukatx nayax amuytxa nayatakix kusaw larkay wakichawinakar jilpach sarañaxa.", "hypothesis": "Larkay wakichawinakx uñch'ukiñ munapuntwa.", "label": "entailment"}
+{"premise": "ukax larakayawa ukatx nayax amuytxa nayatakix kusaw larkay wakichawinakar jilpach sarañaxa.", "hypothesis": "Uka machaq comedia wakichawix ukjamjamaspawa.", "label": "neutral"}
+{"premise": "Janiw yatkti, kusaw, jumamp aruskipañax kusakiwa ukjamarak suma arumakipanay jumataki.", "hypothesis": "¡Wali suma qharxamakipanaya! Jumamp chatiyañax wali kusapuniwa.", "label": "contradiction"}
+{"premise": "Janiw yatkti, kusaw, jumamp aruskipañax kusakiwa ukjamarak suma arumakipanay jumataki.", "hypothesis": "Yatxtwa kunats jan sum uñjastxa, ukatx janiw säñ munkti.", "label": "neutral"}
+{"premise": "Janiw yatkti, kusaw, jumamp aruskipañax kusakiwa ukjamarak suma arumakipanay jumataki.", "hypothesis": "Janjamakiw walikti, ukampirus walikisktwa. Wali kusanaw aka arumax jumamp aruskipañaxa.", "label": "entailment"}
+{"premise": "Grand Rapids ukat kuttanipxtwa kawkintix mayni wawajax mistuwayki ukjäta.", "hypothesis": "Grand Rapids uka chiqax wali jiwakiwa.", "label": "neutral"}
+{"premise": "Grand Rapids ukat kuttanipxtwa kawkintix mayni wawajax mistuwayki ukjäta.", "hypothesis": "Janiw mä wawas utjapkituti.", "label": "contradiction"}
+{"premise": "Grand Rapids ukat kuttanipxtwa kawkintix mayni wawajax mistuwayki ukjäta.", "hypothesis": "Grand Rapids uksaruw waw uruyasir uñjir sarapxta.", "label": "entailment"}
+{"premise": "Utjiriwjanakarut utjnuqasta?", "hypothesis": "Uka ch'usa wasarawjan utjnuqatan chikañchastati?", "label": "entailment"}
+{"premise": "Utjiriwjanakarut utjnuqasta?", "hypothesis": "Manqha utjnuqasïwir sartati?", "label": "contradiction"}
+{"premise": "Amuyatatxa, juk'ampis juk'ampiwa, uka…", "hypothesis": "Amuyatatx juk'ampstaskakiwa.", "label": "entailment"}
+{"premise": "Amuyatatxa, juk'ampis juk'ampiwa, uka…", "hypothesis": "Waliptaskiwa.", "label": "contradiction"}
+{"premise": "Janipuniw chhaqhayatx iyawsirjamäkti, ukapuniskiw jan walt'äwixa, ukatwa juk'ampis mä uta anqaniñama.", "hypothesis": "Uta anqan panqaranakaniñax janiw wali k'uchisiñatakikiti, ukhamarus nayax walpun k'uchistha.", "label": "neutral"}
+{"premise": "Janipuniw chhaqhayatx iyawsirjamäkti, ukapuniskiw jan walt'äwixa, ukatwa juk'ampis mä uta anqaniñama.", "hypothesis": "Janiw chaqhayañ munkti, ukampirus kunawsatix uta anqanitax chaqhayasmawa.", "label": "entailment"}
+{"premise": "Janipuniw chhaqhayatx iyawsirjamäkti, ukapuniskiw jan walt'äwixa, ukatwa juk'ampis mä uta anqaniñama.", "hypothesis": "Kunawsatix mä jisk'a uraqinitax janiw kuns chhaqhaykasmati.", "label": "contradiction"}
+{"premise": "Chhitthapim jan ukax kunatix lurañak uk yatichapxatamwa; kunatix lurañak uk sapxatamwa, ukhamarus lurañam ukhaniwa.", "hypothesis": "Ukat kunatix lurañak uk lurañ sasinxa, sarantaskakim ukat jumatjam luram.", "label": "entailment"}
+{"premise": "Chhitthapim jan ukax kunatix lurañak uk yatichapxatamwa; kunatix lurañak uk sapxatamwa, ukhamarus lurañam ukhaniwa.", "hypothesis": "Janiw kunas lurañapun ukx sapktamti.", "label": "contradiction"}
+{"premise": "Chhitthapim jan ukax kunatix lurañak uk yatichapxatamwa; kunatix lurañak uk sapxatamwa, ukhamarus lurañam ukhaniwa.", "hypothesis": "Kunjamas lurañ ukatuqit wali yaticht'awinak churapxi.", "label": "neutral"}
+{"premise": "Janiw arxatirinakakiti, jan ukasti oficial de policia uksankirinakas, ukhamarak taripirinakas, ukat taqi kamachinakat uñakipirinaka.", "hypothesis": "Janiw kun uka kamachinakan chikañchasitapas jupanx ukan uñjañapakiti.", "label": "contradiction"}
+{"premise": "Janiw arxatirinakakiti, jan ukasti oficial de policia uksankirinakas, ukhamarak taripirinakas, ukat taqi kamachinakat uñakipirinaka.", "hypothesis": "Sapa maynipuniw uka taripañ thakhinx juchañchata.", "label": "entailment"}
+{"premise": "Janiw arxatirinakakiti, jan ukasti oficial de policia uksankirinakas, ukhamarak taripirinakas, ukat taqi kamachinakat uñakipirinaka.", "hypothesis": "Jilawiriw uka taripañ kamachinx juchañchatapxi, jilawiriw uka pulisiya uksankirinakaxa.", "label": "neutral"}
+{"premise": "mmm…pä waranqh phisqapatakan jaqinakaw chikañchasipxatayna, ukatxa mmm...", "hypothesis": "Kunawsatix jupanakamp chikañchasxtxa, ukapachatakix 2500 jaqiw chikañchasxatayna.", "label": "entailment"}
+{"premise": "mmm…pä waranqh phisqapatakan jaqinakaw chikañchasipxatayna, ukatxa mmm...", "hypothesis": "Kunawsatix jupanakamp chikañchasxtxa, mä qawqhan jaqinakax uñt'atanakanawa.", "label": "neutral"}
+{"premise": "mmm…pä waranqh phisqapatakan jaqinakaw chikañchasipxatayna, ukatxa mmm...", "hypothesis": "Patak jaqikiw chikañchasirinakaxa.", "label": "contradiction"}
+{"premise": "Uu, jisa, nayax siristätwa, jaltawayä, maysatxa, amuyasisamachanawa, akax pachp uñtasirinakaruw katurañapäna, ukhamatsti", "hypothesis": "Chiqpachanx janiw kun ajllins amuykti.", "label": "contradiction"}
+{"premise": "Uu, jisa, nayax siristätwa, jaltawayä, maysatxa, amuyasisamachanawa, akax pachp uñtasirinakaruw katurañapäna, ukhamatsti", "hypothesis": "I´ll fly away uk ajlliristxa.", "label": "entailment"}
+{"premise": "Uu, jisa, nayax siristätwa, jaltawayä, maysatxa, amuyasisamachanawa, akax pachp uñtasirinakaruw katurañapäna, ukhamatsti", "hypothesis": "I'll Fly Away uka uñtañax chuymaxankiwa, sapa simanaw uñch'uktha.", "label": "neutral"}
+{"premise": "Jisa, amuyatatx janjamakiw wakiskaniti, kunalaykutix janiw uka awtu sayt'añanak jikxatañjamakiti, uka yatiyäwi juk'ampis yatiñ munapxta.", "hypothesis": "Chanipax kusakipuniwa", "label": "neutral"}
+{"premise": "Jisa, amuyatatx janjamakiw wakiskaniti, kunalaykutix janiw uka awtu sayt'añanak jikxatañjamakiti, uka yatiyäwi juk'ampis yatiñ munapxta.", "hypothesis": "Chiqapuniwa, jiwas pachpan markasan yatiyäwinak ist'apxañanakasawa.", "label": "contradiction"}
+{"premise": "Jisa, amuyatatx janjamakiw wakiskaniti, kunalaykutix janiw uka awtu sayt'añanak jikxatañjamakiti, uka yatiyäwi juk'ampis yatiñ munapxta.", "hypothesis": "Janiw munapkti, aka pachp markan yatiyäwinakapaw wakiskiri, janiw awtu sayayañanakax utjkiti.", "label": "entailment"}
+{"premise": "Amuyatatxa, Anderson ukham sutinjamakinawa, uka kawallir jaqiw uksa tuqirux jalti, uka Reagantuqi uaktxa", "hypothesis": "Andersonax Reaganaruw atipjawayi.", "label": "contradiction"}
+{"premise": "Amuyatatxa, Anderson ukham sutinjamakinawa, uka kawallir jaqiw uksa tuqirux jalti, uka Reagantuqi uaktxa", "hypothesis": "Andersonax Reagan juparuw amuyuparjam saykatawayi.", "label": "entailment"}
+{"premise": "Amuyatatxa, Anderson ukham sutinjamakinawa, uka kawallir jaqiw uksa tuqirux jalti, uka Reagantuqi uaktxa", "hypothesis": "Yaqha qillqaw uñstaniwayi, ukhamat pachpakiw kust'awayi.", "label": "neutral"}
+{"premise": "Jisa, uka alasirix juk'akiwa, ukhamipansa mayamp mayamp uka khusa uma warantasinxa.", "hypothesis": "Wali juk'a chaninikiwa, kunalaykutix wali suma ch'amañchiriwa.", "label": "entailment"}
+{"premise": "Jisa, uka alasirix juk'akiwa, ukhamipansa mayamp mayamp uka khusa uma warantasinxa.", "hypothesis": "Uka khusu uma umañax jilxattawayiwa, juk'ampis gasolinatx payllapuntwa.", "label": "contradiction"}
+{"premise": "Jisa, uka alasirix juk'akiwa, ukhamipansa mayamp mayamp uka khusa uma warantasinxa.", "hypothesis": "Akawjanakans wali suma awtunakapuniw utji.", "label": "neutral"}
+{"premise": "Akax walja maranakaxiwa, ukawjan yatiqayätxa, ukhamat mä tirsuw anqa markan yatintaniwayta, Londres markana.", "hypothesis": "Akax niya mä qawqha maräxiwa, Londres markan mä tirsux yatintaskayätxa.", "label": "entailment"}
+{"premise": "Akax walja maranakaxiwa, ukawjan yatiqayätxa, ukhamat mä tirsuw anqa markan yatintaniwayta, Londres markana.", "hypothesis": "Janipuniw kunawsas anqa markanx yatiqaniwaykti.", "label": "contradiction"}
+{"premise": "Akax walja maranakaxiwa, ukawjan yatiqayätxa, ukhamat mä tirsuw anqa markan yatintaniwayta, Londres markana.", "hypothesis": "Uka Londres tuqinx yatiqañ utax wali sumanakawa.", "label": "neutral"}
+{"premise": "Jupanakampix mä jujk'it yaqhakast lurapxäna.", "hypothesis": "Yaqhanak kikpakrak luratayna.", "label": "contradiction"}
+{"premise": "Jupanakampix mä jujk'it yaqhakast lurapxäna.", "hypothesis": "Kunjamtix apnaqki ukax wali kusapuninawa.", "label": "neutral"}
+{"premise": "Jupanakampix mä jujk'it yaqhakast lurapxäna.", "hypothesis": "Jupanakampix mä juk'it mayjwa luraniwayapxi.", "label": "entailment"}
+{"premise": "Janipuniw kuns uka muxsa t'ant'anakampix lurañ atiwaykti.", "hypothesis": "Janiw uka muxsa t'ant'anak apkaqätakiti.", "label": "entailment"}
+{"premise": "Janipuniw kuns uka muxsa t'ant'anakampix lurañ atiwaykti.", "hypothesis": "Janiw kunkipans jan mä amuyumpis qhiparkiristi, uka muxsa t'ant'ataki.", "label": "contradiction"}
+{"premise": "Janipuniw kuns uka muxsa t'ant'anakampix lurañ atiwaykti.", "hypothesis": "Pastilanakamp inach kunsa lurirista, ukampirus janiw apnaqti.", "label": "neutral"}
+{"premise": "waliki, mä VCR ukanïtwa ukatx componente ukan jan walt'atapatx waljakutiw kutt'ayxtxa ukatx ukax janiw aski jamuq uñachaykiti.", "hypothesis": "Mä videograbadoranïtwa ukax askikiskiwa.", "label": "entailment"}
+{"premise": "waliki, mä VCR ukanïtwa ukatx componente ukan jan walt'atapatx waljakutiw kutt'ayxtxa ukatx ukax janiw aski jamuq uñachaykiti.", "hypothesis": "Videograbadorajax askinak apnaqasiski.", "label": "contradiction"}
+{"premise": "waliki, mä VCR ukanïtwa ukatx componente ukan jan walt'atapatx waljakutiw kutt'ayxtxa ukatx ukax janiw aski jamuq uñachaykiti.", "hypothesis": "Videograbadorajax mä simanakiw apnaqasispa ukatx wasitampiw p'akhisxi.", "label": "neutral"}
+{"premise": "E, akax walikiskiwa, chiqawa, larkayawa, mä siminaryuruw sarta, uka siminaryux satelite ukxatanwa, wali askinwa warminakatakikinwa.", "hypothesis": "Uka satelite ukxat siminaryux janiw justkituti.", "label": "contradiction"}
+{"premise": "E, akax walikiskiwa, chiqawa, larkayawa, mä siminaryuruw sarta, uka siminaryux satelite ukxatanwa, wali askinwa warminakatakikinwa.", "hypothesis": "Satélite tuqi luraskis uka siminaryuruw sarta.", "label": "entailment"}
+{"premise": "E, akax walikiskiwa, chiqawa, larkayawa, mä siminaryuruw sarta, uka siminaryux satelite ukxatanwa, wali askinwa warminakatakikinwa.", "hypothesis": "Satélite ukxat siminaryu luraski ukarux walja jaqiw chikancht'asipxi.", "label": "neutral"}
+{"premise": "Jïsa, phawrikanjamaw makiptaniwatäna, ukampirus eh.", "hypothesis": "Akax janik ukhamaspat niyakixay waytirichixa.", "label": "neutral"}
+{"premise": "Jïsa, phawrikanjamaw makiptaniwatäna, ukampirus eh.", "hypothesis": "Jïsa! Jani ch'amampikiw jikxati!", "label": "contradiction"}
+{"premise": "Jïsa, phawrikanjamaw makiptaniwatäna, ukampirus eh.", "hypothesis": "Jïsa, ukax qhanaxiw kunjamti makiptki.", "label": "entailment"}
+{"premise": "way, oh waya, ukax askipuniwa. Juma… uka yatiqañatakix yatiqir sartati?", "hypothesis": "Jumapachpaw ukax kunjamas yatiqaña ukxa yatiqpachataxa.", "label": "neutral"}
+{"premise": "way, oh waya, ukax askipuniwa. Juma… uka yatiqañatakix yatiqir sartati?", "hypothesis": "¿Kawkhans uka yatiqtaxa?", "label": "entailment"}
+{"premise": "Taykanakan urup amtaski ukhaw mayninakampix lurapxtxa.", "hypothesis": "Awkinakan urupatakïnwa ukatx Ellen jupax askin uñjirinxa.", "label": "contradiction"}
+{"premise": "Taykanakan urup amtaski ukhaw mayninakampix lurapxtxa.", "hypothesis": "Yaqhip masinakax taykanakan urupa amtasipkänxa.", "label": "entailment"}
+{"premise": "Taykanakan urup amtaski ukhaw mayninakampix lurapxtxa.", "hypothesis": "Yaqhip masinakax taykan urunakapakipanx brunch uka amtastxa.", "label": "neutral"}
+{"premise": "kuntï siskañan ukxa yatantisti.", "hypothesis": "¿Kawknirs ullañatak churistan ukxa yatati?", "label": "neutral"}
+{"premise": "kuntï siskañan ukxa yatantisti.", "hypothesis": "Kuntix siskañän ukxatx janiw amuyus utjkistuti.", "label": "contradiction"}
+{"premise": "kuntï siskañan ukxa yatantisti.", "hypothesis": "¿ Sañatakix kuns lurasktanxa?", "label": "entailment"}
+{"premise": "jïsa, qhanawa, janiw ukat arsupkanti eh… kunjamti uñkata uka jani yatktati, ukampirus yataw jach'a wila masit jutiri.", "hypothesis": "Taqiniw wila masinakapar uñjt'apxtanaxa, kunasay utjpan ukar jan uñjasa.", "label": "contradiction"}
+{"premise": "jïsa, qhanawa, janiw ukat arsupkanti eh… kunjamti uñkata uka jani yatktati, ukampirus yataw jach'a wila masit jutiri.", "hypothesis": "Yaqhip jaqinkaax janiw wila masinakapat llakt'asipkiti kunjamatix utanakapax walja iskaliras ukanakaniwa.", "label": "neutral"}
+{"premise": "jïsa, qhanawa, janiw ukat arsupkanti eh… kunjamti uñkata uka jani yatktati, ukampirus yataw jach'a wila masit jutiri.", "hypothesis": "Yaqhip jaqinakax janiw yaqha jaqinakar uñjapkiti.", "label": "entailment"}
+{"premise": "uh huh, taqi kunas walikiskiwa, jan mayampitaki.", "hypothesis": "¡Jan mayampitaki!", "label": "entailment"}
+{"premise": "uh huh, taqi kunas walikiskiwa, jan mayampitaki.", "hypothesis": "Jumamp aruskipt'añax askipuniw ukatx qharuruw aruskipt'askañani.", "label": "neutral"}
+{"premise": "uh huh, taqi kunas walikiskiwa, jan mayampitaki.", "hypothesis": "Aruskipt'askakiñäni.", "label": "contradiction"}
+{"premise": "yaw, wali aski lasañanitawa.", "hypothesis": "¡Lasaña ukax wali mayjawa!", "label": "contradiction"}
+{"premise": "yaw, wali aski lasañanitawa.", "hypothesis": "Lasañax wali askiwa.", "label": "entailment"}
+{"premise": "yaw, wali aski lasañanitawa.", "hypothesis": "Lasañax muxsaw xaxu salchicha.", "label": "neutral"}
+{"premise": "ukax kunawsati qullqimp wali phuqhatak ukhax janiw kuns lurañ atkti.", "hypothesis": "Anchhitax janiw wali qullqinïkti.", "label": "entailment"}
+{"premise": "ukax kunawsati qullqimp wali phuqhatak ukhax janiw kuns lurañ atkti.", "hypothesis": "Anchhitax wali qullqinïtwa,, ukhamax alt'asiriw sarañ muntxa.", "label": "contradiction"}
+{"premise": "ukax kunawsati qullqimp wali phuqhatak ukhax janiw kuns lurañ atkti.", "hypothesis": "Payllaw katuqañ urukamax 20 $ ukhakiw utjitu.", "label": "neutral"}
+{"premise": "Jïsa, kawkir munkir tamatï.", "hypothesis": "Tamax may maya temanakanw yatiñ munapxchixa.", "label": "contradiction"}
+{"premise": "Jïsa, kawkir munkir tamatï.", "hypothesis": "Tamax ambientales ukxat yatiñx muni.", "label": "neutral"}
+{"premise": "um, janiw kuna jan walis utjkit mayni awkix utjirips churiwa uh uh mayni jaqi uh ukhama jumjama.", "hypothesis": "Walikiskiw mayni awkix waxt'anak churkï ukaxa.", "label": "entailment"}
+{"premise": "um, janiw kuna jan walis utjkit mayni awkix utjirips churiwa uh uh mayni jaqi uh ukhama jumjama.", "hypothesis": "Walikiskiw awki taykanakan wawanakapar uñjapki ukax kunawsatï sapak lurxapxirjamach ukhakama.", "label": "neutral"}
+{"premise": "um, janiw kuna jan walis utjkit mayni awkix utjirips churiwa uh uh mayni jaqi uh ukhama jumjama.", "hypothesis": "Awkinakax kunti utjki ukxa sarantayasipkakiñapaw ukatx janiw uñt'ayapxañapakiti.", "label": "contradiction"}
+{"premise": "Kunawsatix nayax khayankayatxa, Texas ukax phiqha tunk phiqhan waranqa ukhanikinwa.", "hypothesis": "Ukat nayrax janiw Texas uksankirikayäti.", "label": "contradiction"}
+{"premise": "Kunawsatix nayax khayankayatxa, Texas ukax phiqha tunk phiqhan waranqa ukhanikinwa.", "hypothesis": "Texas markan 80 uka maranakanw jakaniwaytxa.", "label": "neutral"}
+{"premise": "Kunawsatix nayax khayankayatxa, Texas ukax phiqha tunk phiqhan waranqa ukhanikinwa.", "hypothesis": "Texas uksankiriyatwa.", "label": "entailment"}
+{"premise": "jila chanini, akjama yänakanx walja qullqi katuqaspa,", "hypothesis": "Janiw kuna chaninikisa kunjamti ukax thunanakamp sasiwa.", "label": "contradiction"}
+{"premise": "jila chanini, akjama yänakanx walja qullqi katuqaspa,", "hypothesis": "Ukatx walja qullq payllapxiristam.", "label": "entailment"}
+{"premise": "jila chanini, akjama yänakanx walja qullqi katuqaspa,", "hypothesis": "Wali aski tilas ukhamanïst ukhax walja qullq payllapxiristam.", "label": "neutral"}
+{"premise": "kunti uñt'kta ukatx payllapxtwa. Wawanakar uñjawi ukampirus janiw anqaxan kunjamti uñjatak ukham payllapkti.", "hypothesis": "Infantiles markachirinakax 2000 $ ukhawa wasikuts jila.", "label": "neutral"}
+{"premise": "kunti uñt'kta ukatx payllapxtwa. Wawanakar uñjawi ukampirus janiw anqaxan kunjamti uñjatak ukham payllapkti.", "hypothesis": "Wawanaka uñjañax pisi chaninikiwa.", "label": "entailment"}
+{"premise": "kunti uñt'kta ukatx payllapxtwa. Wawanakar uñjawi ukampirus janiw anqaxan kunjamti uñjatak ukham payllapkti.", "hypothesis": "Wawanak uñjañax jani chanitakikiwa.", "label": "contradiction"}
+{"premise": "eh,uh, ukhamax mä uñacht'awinitat ukatx mä sistima de alarma ukanitawa, mä lunthatatix purinispax tiliphuniyamax khuchhuqaspawa.", "hypothesis": "Alarmanit sasin qillqat uñacht'awiniñ amtax janiw askikiti.", "label": "contradiction"}
+{"premise": "eh,uh, ukhamax mä uñacht'awinitat ukatx mä sistima de alarma ukanitawa, mä lunthatatix purinispax tiliphuniyamax khuchhuqaspawa.", "hypothesis": "Kumpaniya de alarmas ukax sapa wintanatakiw siñas uk churi.", "label": "neutral"}
+{"premise": "eh,uh, ukhamax mä uñacht'awinitat ukatx mä sistima de alarma ukanitawa, mä lunthatatix purinispax tiliphuniyamax khuchhuqaspawa.", "hypothesis": "Mä siñal ukaw utji ukax alarmanitaw sañ muni.", "label": "entailment"}
+{"premise": "Jïsa, utjiwa, nayankirimp nayampix suxtanipxtwa.", "hypothesis": "Sapakïsktwa, janiw jaqichaskti.", "label": "contradiction"}
+{"premise": "Jïsa, utjiwa, nayankirimp nayampix suxtanipxtwa.", "hypothesis": "Chachajamp nayampix suxta wawanïpxtwa.", "label": "neutral"}
+{"premise": "Jïsa, utjiwa, nayankirimp nayampix suxtanipxtwa.", "hypothesis": "Warmijamp nayampix ukanakatx suxtaw utjapxitu.", "label": "entailment"}
+{"premise": "jïsa, walikiwa, Texas uksan mä phusil apañax janiw janipunikiti, janiwa, ukampirus utamankaspawa.", "hypothesis": "Texas markanx mä phusilaniñax juchawa.", "label": "neutral"}
+{"premise": "jïsa, walikiwa, Texas uksan mä phusil apañax janiw janipunikiti, janiwa, ukampirus utamankaspawa.", "hypothesis": "¡Texas markanx mä phusilx kawkharus apaskakismawa!", "label": "contradiction"}
+{"premise": "jïsa, walikiwa, Texas uksan mä phusil apañax janiw janipunikiti, janiwa, ukampirus utamankaspawa.", "hypothesis": "Texas markanx utamat anqarux janiw phusilx apkasmati.", "label": "entailment"}
+{"premise": "oh, waliki, mä ordenador ukaw utjitu, utanx pä PC ukaw utjitu ukampirus mayas janiw nayankituti.", "hypothesis": "Janiw mä dispositivo electronicojas utjkituti.", "label": "contradiction"}
+{"premise": "oh, waliki, mä ordenador ukaw utjitu, utanx pä PC ukaw utjitu ukampirus mayas janiw nayankituti.", "hypothesis": "Mä apple ukaw utjitu ukatx utanx HP ukas utjarakituwa.", "label": "neutral"}
+{"premise": "oh, waliki, mä ordenador ukaw utjitu, utanx pä PC ukaw utjitu ukampirus mayas janiw nayankituti.", "hypothesis": "Utajanx pä ordenador ukaw utjitu.", "label": "entailment"}
+{"premise": "mmm…yaqhippachax mistuñax jiwakiwa ukat mä ensalada manq'añasa.", "hypothesis": "¡Janiw ensalada manq'kti, mayjapachawa!", "label": "contradiction"}
+{"premise": "mmm…yaqhippachax mistuñax jiwakiwa ukat mä ensalada manq'añasa.", "hypothesis": "Yaqhip pachanakakiw terraza patxan vegetaryan ensalada manq'añax justitu.", "label": "neutral"}
+{"premise": "mmm…yaqhippachax mistuñax jiwakiwa ukat mä ensalada manq'añasa.", "hypothesis": "Yaqhip pachakiw ensalada manq'añ muniritxa.", "label": "entailment"}
+{"premise": "uh ukhamat wali sum jikxat'astxa.", "hypothesis": "Chiqpachans ukax justituwa.", "label": "entailment"}
+{"premise": "uh ukhamat wali sum jikxat'astxa.", "hypothesis": "Yaqhanirist ukax askispawa kunjamati wali askikiwa.", "label": "neutral"}
+{"premise": "uh ukhamat wali sum jikxat'astxa.", "hypothesis": "¡Sinti axtañapuninwa!", "label": "contradiction"}
+{"premise": "Wuw, inas teatro uñjir sarirista ukat qunt'asisin arum manq'ir ukxat aruskipañataki", "hypothesis": "¡Uka pilikul uñjirix janiw sarañ munkti!", "label": "contradiction"}
+{"premise": "Wuw, inas teatro uñjir sarirista ukat qunt'asisin arum manq'ir ukxat aruskipañataki", "hypothesis": "China manq' manq'irix sarsnawa ukatx Oscar pilikul uñjansna.", "label": "neutral"}
+{"premise": "Wuw, inas teatro uñjir sarirista ukat qunt'asisin arum manq'ir ukxat aruskipañataki", "hypothesis": "Uñt'awayasinx manq'ir sarsnawa.", "label": "entailment"}
+{"premise": "jupankax juk'a mantapktä ukat yatipxi, yatkasma uka kuñtat jayankasas janiw utjkiti.", "hypothesis": "Qullqinipxit ukxatx chuymapankaskiwa.", "label": "entailment"}
+{"premise": "jupankax juk'a mantapktä ukat yatipxi, yatkasma uka kuñtat jayankasas janiw utjkiti.", "hypothesis": "Qaqha qullqs katuqasipki ukxa janiw amuyapkiti.", "label": "contradiction"}
+{"premise": "jupankax juk'a mantapktä ukat yatipxi, yatkasma uka kuñtat jayankasas janiw utjkiti.", "hypothesis": "Jupanakax phaxsinx 2903 $ ukhwa payllaw katuqapxi.", "label": "neutral"}
+{"premise": "walikiwa, pisinkirjam ukatx takichat jan arxatasirjam uñjañani .", "hypothesis": "Jiwasankirinakax jupanakan askipañapatakiw jark't'i.", "label": "entailment"}
+{"premise": "walikiwa, pisinkirjam ukatx takichat jan arxatasirjam uñjañani .", "hypothesis": "Sapürunjamaw amtayasktana.", "label": "contradiction"}
+{"premise": "walikiwa, pisinkirjam ukatx takichat jan arxatasirjam uñjañani .", "hypothesis": "Jan wali lurapxtanxa, jaqinakan jani jikxatapxañapataki.", "label": "neutral"}
+{"premise": "mä jawunjamawa, arum tilinuwilakaspas ukhama.", "hypothesis": "Mä qhana wakichäwiwa.", "label": "contradiction"}
+{"premise": "mä jawunjamawa, arum tilinuwilakaspas ukhama.", "hypothesis": "Mä tilinuwilawa.", "label": "entailment"}
+{"premise": "mä jawunjamawa, arum tilinuwilakaspas ukhama.", "hypothesis": "Days of Our lives ukar uñatataw uka uñtañaxa.", "label": "neutral"}
+{"premise": "Jïsa, jiwaspa sapunirïtwa, waliki, jiwaspa sapunirïtwa, walikisp ukhax anur uñtataw sarnaqiristxa.", "hypothesis": "Jiwxatatx janiw kuna jakawjamakaspasa.", "label": "contradiction"}
+{"premise": "Jïsa, jiwaspa sapunirïtwa, waliki, jiwaspa sapunirïtwa, walikisp ukhax anur uñtataw sarnaqiristxa.", "hypothesis": "Jilpach jiwir jaqinakax anur uñtataw kutanxapxi.", "label": "neutral"}
+{"premise": "Jïsa, jiwaspa sapunirïtwa, waliki, jiwaspa sapunirïtwa, walikisp ukhax anur uñtataw sarnaqiristxa.", "hypothesis": "Jiwxäxa, anur uñtatiristwa.", "label": "entailment"}
+{"premise": "mmm…, waliki, yaqhip chiqanakax janiw saspaw ukham nayax siristxa, yatxtawa, nayax janiwa, janiw jani siskiristixa.", "hypothesis": "Manq'anakans tukhkasp janis pankanx ukham amuytxa.", "label": "neutral"}
+{"premise": "mmm…, waliki, yaqhip chiqanakax janiw saspaw ukham nayax siristxa, yatxtawa, nayax janiwa, janiw jani siskiristixa.", "hypothesis": "Yaqha tukhawinaks utjayarakiristwa.", "label": "entailment"}
+{"premise": "mmm…, waliki, yaqhip chiqanakax janiw saspaw ukham nayax siristxa, yatxtawa, nayax janiwa, janiw jani siskiristixa.", "hypothesis": "¡Janiw kunar tukhañas utjkiti!", "label": "contradiction"}
+{"premise": "Qhipa kuntratu ukax Virginia ukampix kipkakiw Gratin kuntraw qhananchax utji jani chiqakasp ukham utjayañataki.", "hypothesis": "Kuntratunakax wali ch'amanwa.", "label": "entailment"}
+{"premise": "Qhipa kuntratu ukax Virginia ukampix kipkakiw Gratin kuntraw qhananchax utji jani chiqakasp ukham utjayañataki.", "hypothesis": "Kuntratunakax arxatirinakampix wila wiphalanak aytawayi.", "label": "neutral"}
+{"premise": "Juman waxt'äwimax 85ª temporada ukatakix wali wakiskiriwa.", "hypothesis": "Sapa waxt'aw katuqt ukax janiw jumankirjam wakiskirikiti.", "label": "neutral"}
+{"premise": "Juman waxt'äwimax 85ª temporada ukatakix wali wakiskiriwa.", "hypothesis": "Janiw waxt'awimax impurtapkituti.", "label": "contradiction"}
+{"premise": "Juman waxt'äwimax 85ª temporada ukatakix wali wakiskiriwa.", "hypothesis": "Akxa 80 mara jilanakaw lurxaptxa.", "label": "entailment"}
+{"premise": "Wakiskiriw mä jamasankir qullqi imataxa ukat Yatiqañ utan facultad de derecho ukan nayrar sarantañapaxa.", "hypothesis": "Facultad de derecho ukax jan uñjkay qulli apayaniwitjamawa.", "label": "contradiction"}
+{"premise": "Wakiskiriw mä jamasankir qullqi imataxa ukat Yatiqañ utan facultad de derecho ukan nayrar sarantañapaxa.", "hypothesis": "Facultad de Derecho ukax yanapiriniwa, Fundación Melinda ukat Bill Gates ukanakata.", "label": "neutral"}
+{"premise": "Wakiskiriw mä jamasankir qullqi imataxa ukat Yatiqañ utan facultad de derecho ukan nayrar sarantañapaxa.", "hypothesis": "Derecho yatintañ thakhisax nayrar sartañatakix qulli muni.", "label": "entailment"}
+{"premise": "IRT ukan chikanchasiñatakix wali askiniw janiw mä ikskursuyn ukar sarañjamakiti.", "hypothesis": "IRT ukar sarañax janiw mä parki ukar muytir sarañjamakiti.", "label": "entailment"}
+{"premise": "IRT ukan chikanchasiñatakix wali askiniw janiw mä ikskursuyn ukar sarañjamakiti.", "hypothesis": "IRT ukar sarañax mä samart'awjamaniwa ukatx ch'ama irnaqäwin irnaqaña ukat amuyt'aña.", "label": "contradiction"}
+{"premise": "IRT ukan chikanchasiñatakix wali askiniw janiw mä ikskursuyn ukar sarañjamakiti.", "hypothesis": "IRT ukan askin uñjañatakixa, wali suma uñjañapa ukhamaraki isturyaps yatiqañapa.", "label": "neutral"}
+{"premise": "Socios filántropos jupanakan yanapapampikiw nayrar mistuñ attanxa.", "hypothesis": "Bill Gates ukax 5 waranq waranq waxt'apxitu.", "label": "neutral"}
+{"premise": "Socios filántropos jupanakan yanapapampikiw nayrar mistuñ attanxa.", "hypothesis": "Qullqi churirinakxata, nanakan socios filantrópicos ukanakax taqpach qullqi apsxapaxatayna.", "label": "contradiction"}
+{"premise": "Socios filántropos jupanakan yanapapampikiw nayrar mistuñ attanxa.", "hypothesis": "Filantropia ukat katuqapxta, walja jixatapxta.", "label": "entailment"}
+{"premise": "Museo de Arte de Indianapolis ukarux 1999 maranx walik ch'amancht'anipxtaxa.", "hypothesis": "Museo de Arte de Indianápolis ukarux 100 $ ukha qullqimpix walik yanapt'anipxixa..", "label": "neutral"}
+{"premise": "Museo de Arte de Indianapolis ukarux 1999 maranx walik ch'amancht'anipxtaxa.", "hypothesis": "Pay suma, 1999 maran waxt'aw churapkapunit ukarux janiw jallallt'apkti.", "label": "contradiction"}
+{"premise": "Museo de Arte de Indianapolis ukarux 1999 maranx walik ch'amancht'anipxtaxa.", "hypothesis": "Wali kusisitapxtwa ukham museo ukar yanapt'apxatapata.", "label": "entailment"}
+{"premise": "Juman wali khuyapt'at jikxatasisma ukaw suyt'awijaxa ukat aka jan walt'awimp ch'amancht'ata.", "hypothesis": "Aka jan walt'awix juk'amp waytpachatamxa.", "label": "entailment"}
+{"premise": "Juman wali khuyapt'at jikxatasisma ukaw suyt'awijaxa ukat aka jan walt'awimp ch'amancht'ata.", "hypothesis": "Aka jan walt'awix may may lup'iypachatamxa, ukampis samart'awim suyt'am.", "label": "contradiction"}
+{"premise": "Juman wali khuyapt'at jikxatasisma ukaw suyt'awijaxa ukat aka jan walt'awimp ch'amancht'ata.", "hypothesis": "Ñuñu cancer usut qullasiñatakix ch'amacht'asitawa.", "label": "neutral"}
+{"premise": "Aka qhipa maranakan jumxat yatiñax wali wakiskiriwa.", "hypothesis": "Akaw aka qhipa pachan qullqi waxt'aw muytawixa, ¡ukhamax yanapam munapxta!", "label": "entailment"}
+{"premise": "Aka qhipa maranakan jumxat yatiñax wali wakiskiriwa.", "hypothesis": "Aka maranx pä kampañaw utjapxitu ukhamt qullqi apthapiñataki.", "label": "contradiction"}
+{"premise": "Aka qhipa maranakan jumxat yatiñax wali wakiskiriwa.", "hypothesis": "100,000 $ qullqi apthapiñanakajatakix munapxta.", "label": "neutral"}
+{"premise": "P.D.: Ukan yanpt'äwipax Teatro Cívico de Indianápolis ukan mara phuqhawip amtañatakix wali wakiskiriwa ukampirus markanx wali jaya maran uñt'atarakiwa.", "hypothesis": "Yaqha teatro ukax utjarakiw ukax 84n mara phuqhawip amtanxa, ukatx nakhantawayxataynawa.", "label": "neutral"}
+{"premise": "P.D.: Ukan yanpt'äwipax Teatro Cívico de Indianápolis ukan mara phuqhawip amtañatakix wali wakiskiriwa ukampirus markanx wali jaya maran uñt'atarakiwa.", "hypothesis": "Indianapolis ukan jichha uñstir teatro ukan qallantawiparuw amt'asipktxa.", "label": "contradiction"}
+{"premise": "P.D.: Ukan yanpt'äwipax Teatro Cívico de Indianápolis ukan mara phuqhawip amtañatakix wali wakiskiriwa ukampirus markanx wali jaya maran uñt'atarakiwa.", "hypothesis": "Teatro Cívico de Indianápolis ukan 85n mara amtasiwp amtakasax wali kusisitapxtwa.", "label": "entailment"}
+{"premise": "Chikanchasirinakax suti, khawkhankisa ukat jawsañ jakhup katuqapxani, yatiñ utan kunti munask ukxat yatiy apthapisa.", "hypothesis": "Chikanchasirinakax sumpachw yatinakax yatipxani ukamarak nayra yatiwinaks yatipxani.", "label": "entailment"}
+{"premise": "Chikanchasirinakax suti, khawkhankisa ukat jawsañ jakhup katuqapxani, yatiñ utan kunti munask ukxat yatiy apthapisa.", "hypothesis": "Chikañchasirinakax wali alasirinakan sutinakak uñt'apxañapawa, janiw kawkha chiqan jakki ukamp kunxa", "label": "contradiction"}
+{"premise": "(dba), ma suma tamawa, jan qullqichasiñampikiw, jupanakpach irnaqasipxañapatakikiw yatichapxi, impresanak apnaqapxañapataki ukhamarak sarantayapxapataki yatichasin yanapapxi.", "hypothesis": "Taqin akan irnakapxi ukanakax suma chaniñchatapxiwa.", "label": "contradiction"}
+{"premise": "(dba), ma suma tamawa, jan qullqichasiñampikiw, jupanakpach irnaqasipxañapatakikiw yatichapxi, impresanak apnaqapxañapataki ukhamarak sarantayapxapataki yatichasin yanapapxi.", "hypothesis": "Yanapt'irinakamp jutacht'asitawa.", "label": "entailment"}
+{"premise": "(dba), ma suma tamawa, jan qullqichasiñampikiw, jupanakpach irnaqasipxañapatakikiw yatichapxi, impresanak apnaqapxañapataki ukhamarak sarantayapxapataki yatichasin yanapapxi.", "hypothesis": "Urunx 20ka yanapt'irinakaniwa", "label": "neutral"}
+{"premise": "Jiwasan zoo ukax biomas ukanakamp luratawa, kunjamthix uywanakax jakasipki ukjamarjama.", "hypothesis": "Biomas ukanakax kunjamthix uywanakax jakasipki ukaruw uñtayi.", "label": "entailment"}
+{"premise": "Jiwasan zoo ukax biomas ukanakamp luratawa, kunjamthix uywanakax jakasipki ukjamarjama.", "hypothesis": "Jiwasa zoo, jiwaspach lurat jakasiñatakixä juk'amp sumaw jupanakpach jakasipki ukat sipansa.", "label": "contradiction"}
+{"premise": "Jiwasan zoo ukax biomas ukanakamp luratawa, kunjamthix uywanakax jakasipki ukjamarjama.", "hypothesis": "Bioma ukanakax zoológico ukanx wali chanininwa.", "label": "neutral"}
+{"premise": "Goodwill ukar yanapatamax yatintañaruw yanapäni ukatx lurañanakarurakiw yanapani ukjamat pisin jakasirinakar yanapt'añataki.", "hypothesis": "Centro Indiana ukanx janiw kunapachas irnaqañatak yatichaw katuqapkiti.", "label": "contradiction"}
+{"premise": "Goodwill ukar yanapatamax yatintañaruw yanapäni ukatx lurañanakarurakiw yanapani ukjamat pisin jakasirinakar yanapt'añataki.", "hypothesis": "Supporting Goodwill Indiana uka jaqinakaruw yanapani.", "label": "entailment"}
+{"premise": "Goodwill ukar yanapatamax yatintañaruw yanapäni ukatx lurañanakarurakiw yanapani ukjamat pisin jakasirinakar yanapt'añataki.", "hypothesis": "Goodwill utt'asitapax jan irnaqirinakax juk'akiptaniwa.", "label": "neutral"}
+{"premise": "Qalltatkam jichhakamaxa wali suma qulla uta ukjam uñt'atawa, mayni qullirikiw kusisit uñicht'ayi kunanakanikitix uka.", "hypothesis": "Indiana markax pätunka qullañ yatiqañ utanakaniwa.", "label": "contradiction"}
+{"premise": "Qalltatkam jichhakamaxa wali suma qulla uta ukjam uñt'atawa, mayni qullirikiw kusisit uñicht'ayi kunanakanikitix uka.", "hypothesis": "Indiana markanx mä qullañ utanikiwa.", "label": "entailment"}
+{"premise": "Qalltatkam jichhakamaxa wali suma qulla uta ukjam uñt'atawa, mayni qullirikiw kusisit uñicht'ayi kunanakanikitix uka.", "hypothesis": "Indiana markanx janiw yaqha qullat yatiqañ utax utjkanit phisqha jutir maranakanxa.", "label": "neutral"}
+{"premise": "Ukjamipanxa, pakanakan, revista ukan, yanapawinakan chaniñchawipax jilxattawayiwa base de datos uka uñjasax jilariw qullqiñchawisaruxa.", "hypothesis": "Munasiw 10000$ ukja qullqi waxt'awi jichha ajllitanakatakixa.", "label": "neutral"}
+{"premise": "katuwa, luriw ukat ch'ukt'iw jiwa isinakaki, Mary Todd pachapana Abe Lincoln ukan ukarjama jan ukax 'A Christmas Carol' uka phuñchhawitakjam luratawa.", "hypothesis": "Trajinakax mä fabrikan lurt'atanwa.", "label": "contradiction"}
+{"premise": "katuwa, luriw ukat ch'ukt'iw jiwa isinakaki, Mary Todd pachapana Abe Lincoln ukan ukarjama jan ukax 'A Christmas Carol' uka phuñchhawitakjam luratawa.", "hypothesis": "Isix amparamp luratkamakinwa.", "label": "neutral"}
+{"premise": "katuwa, luriw ukat ch'ukt'iw jiwa isinakaki, Mary Todd pachapana Abe Lincoln ukan ukarjama jan ukax 'A Christmas Carol' uka phuñchhawitakjam luratawa.", "hypothesis": "Trajinakax amparamp luratkamakinwa", "label": "entailment"}
+{"premise": "Taqi aka maranx qhitinakatix jan chikañchasipkta jumanakampiw jikthaptañatak thaqhatani aka jutir 45n urunakana amtanakas phuqhañataki janir 30 de junio ukjataki.", "hypothesis": "Janiw qhitinakatix jan waxt'apkan ukanakamp aruskipañ munatakiti.", "label": "contradiction"}
+{"premise": "Taqi aka maranx qhitinakatix jan chikañchasipkta jumanakampiw jikthaptañatak thaqhatani aka jutir 45n urunakana amtanakas phuqhañataki janir 30 de junio ukjataki.", "hypothesis": "Correo tukiw jutir 45n urunkan arsukipatani kawnir jan waxt'apki ukanakampi.", "label": "neutral"}
+{"premise": "Taqi aka maranx qhitinakatix jan chikañchasipkta jumanakampiw jikthaptañatak thaqhatani aka jutir 45n urunakana amtanakas phuqhañataki janir 30 de junio ukjataki.", "hypothesis": "Jutir 45n Urunakana, jan waxt'apkix ukanakar aruskipañat jawsatani.", "label": "entailment"}
+{"premise": "Arxataw tuqinkirjamaxa, jumax jilatataskit ukat sum yatisktaxa.", "hypothesis": "Kamachinakan yatichaw yatiqaw utan chikañchasiritwa.", "label": "neutral"}
+{"premise": "Arxataw tuqinkirjamaxa, jumax jilatataskit ukat sum yatisktaxa.", "hypothesis": "Janiw qhitis yatichäw yatiqäw uta ukankirikiti.", "label": "contradiction"}
+{"premise": "Arxataw tuqinkirjamaxa, jumax jilatataskit ukat sum yatisktaxa.", "hypothesis": "Yatiqaw yatichaw kamachinakxat utax jaqinakar jaysapxataynawa.", "label": "entailment"}
+{"premise": "Lurañ utanakan chanipax wali jilawa, alasirinakax wali jilxatat payllapxi, ukatx waxt'awinakatjamaptwa taqinir puriñataki.", "hypothesis": "Utanak uñstayañax inakinwa.", "label": "contradiction"}
+{"premise": "Lurañ utanakan chanipax wali jilawa, alasirinakax wali jilxatat payllapxi, ukatx waxt'awinakatjamaptwa taqinir puriñataki.", "hypothesis": "Utanakax qullqi munapxi juntacht'atañataki.", "label": "entailment"}
+{"premise": "Lurañ utanakan chanipax wali jilawa, alasirinakax wali jilxatat payllapxi, ukatx waxt'awinakatjamaptwa taqinir puriñataki.", "hypothesis": "Utanakax wali jila qullqi chanininwa.", "label": "neutral"}
+{"premise": "Becky, Stephanie, Marcus ukjamarak Emily jupanakatakix taqikunawa amuyasi, yatiqirinakax jupanakjama.", "hypothesis": "Becky jupatakix janiw wakiskirikiti.", "label": "contradiction"}
+{"premise": "Becky, Stephanie, Marcus ukjamarak Emily jupanakatakix taqikunawa amuyasi, yatiqirinakax jupanakjama.", "hypothesis": "Becky jupax mä yatiqiriwa", "label": "entailment"}
+{"premise": "Qullqi irtatamax museo ukan suma lurawiruw yanapi ukatx machaq luratanak uñstayi.", "hypothesis": "Qullqi irtatax janiw kuna jan walirus apkiti.", "label": "contradiction"}
+{"premise": "Qullqi irtatamax museo ukan suma lurawiruw yanapi ukatx machaq luratanak uñstayi.", "hypothesis": "Walja qullqi irantatax museo ukatakix wali askiwa.", "label": "neutral"}
+{"premise": "Qullqi irtatamax museo ukan suma lurawiruw yanapi ukatx machaq luratanak uñstayi.", "hypothesis": "Museo ukax aynacht'ayataw qullqi irtatampixa.", "label": "entailment"}
+{"premise": "Aka maranx suyataskiw yanapañamataki 25n maranak amtañataki ukjamarus waxt'awimax $25 ukjar irjattañapataki.", "hypothesis": "Amp suma, jichha marx $25n ukjar waxt'awimx yapxatt'am.", "label": "entailment"}
+{"premise": "Aka maranx suyataskiw yanapañamataki 25n maranak amtañataki ukjamarus waxt'awimax $25 ukjar irjattañapataki.", "hypothesis": "Maymarax phuqhatpun churtaxa, jichha marax $25x iraqt'atayatawa.", "label": "contradiction"}
+{"premise": "Aka maranx suyataskiw yanapañamataki 25n maranak amtañataki ukjamarus waxt'awimax $25 ukjar irjattañapataki.", "hypothesis": "Maymarax waxt'awipax 33n ukjanwa", "label": "neutral"}
+{"premise": "Ukjamax, Civic Theater ukanx suyt'atasktaw yanapt'añamataki artistikur ukjamarak yatichaw yatiqaw tuqiru aka maranxa.", "hypothesis": "Ukat aka marax Taotro Civicor mayamp yatichäwimp artistikump luräwinakampir yanapt'asma uk munta", "label": "contradiction"}
+{"premise": "Ukjamax, Civic Theater ukanx suyt'atasktaw yanapt'añamataki artistikur ukjamarak yatichaw yatiqaw tuqiru aka maranxa.", "hypothesis": "Aka marax Civicox 1 $ qullqi muni.", "label": "neutral"}
+{"premise": "Ukjamax, Civic Theater ukanx suyt'atasktaw yanapt'añamataki artistikur ukjamarak yatichaw yatiqaw tuqiru aka maranxa.", "hypothesis": "Teatro Civicox yanapam muni.", "label": "entailment"}
+{"premise": "Markaspachan IRT ukax nayrankiwa, ukaw p'iqi wal waytayitu ukat yatiqirinakaruw tiyatru lurañanakxat yatichi.", "hypothesis": "IRT ukax pilut anatañampiwa.", "label": "contradiction"}
+{"premise": "Markaspachan IRT ukax nayrankiwa, ukaw p'iqi wal waytayitu ukat yatiqirinakaruw tiyatru lurañanakxat yatichi.", "hypothesis": "IRT ukax tiyatru taypinkiwa, yatiqañ utankirinakataki.", "label": "neutral"}
+{"premise": "Markaspachan IRT ukax nayrankiwa, ukaw p'iqi wal waytayitu ukat yatiqirinakaruw tiyatru lurañanakxat yatichi.", "hypothesis": "IRT ukax tiyatru taypinkiwa.", "label": "entailment"}
+{"premise": "Yanapamax uywanakamp ayrunakamp waqaychayi ukat juk'ak utjki uka uywanakxat yatxatäwinak luraña, Plan de Supervivencia de Especies ukamppacha.", "hypothesis": "Áfrican niya chhaqtata uka uywanakamppachat jaqix llakisi.", "label": "neutral"}
+{"premise": "Yanapamax uywanakamp ayrunakamp waqaychayi ukat juk'ak utjki uka uywanakxat yatxatäwinak luraña, Plan de Supervivencia de Especies ukamppacha.", "hypothesis": "Jaqix uywanakat llakisiwa.", "label": "entailment"}
+{"premise": "Yanapamax uywanakamp ayrunakamp waqaychayi ukat juk'ak utjki uka uywanakxat yatxatäwinak luraña, Plan de Supervivencia de Especies ukamppacha.", "hypothesis": "Jaqix jisk'a wawanakat llakisiwa.", "label": "contradiction"}
+{"premise": "Nayax janiw ukjamäkiti siristwa.", "hypothesis": "Janiw ukax chiqäkpachati.", "label": "entailment"}
+{"premise": "Nayax janiw ukjamäkiti siristwa.", "hypothesis": "¡Chiqakjamakw arsusktaxa!", "label": "contradiction"}
+{"premise": "Nayax janiw ukjamäkiti siristwa.", "hypothesis": "Jisa sasina, ukat janiw jiskapayax pantjasisamächaktawa.", "label": "neutral"}
+{"premise": "Yatichañxat wakichäwinak ch'iqiyasax juk'amp herencia filantrópica de los Estados Unidos uk ch'amanchañ yanapt'istani.", "hypothesis": "Janiw ch'iqitatan munapkapuntti.", "label": "contradiction"}
+{"premise": "Yatichañxat wakichäwinak ch'iqiyasax juk'amp herencia filantrópica de los Estados Unidos uk ch'amanchañ yanapt'istani.", "hypothesis": "Paqallqu markaruw ch'iqitatañ yanapt'apxitasma.", "label": "neutral"}
+{"premise": "Yatichañxat wakichäwinak ch'iqiyasax juk'amp herencia filantrópica de los Estados Unidos uk ch'amanchañ yanapt'istani.", "hypothesis": "Wakichäwinakaj ch'iqitatayañ yanapt'apxitasma.", "label": "entailment"}
+{"premise": "Walja suma akturanakax juk'amp yatsupxañapatakiw yanapi.", "hypothesis": "Ayllunkir tiyatrunakax janipuniw akturanakar juk'amp yatsuyañ yanapt'kiti.", "label": "contradiction"}
+{"premise": "Walja suma akturanakax juk'amp yatsupxañapatakiw yanapi.", "hypothesis": "Chikat jila yatxatat akturanakax ayllunkir tiyatrunakan qalltawayapxi.", "label": "neutral"}
+{"premise": "Walja suma akturanakax juk'amp yatsupxañapatakiw yanapi.", "hypothesis": "Yaqhip akturanakax juk'amp yatsuñatakiw ayllunkir tiyatrur mantapxi.", "label": "entailment"}
+{"premise": "Qhipha tuminku, junyut 18 saraqkipana, Festival de mitos, phulkluri ukat isturya, Keepers of the Lore/Joseph Campbell ukar saririnak walpun aka marax juk'aruchäwayi,", "hypothesis": "Kimsa maran janiw jallux purkiti.", "label": "contradiction"}
+{"premise": "Qhipha tuminku, junyut 18 saraqkipana, Festival de mitos, phulkluri ukat isturya, Keepers of the Lore/Joseph Campbell ukar saririnak walpun aka marax juk'aruchäwayi,", "hypothesis": "Nayrïr tuminkux wal jallux puriwayi.", "label": "neutral"}
+{"premise": "Qhipha tuminku, junyut 18 saraqkipana, Festival de mitos, phulkluri ukat isturya, Keepers of the Lore/Joseph Campbell ukar saririnak walpun aka marax juk'aruchäwayi,", "hypothesis": "Nayrïr tuminkux jalluwa.", "label": "entailment"}
+{"premise": "1973 ukan maran akturanakax qalltapxi, sañäni Gary , Elkhart y Terre Haute uka markanakan aktuwapxi, jichhürun IRT yatichañxat wakichäwi.", "hypothesis": "70 maranakan janiw Indianan akturanakax utjkänti.", "label": "contradiction"}
+{"premise": "1973 ukan maran akturanakax qalltapxi, sañäni Gary , Elkhart y Terre Haute uka markanakan aktuwapxi, jichhürun IRT yatichañxat wakichäwi.", "hypothesis": "Yaqhip Oscar atipt'ir akturanakax 1973 ukan maran Indiana markpacharuw sarawayapxi.", "label": "neutral"}
+{"premise": "1973 ukan maran akturanakax qalltapxi, sañäni Gary , Elkhart y Terre Haute uka markanakan aktuwapxi, jichhürun IRT yatichañxat wakichäwi.", "hypothesis": "Yaqhip akturanakax 1973 ukan maran Indiana markpach muytawayapxi", "label": "entailment"}
+{"premise": "Anthapiñataki ukat kusa yatichirinak apsuñatakix qullqi munapxta.", "hypothesis": "Janiw yatichirinak anthapiñax munaskiti, jupanakax justupaw jutasipki.", "label": "contradiction"}
+{"premise": "Anthapiñataki ukat kusa yatichirinak apsuñatakix qullqi munapxta.", "hypothesis": "Suma yatichirinak munapxta.", "label": "entailment"}
+{"premise": "Anthapiñataki ukat kusa yatichirinak apsuñatakix qullqi munapxta.", "hypothesis": "100 machaq yatichir kuntratañ munapxta ukat kust'atäpxañapawa.", "label": "neutral"}
+{"premise": "Escuela de derecho ukankir 5.539 yatiqirix kust'atäpxiwa.", "hypothesis": "Facultad de derechox 100 maraw jist'arata ukat 5539 yatiqiriw utjawayi.", "label": "neutral"}
+{"premise": "Escuela de derecho ukankir 5.539 yatiqirix kust'atäpxiwa.", "hypothesis": "Facultad de derechox 20 tukuyirinikiwa.", "label": "contradiction"}
+{"premise": "Escuela de derecho ukankir 5.539 yatiqirix kust'atäpxiwa.", "hypothesis": "Escuela de derecho ukan 5,000 jila yatiqiriw utji.", "label": "entailment"}
+{"premise": "Coronas de laurel ukax atipt'aña sañ muni, ukat ramas de olivo ukax samaraña sañ munaraki, hojas de acanto ukampix alphumra thiys k'achacharakiwa.", "hypothesis": "Coronas de laurel, ramas de olivo ukat hojas de acanto ukanakax alphumra thiyankiwa.", "label": "entailment"}
+{"premise": "Coronas de laurel ukax atipt'aña sañ muni, ukat ramas de olivo ukax samaraña sañ munaraki, hojas de acanto ukampix alphumra thiys k'achacharakiwa.", "hypothesis": "Alphumrax wiys uka saminiwa.", "label": "neutral"}
+{"premise": "Mä irnaqäwikiw utjitu.", "hypothesis": "Janiw irnaqäwi ni inäkas lurañas utjkituti.", "label": "contradiction"}
+{"premise": "Mä irnaqäwikiw utjitu.", "hypothesis": "Irnaqäwijax sapürutakiwa.", "label": "neutral"}
+{"premise": "Mä irnaqäwikiw utjitu.", "hypothesis": "Irnaqäwinïtwa.", "label": "entailment"}
+{"premise": "Sociedad Maennerchor ukan Fondo Anual ukar yanapatanakax yatiqañ utar saririnak wal utjayi.", "hypothesis": "Sociedad Maennerchor ukax churatanak katuqi.", "label": "entailment"}
+{"premise": "Sociedad Maennerchor ukan Fondo Anual ukar yanapatanakax yatiqañ utar saririnak wal utjayi.", "hypothesis": "Maymarax Sociedad Maennerchor ukax mä waranq waranq tular qullqi jikxatawayi.", "label": "neutral"}
+{"premise": "Sociedad Maennerchor ukan Fondo Anual ukar yanapatanakax yatiqañ utar saririnak wal utjayi.", "hypothesis": "Sociedad Maennerchor ukax Bill Gates ukamp qullqichatawa.", "label": "contradiction"}
+{"premise": "Chikañchasiñatakix jichha kutix 30 ch'uxña qullqimp 2 maratak qillqt'ayasisma, Ukampix 60% imasirakïta, para maratakiniwa.", "hypothesis": "30 $ ukhakiw chanipax aka jutir pä uruna.", "label": "neutral"}
+{"premise": "Chikañchasiñatakix jichha kutix 30 ch'uxña qullqimp 2 maratak qillqt'ayasisma, Ukampix 60% imasirakïta, para maratakiniwa.", "hypothesis": "30 $ ukha chaniw aka jutir pä maran chikañchasiñatakixa.", "label": "entailment"}
+{"premise": "Chikañchasiñatakix jichha kutix 30 ch'uxña qullqimp 2 maratak qillqt'ayasisma, Ukampix 60% imasirakïta, para maratakiniwa.", "hypothesis": "800 $ ukha chaniniw jutir pä maratak chikañchasiñaxa.", "label": "contradiction"}
+{"premise": "Juk'a arunakanxa, mä suma mayacht'at tamampiw chikañchasïta, alakipanakan irptirinakapa, yatxatatanaka, laqañchayir yatxatatanaka, inak yanapasirinakawa…", "hypothesis": "Tamax wali uñt'at jaqinakaniwa.", "label": "entailment"}
+{"premise": "Juk'a arunakanxa, mä suma mayacht'at tamampiw chikañchasïta, alakipanakan irptirinakapa, yatxatatanaka, laqañchayir yatxatatanaka, inak yanapasirinakawa…", "hypothesis": "Tamax lunthatanakamp karsilankirinakampiw chikañchasi.", "label": "contradiction"}
+{"premise": "Yaqhanakax kuntix lurawayapktan ukx yäqasipkakiwa.", "hypothesis": "Janiw sum lurktanti, taqiniw uñjasipkarakstu.", "label": "contradiction"}
+{"premise": "Yaqhanakax kuntix lurawayapktan ukx yäqasipkakiwa.", "hypothesis": "Wali sumapuniw uñsti kunawsatix kapital apthapiñ munktan ukhaxa.", "label": "neutral"}
+{"premise": "Yaqhanakax kuntix lurawayapktan ukx yäqasipkakiwa.", "hypothesis": "Taqikunans atipjataskiwa.", "label": "entailment"}
+{"premise": "Kuntix samkta ukx nanakamp chikañchasitati?", "hypothesis": "Janiw nanakampix kuns samkapkasmati.", "label": "contradiction"}
+{"premise": "Kuntix samkta ukx nanakamp chikañchasitati?", "hypothesis": "Aka markan wali suma utt'at yatiqañ ut utachañ yanapt'apxitätati?", "label": "neutral"}
+{"premise": "Kuntix samkta ukx nanakamp chikañchasitati?", "hypothesis": "Kuntix samkta ukax nanakan pachpati?", "label": "entailment"}
+{"premise": "Jan wali amuyunakarjamax, walja qallta sartir yanapanakampiwa, ukhamatx taqpach markaruw yanapt'aspa.", "hypothesis": "Jupanakax uka mayacht'äwix markarus t'unjkaspa ukham amuyapxäna.", "label": "contradiction"}
+{"premise": "Jan wali amuyunakarjamax, walja qallta sartir yanapanakampiwa, ukhamatx taqpach markaruw yanapt'aspa.", "hypothesis": "Jupanakax uka mayacht'äwix markarus wali sum jilïr jila kullakanakar uñjapkaspan ukham amuypxäna.", "label": "neutral"}
+{"premise": "Jan wali amuyunakarjamax, walja qallta sartir yanapanakampiwa, ukhamatx taqpach markaruw yanapt'aspa.", "hypothesis": "Walpun uka mayacht'äwirux arxatapxatayna, kunalaykutix markaruw yanapan sasaw sapxatayna.", "label": "entailment"}
+{"premise": "Taqi kunayman suma mayacht'awinakax juman wali suma yanapt'amampix sartayata, ukhamarak janiw kunas jan yanapamampix sayt'ayatakaspati.", "hypothesis": "Juman mayacht'atanakamjamaw walipun waythapiñan sapürunjam yanapt'asiraki.", "label": "entailment"}
+{"premise": "Taqi kunayman suma mayacht'awinakax juman wali suma yanapt'amampix sartayata, ukhamarak janiw kunas jan yanapamampix sayt'ayatakaspati.", "hypothesis": "Janiw juman yanapt'amax kunkipans aka mayacht'awinakan askikiti.", "label": "contradiction"}
+{"premise": "Taqi kunayman suma mayacht'awinakax juman wali suma yanapt'amampix sartayata, ukhamarak janiw kunas jan yanapamampix sayt'ayatakaspati.", "hypothesis": "Jan juman mayacht'asitamampix janipuniw akham jach'a mayacht'äwinakax utjkasapanati.", "label": "neutral"}
+{"premise": "Mayacht'atan irpirinakapan p'iqiñchiri.", "hypothesis": "Uka Mayacht'at Fideicomisarios chiqanx janiw irptirinikiti.", "label": "contradiction"}
+{"premise": "Mayacht'atan irpirinakapan p'iqiñchiri.", "hypothesis": "Uka Mayacht'at Yanapirinakax janiw p'iqiñchirinikiti.", "label": "entailment"}
+{"premise": "Mayacht'atan irpirinakapan p'iqiñchiri.", "hypothesis": "Uka Junta Directiva tuqinx wali jaya maranakapuniw irptirjamäna.", "label": "neutral"}
+{"premise": "Young Leaders ukhamarak Love is Reading Together Week uksankirinakas waynanakarux uka panka uta tuqinakarux jisk'atpach nukt'apxi.", "hypothesis": "Wakichäwinakax wawanakan mistsupxañanakapatak anatt'asipxañanakapatakiw wakt'ayapxi.", "label": "contradiction"}
+{"premise": "Young Leaders ukhamarak Love is Reading Together Week uksankirinakas waynanakarux uka panka uta tuqinakarux jisk'atpach nukt'apxi.", "hypothesis": "Yaqhip wakichäwinakax wawanakarux pay kut simana panka utar sarapxañanakapatakiw ch'amachapxi.", "label": "neutral"}
+{"premise": "Young Leaders ukhamarak Love is Reading Together Week uksankirinakas waynanakarux uka panka uta tuqinakarux jisk'atpach nukt'apxi.", "hypothesis": "Yaqhip wakichäwinakax wawanakan ullañ utar chuyma wayt'apxañanakapatakiwa.", "label": "entailment"}
+{"premise": "Miymarax wali sumanjampunwa $ apaniwaytaxa-.", "hypothesis": "Janiw miymarax qullqi apanktati.", "label": "contradiction"}
+{"premise": "Miymarax wali sumanjampunwa $ apaniwaytaxa-.", "hypothesis": "Jumax miymarax 10,000 $ qullq churtaxa.", "label": "neutral"}
+{"premise": "Miymarax wali sumanjampunwa $ apaniwaytaxa-.", "hypothesis": "Jumax qullq churtaw miymaraxa.", "label": "entailment"}
+{"premise": "…kunats wali juk'akipun jumanakpachpar munasiñaxa, ukhamat lunthatanakar jaqi jiwayanakar munañataki.", "hypothesis": "Janiw mayni masipas lunthatakis ni jaqi jiwayakarakisa.", "label": "contradiction"}
+{"premise": "…kunats wali juk'akipun jumanakpachpar munasiñaxa, ukhamat lunthatanakar jaqi jiwayanakar munañataki.", "hypothesis": "Yaqhi masinakapax lunthatanak jaqi jiwayanakawa.", "label": "entailment"}
+{"premise": "…kunats wali juk'akipun jumanakpachpar munasiñaxa, ukhamat lunthatanakar jaqi jiwayanakar munañataki.", "hypothesis": "Yaqhip masinakapax chikli lunthatasipxatayna.", "label": "neutral"}
+{"premise": "Uka pampar ch'iya laram jant'akux Sello Presidencial ukanwa, taqi kunayman saminakan ukhamarak uka muruq'ur 50 warawaranakan muytat uñacht'ayi.", "hypothesis": "Alfombrax iripirin chimpup api.", "label": "entailment"}
+{"premise": "Uka pampar ch'iya laram jant'akux Sello Presidencial ukanwa, taqi kunayman saminakan ukhamarak uka muruq'ur 50 warawaranakan muytat uñacht'ayi.", "hypothesis": "Uka pampar jant'akuñax janq'u ch'uxñawa, ukhamarak Bart Simpson ajanupaniwa.", "label": "contradiction"}
+{"premise": "Uka pampar ch'iya laram jant'akux Sello Presidencial ukanwa, taqi kunayman saminakan ukhamarak uka muruq'ur 50 warawaranakan muytat uñacht'ayi.", "hypothesis": "Uka pampa jant'akux suxa kayunakaniwa.", "label": "neutral"}
+{"premise": "IUPUI Jach'a Yatiqañ utan panka utapar apayanipxatamat yuspajart'apxsma, ukhamarak mayanakanx yanapt'apxakitaya.", "hypothesis": "ASPCA uksatak 10 ch'uxña qullq mayt'anipxsma.", "label": "contradiction"}
+{"premise": "IUPUI Jach'a Yatiqañ utan panka utapar apayanipxatamat yuspajart'apxsma, ukhamarak mayanakanx yanapt'apxakitaya.", "hypothesis": "IUPUI Jach'a Yatiqañ utan panka utapatakix 100$ apayanipxakitaya.", "label": "neutral"}
+{"premise": "IUPUI Jach'a Yatiqañ utan panka utapar apayanipxatamat yuspajart'apxsma, ukhamarak mayanakanx yanapt'apxakitaya.", "hypothesis": "IUPUI Jach'a Yatiqañ utan panka utapar yaqha yanapt'anakx apayanipxakitaya.", "label": "entailment"}
+{"premise": "Uka yanapanakamar juk'amp ch'amañchañatakix janipun Kathy Dannels Directora de Desarrollo 924-6770 ukar jawsant'añx pächasimti.", "hypothesis": "Kathy Kannels jupar jawsam, ukhamatix uka The Walking Dead tuqitak aruskipañ munsta ukhaxa.", "label": "contradiction"}
+{"premise": "Uka yanapanakamar juk'amp ch'amañchañatakix janipun Kathy Dannels Directora de Desarrollo 924-6770 ukar jawsant'añx pächasimti.", "hypothesis": "Kathy Dannels jupax jank'akiw jawsatanakarux jaysy", "label": "neutral"}
+{"premise": "Uka yanapanakamar juk'amp ch'amañchañatakix janipun Kathy Dannels Directora de Desarrollo 924-6770 ukar jawsant'añx pächasimti.", "hypothesis": "Amp suma, ukhamatix tuqisiñ mumstax Kathy Dnnels ukar jawst'am", "label": "entailment"}
+{"premise": "kusapunispaw jumatix yatiqañ utamar tumt'anisma ukhaxa juman nayrar mistsutamax uñjasispa", "hypothesis": "jan yatiqañ utarux tumpankamti, qullqik apayam", "label": "contradiction"}
+{"premise": "kusapunispaw jumatix yatiqañ utamar tumt'anisma ukhaxa juman nayrar mistsutamax uñjasispa", "hypothesis": "yatiqañ utarux sarasmäna ukhamak k'uchirtaw nayrar sarantatapx yatsna, ukantix irnaqaskäna uka", "label": "neutral"}
+{"premise": "kusapunispaw jumatix yatiqañ utamar tumt'anisma ukhaxa juman nayrar mistsutamax uñjasispa", "hypothesis": "Yatiqañ utamarux tumtt'anismäna, ukhamak kuntix irnaqtan uka uñjañataki.", "label": "entailment"}
+{"premise": "Nanakatakix askitawa ukhamarak I.U.", "hypothesis": "I.U ukatakis nanakatakis askitaw jumaxa, kunatix prolifico uka churiritawa.", "label": "neutral"}
+{"premise": "Nanakatakix askitawa ukhamarak I.U.", "hypothesis": "Nanaka ukhamarak I.U. askiruw uñjapsma.", "label": "entailment"}
+{"premise": "Nanakatakix askitawa ukhamarak I.U.", "hypothesis": "Nanakarus I.U.jupanakarus askjamaktati.", "label": "contradiction"}
+{"premise": "kunapachatix Urban jupax sarxixVietnam uksarux, juk'a pachakiw jaqichatxamaptxa sasin Joann jupax arst'awayi.", "hypothesis": "Joann ukhamarak Urban jupanakax 50ka mara jaqichasiwip amtapxi, kunapachatix jupax Vietnam sarxana ukhaxa.", "label": "contradiction"}
+{"premise": "kunapachatix Urban jupax sarxixVietnam uksarux, juk'a pachakiw jaqichatxamaptxa sasin Joann jupax arst'awayi.", "hypothesis": "Joann jupamp Urban jupampix mä paxsiw jaqichatapxanxa, kunapachatix Vietnam ukar sarxi ukhaxa.", "label": "neutral"}
+{"premise": "kunapachatix Urban jupax sarxixVietnam uksarux, juk'a pachakiw jaqichatxamaptxa sasin Joann jupax arst'awayi.", "hypothesis": "Joann ukax siwa Urban ukampix janiw walja marak jaqichatapkti sasina.", "label": "entailment"}
+{"premise": "Civic qullq mantirinakax phuqt'at utanakat juti, yatichaw ukhamarak wakichaw yatichaña, fundaciones, yanapt'rinak sapa mayn yanapt'rinaka tuqinakata,", "hypothesis": "Janiw khitis kuns churkistuti, ukhamarus qullqinisktanwa, ukhamax walikiwa.", "label": "contradiction"}
+{"premise": "Civic qullq mantirinakax phuqt'at utanakat juti, yatichaw ukhamarak wakichaw yatichaña, fundaciones, yanapt'rinak sapa mayn yanapt'rinaka tuqinakata,", "hypothesis": "$1 waraq waranqa jist'antañatakix jaqinakax qullqimpiw yanapistu.", "label": "neutral"}
+{"premise": "Civic qullq mantirinakax phuqt'at utanakat juti, yatichaw ukhamarak wakichaw yatichaña, fundaciones, yanapt'rinak sapa mayn yanapt'rinaka tuqinakata,", "hypothesis": "Askirjam sarantañatakix jaqiw qullqi churistu.", "label": "entailment"}
+{"premise": "Yatiqirinakatakix 12% ukhat 1992-92 ukhakamaw jiltawayi.", "hypothesis": "Qillqantayasiwix anchapuniw jilxattawayi.", "label": "entailment"}
+{"premise": "Yatiqirinakatakix 12% ukhat 1992-92 ukhakamaw jiltawayi.", "hypothesis": "Qillqantawix 40%ukhwa pisiqtawayi.", "label": "contradiction"}
+{"premise": "Yatiqirinakatakix 12% ukhat 1992-92 ukhakamaw jiltawayi.", "hypothesis": "Sapa maraw qillqayasiñax yapxatawayani", "label": "neutral"}
+{"premise": "00 mä yatichaw wakichawir juttayataxa mayni jaqitix yanap katuqchix 3$ ukj imasi.", "hypothesis": "Qhiti jaqitix irnaqäñatak yatichaw wakichat tuqir irti ukhax 5$ ukjwa jalanti.", "label": "contradiction"}
+{"premise": "00 mä yatichaw wakichawir juttayataxa mayni jaqitix yanap katuqchix 3$ ukj imasi.", "hypothesis": "Sapa patakatx piskxan jaqiw patunk phisqan maranit markpachanx yanap katuqi.", "label": "neutral"}
+{"premise": "00 mä yatichaw wakichawir juttayataxa mayni jaqitix yanap katuqchix 3$ ukj imasi.", "hypothesis": "Ujtxiw qullqi imatax irtañataki mä irnaqaw yatichaw wakichat tuqiruxa.", "label": "entailment"}
+{"premise": "Aljañanakatx 58% ukhaw qullqiw sapa patakatx irsutaxi, jiltañataki 32% ukha jaytataw wasitat waxt'awinkamp sarantañataki.", "hypothesis": "Boletos uka aljañanakatwa jilapachax qullqix mantani.", "label": "entailment"}
+{"premise": "Aljañanakatx 58% ukhaw qullqiw sapa patakatx irsutaxi, jiltañataki 32% ukha jaytataw wasitat waxt'awinkamp sarantañataki.", "hypothesis": "Akax qhipa maraw manatañatak aljañanakax luratäni.", "label": "neutral"}
+{"premise": "Aljañanakatx 58% ukhaw qullqiw sapa patakatx irsutaxi, jiltañataki 32% ukha jaytataw wasitat waxt'awinkamp sarantañataki.", "hypothesis": "Mantañatak aljatax chiqat qullqimpikiw irxatstu.", "label": "contradiction"}
+{"premise": "Musparkayäwa ukjamarak munkay wutanikux jiwakiwa 3,3 acre ukch'ax jartinatakjam, qullinakat yatxatañatakjam ukjamarak paysajitakjam wakichat lurt'atawa.", "hypothesis": "Ukawjitax mä tunilara ukja qulliniwa.", "label": "entailment"}
+{"premise": "Musparkayäwa ukjamarak munkay wutanikux jiwakiwa 3,3 acre ukch'ax jartinatakjam, qullinakat yatxatañatakjam ukjamarak paysajitakjam wakichat lurt'atawa.", "hypothesis": "Ukawjitax taqpach kuncrituwa ukatx wali phiruwa.", "label": "contradiction"}
+{"premise": "Musparkayäwa ukjamarak munkay wutanikux jiwakiwa 3,3 acre ukch'ax jartinatakjam, qullinakat yatxatañatakjam ukjamarak paysajitakjam wakichat lurt'atawa.", "hypothesis": "Ukawjitax junt'u panqaranakamp phuqhawa ukjamarak jiwa qullinakampi.", "label": "neutral"}
+{"premise": "Ejército de Salvacion ukan iskurupatix arsurispaxä, siristamwa kunjam mä tiyawitiku jaqir yanapt'atasa kuntix insulina munkana uk jikxatañapataki.", "hypothesis": "Ejército de Salvación ukax qullañanak munaski ukx yanapkiti.", "label": "contradiction"}
+{"premise": "Ejército de Salvacion ukan iskurupatix arsurispaxä, siristamwa kunjam mä tiyawitiku jaqir yanapt'atasa kuntix insulina munkana uk jikxatañapataki.", "hypothesis": "Ejército de Salvación uraqpachan pisin jakasir jaqinakarux yanapt'i", "label": "neutral"}
+{"premise": "Akaxa mayxt'ayarakispaw lurañanakasaru yaqha uñacht'awinak jutir marän lurañataki.", "hypothesis": "Jutir 10a maranakatakix uñacht'awinakax lurataskaniwa, kunasay utjpan.", "label": "contradiction"}
+{"premise": "Akaxa mayxt'ayarakispaw lurañanakasaru yaqha uñacht'awinak jutir marän lurañataki.", "hypothesis": "Janitix aka maranx waljan utjkan ukjaxä, janiw uñacht'awinakax luraskxaspati.", "label": "neutral"}
+{"premise": "Akaxa mayxt'ayarakispaw lurañanakasaru yaqha uñacht'awinak jutir marän lurañataki.", "hypothesis": "Janjamakiw jutir maränx yaqha uñachtawinakax utjkaniti.", "label": "entailment"}
+{"premise": "Waljanitakix, yanapt'awix qamirinakan lurawipakaspas ukjam uñjapxi.", "hypothesis": "Taqi uraqpachan amuyapxi ukjamatix uñjayasiñ munstan ukjax, taqiniw waxt'añasaxa.", "label": "contradiction"}
+{"premise": "Waljanitakix, yanapt'awix qamirinakan lurawipakaspas ukjam uñjapxi.", "hypothesis": "Yaqhip jaqix amuyapxiw qamirinakakis waxt'apkasp ukjama.", "label": "entailment"}
+{"premise": "Waljanitakix, yanapt'awix qamirinakan lurawipakaspas ukjam uñjapxi.", "hypothesis": "Yaqhip jaqix qullqi churañatakix wali pisin jakasiripkaspas ukham amuyasipxi ukatx janiw jaysapkitut jawsawinakaxaru.", "label": "neutral"}
+{"premise": "Jichpachaw, IRT mä masix jawsanstani jawsañ tuqit qullq churañataki.", "hypothesis": "Janiw jawsawinak lurapkti jan walt'awinak luratapata.", "label": "contradiction"}
+{"premise": "Jichpachaw, IRT mä masix jawsanstani jawsañ tuqit qullq churañataki.", "hypothesis": "Atismaw qullq churañ jawsañ tuqi.", "label": "entailment"}
+{"premise": "Jichpachaw, IRT mä masix jawsanstani jawsañ tuqit qullq churañataki.", "hypothesis": "Ukankañtix munstaxä, $100 ukha qullq churañamaw jawsañ tuqi.", "label": "neutral"}
+{"premise": "1 de mayo nayraqatax, utt'ayañasaw machaq chikañchasirinak 1991n churirinakaruxa.", "hypothesis": "Yaqhip chikañchasirinakax atipxaspaw chikañchasiskaña.", "label": "entailment"}
+{"premise": "1 de mayo nayraqatax, utt'ayañasaw machaq chikañchasirinak 1991n churirinakaruxa.", "hypothesis": "Utjiw 1500k chikañchasirinak utt'ayañataki uka mayamp chikañchasisipkaspawa.", "label": "neutral"}
+{"premise": "1 de mayo nayraqatax, utt'ayañasaw machaq chikañchasirinak 1991n churirinakaruxa.", "hypothesis": "Mayamp chikañchasiñatakix nanakax iyaw sapt….", "label": "contradiction"}
+{"premise": "McCoy ukax jawillt'iw imprisamp qallantañatakix $10000amp yanapt'añataki.", "hypothesis": "McCoy ukax $ 25000 ukja qullqmayiski.", "label": "contradiction"}
+{"premise": "McCoy ukax jawillt'iw imprisamp qallantañatakix $10000amp yanapt'añataki.", "hypothesis": "McCoy ukax mayiw $10000 ukja qullqi.", "label": "entailment"}
+{"premise": "McCoy ukax jawillt'iw imprisamp qallantañatakix $10000amp yanapt'añataki.", "hypothesis": "McCoy ukax juk'amp qulq muni, ukampirus jichhax mayt'askiw $10000 qullqi.", "label": "neutral"}
+{"premise": "Yatiqañ utan Dr. Loren I. Field ukanak irnaqatapawa ukjamarak masinakapampi ukxatx nayrir qillqanakanwa aka jichha yatxataw lurat riwistanxa.", "hypothesis": "Loren Field jupax yatiqañ utanx yatxatir wali uñt'atawa.", "label": "neutral"}
+{"premise": "Yatiqañ utan Dr. Loren I. Field ukanak irnaqatapawa ukjamarak masinakapampi ukxatx nayrir qillqanakanwa aka jichha yatxataw lurat riwistanxa.", "hypothesis": "Loren Field jupax markan t'unanakawjan irnaqiriwa.", "label": "contradiction"}
+{"premise": "Yatiqañ utan Dr. Loren I. Field ukanak irnaqatapawa ukjamarak masinakapampi ukxatx nayrir qillqanakanwa aka jichha yatxataw lurat riwistanxa.", "hypothesis": "Loren Field jupax yatiqañ utan irnaqi.", "label": "entailment"}
+{"premise": "Maynin jakäwipxar uchasiñ yatiqäña.", "hypothesis": "Mayni lurañ atki uk lurañ yatiqañamawa.", "label": "entailment"}
+{"premise": "Maynin jakäwipxar uchasiñ yatiqäña.", "hypothesis": "Qhititix kunjam jakaski ukarjam jakam.", "label": "neutral"}
+{"premise": "Maynin jakäwipxar uchasiñ yatiqäña.", "hypothesis": "Imañataki, jan maynir lurayañ munsa, jupan jaqawipxata ukjamarak aljasiñapxata.", "label": "contradiction"}
+{"premise": "Aytat irpiri Asociacion Dental de Indiana ukax nayrir Asociacion Dental ukaruw irpirjam saran markpachanxa, phuqhachtt'añ laka ch'akhanak yatiqañ uta tuqina.", "hypothesis": "Indiana ukax nayrir Asociación Dental estatal ukawa ukatx akjam irnaqi laka ch'akhanak yatiqañ utana.", "label": "entailment"}
+{"premise": "Aytat irpiri Asociacion Dental de Indiana ukax nayrir Asociacion Dental ukaruw irpirjam saran markpachanxa, phuqhachtt'añ laka ch'akhanak yatiqañ uta tuqina.", "hypothesis": "Indiana ukax janiw laka ch'akhanak yatiqañ utan yanapañatak munkiti.", "label": "contradiction"}
+{"premise": "Aytat irpiri Asociacion Dental de Indiana ukax nayrir Asociacion Dental ukaruw irpirjam saran markpachanxa, phuqhachtt'añ laka ch'akhanak yatiqañ uta tuqina.", "hypothesis": "Asociación Dental Estatal Indiana ukax 1 waranq waranq qullqi churañatakiw laka ch'akhanak yatiqañ utatak iyaw sawayi.", "label": "neutral"}
+{"premise": "Aruskipt'aw Hilbert, Las mariposas son libres, El mago de Oz, Tierra de juguetes y Vuelos ukanakatx purt'anirinakax uñjtawayapxaniwa.", "hypothesis": "Purt'anirinakax sapa urunx walja uñacht'awinak Hilbert tuqit uñjapxani", "label": "neutral"}
+{"premise": "Aruskipt'aw Hilbert, Las mariposas son libres, El mago de Oz, Tierra de juguetes y Vuelos ukanakatx purt'anirinakax uñjtawayapxaniwa.", "hypothesis": "Purt'anirinakax walja uñacht'awinak Hilbert tuqit uñjapxani", "label": "entailment"}
+{"premise": "Aruskipt'aw Hilbert, Las mariposas son libres, El mago de Oz, Tierra de juguetes y Vuelos ukanakatx purt'anirinakax uñjtawayapxaniwa.", "hypothesis": "Purt'anirinakax aruskipawi Hilbert ukanx West Side Story ukat uñjapjani.", "label": "contradiction"}
+{"premise": "Akax yatiqirinakan ukhamarak yatichirinakan juk'amp yatintapxañanakapatakix jan yatit wakichäwinakaw utjaspa, juk'ampis uka campus ukanxa.", "hypothesis": "Uka campus uka manqhar mantañatakix yatiqirinakax kunjamas jakäwix uk uñt'awayapxi.", "label": "neutral"}
+{"premise": "Akax yatiqirinakan ukhamarak yatichirinakan juk'amp yatintapxañanakapatakix jan yatit wakichäwinakaw utjaspa, juk'ampis uka campus ukanxa.", "hypothesis": "Yatiqirinakax uka campus uka manqhar mantañatx iyawsatapxaspawa.", "label": "entailment"}
+{"premise": "Akax yatiqirinakan ukhamarak yatichirinakan juk'amp yatintapxañanakapatakix jan yatit wakichäwinakaw utjaspa, juk'ampis uka campus ukanxa.", "hypothesis": "Yatiqirinakax janiw kuns uka campus ukar mantasinx yatiqawayapkiti.", "label": "contradiction"}
+{"premise": "Chikañchasirinakax uka luratanakapatx iraqäpxiwa, ukhamarak uka uñt'ayañ pankanakapatxa, ukhamarak uka nayrapach aljañ utanakana, kawkniritix uka uka sede central Society ukanxa.", "hypothesis": "Chikañcharirinakax janiw kuna iraqañsa katuqapkiti, ukhamaspaxa walja qullqiw chhaqtaspa.", "label": "contradiction"}
+{"premise": "Chikañchasirinakax uka luratanakapatx iraqäpxiwa, ukhamarak uka uñt'ayañ pankanakapatxa, ukhamarak uka nayrapach aljañ utanakana, kawkniritix uka uka sede central Society ukanxa.", "hypothesis": "Chikañchasirinakax kunawsatix uka aljañ utat alasipkixa, iraqatapxiwa.", "label": "entailment"}
+{"premise": "Chikañchasirinakax uka luratanakapatx iraqäpxiwa, ukhamarak uka uñt'ayañ pankanakapatxa, ukhamarak uka nayrapach aljañ utanakana, kawkniritix uka uka sede central Society ukanxa.", "hypothesis": "Chikañchasirinakax 25% ukha iraqatapxiwa.", "label": "neutral"}
+{"premise": "Khaysa Indianatuqinx uka teatro profesional ukax Becky, Stephanie, Marcus, Emily juk'amp yaqha wawanakatakix wal mayjt'awayi.", "hypothesis": "Teatron luratanakax wawanakarux samiñchañ yatichawayi.", "label": "neutral"}
+{"premise": "Khaysa Indianatuqinx uka teatro profesional ukax Becky, Stephanie, Marcus, Emily juk'amp yaqha wawanakatakix wal mayjt'awayi.", "hypothesis": "Teatrox Indiana uka markan utjasir wawanakaruw yanapaniwayi.", "label": "entailment"}
+{"premise": "Khaysa Indianatuqinx uka teatro profesional ukax Becky, Stephanie, Marcus, Emily juk'amp yaqha wawanakatakix wal mayjt'awayi.", "hypothesis": "Inay kunjamatas wali suma lurat sarnaqäwinakax wakicht'atachispan, ukhamarus janipuniw aka Indiana ukawjan qullqix utjawaykiti.", "label": "contradiction"}
+{"premise": "Taqiwjanxama, taqi uka Institutor churatanakax, 100% yatxatäwinakatak irtatäni.", "hypothesis": "Sapa jisk'a qullqis uka cancer ñanqha usut yatxatañatakiniwa.", "label": "neutral"}
+{"premise": "Taqiwjanxama, taqi uka Institutor churatanakax, 100% yatxatäwinakatak irtatäni.", "hypothesis": "Sata sintawu churatamas yatxatäwinak lurañatakiniwa.", "label": "entailment"}
+{"premise": "Taqiwjanxama, taqi uka Institutor churatanakax, 100% yatxatäwinakatak irtatäni.", "hypothesis": "Chikat qullqimax apnaqañatakiw irtataski.", "label": "contradiction"}
+{"premise": "Teatro anqaxanxa, IRT ukan artistanakapax chiqak wawanakamp irnaqir sarapxi, ukhamat teatro kunayman sarnaqäwinak uñacht'ayañataki.", "hypothesis": "IRT uksan artistanakapax janiw kuns wawanakampix lurapkiti, ukhamipanxa, jilir jaqinakampiw irnaqapxi.", "label": "contradiction"}
+{"premise": "Teatro anqaxanxa, IRT ukan artistanakapax chiqak wawanakamp irnaqir sarapxi, ukhamat teatro kunayman sarnaqäwinak uñacht'ayañataki.", "hypothesis": "IRT artistanakax jisk'a yatiqañ utankir wawanakaruw yanapapxi.", "label": "entailment"}
+{"premise": "Teatro anqaxanxa, IRT ukan artistanakapax chiqak wawanakamp irnaqir sarapxi, ukhamat teatro kunayman sarnaqäwinak uñacht'ayañataki.", "hypothesis": "IRT artistanakax wawanakarux uka sarnaqäwinak uñacht'ayañan yanapapxi.", "label": "neutral"}
+{"premise": "Uñjatat payllam, manq'aña ukhamarak uka waranqh alinaka uywanakan jakäwipataki.", "hypothesis": "Kawknïr uywanakatix mawjan uñjatäpki ukanakatak payllam.", "label": "contradiction"}
+{"premise": "Uñjatat payllam, manq'aña ukhamarak uka waranqh alinaka uywanakan jakäwipataki.", "hypothesis": "Uka sulujikunx uywanakax wali suma uñjäw katuqasipki.", "label": "entailment"}
+{"premise": "Uñjatat payllam, manq'aña ukhamarak uka waranqh alinaka uywanakan jakäwipataki.", "hypothesis": "Sulujikunkir uywanakax 100 000 ch'uxña qullq maranx manq'añatak uñjatapxañanakapatakix katuqapxi.", "label": "neutral"}
+{"premise": "Ukhamatix kuna jiskt'as ixwas utjchixa, (924-5471) ukar jawsant'anita, jan ukasti Bob Lovell (274-0622) ukarusa.", "hypothesis": "Bob Lovell jupax jiskt'anak jaysaspawa.", "label": "entailment"}
+{"premise": "Ukhamatix kuna jiskt'as ixwas utjchixa, (924-5471) ukar jawsant'anita, jan ukasti Bob Lovell (274-0622) ukarusa.", "hypothesis": "Bob Lovell jupax janiw aka tamankxiti.", "label": "contradiction"}
+{"premise": "Ukhamatix kuna jiskt'as ixwas utjchixa, (924-5471) ukar jawsant'anita, jan ukasti Bob Lovell (274-0622) ukarusa.", "hypothesis": "Bob Lovell mara qullqi apthapïwitakix irnaqaski.", "label": "neutral"}
+{"premise": "Centro uksankirinakax walpun markachirinakan maynit maynikam yanapt'asiñ yatichäwinakanx yatichasipki, yatsusipki, ukhamat jupanakax manqhatpach yatiqanipxi.", "hypothesis": "Centrox aka markan pisin jakirinakaruw yanapañ muni.", "label": "entailment"}
+{"premise": "Centro uksankirinakax walpun markachirinakan maynit maynikam yanapt'asiñ yatichäwinakanx yatichasipki, yatsusipki, ukhamat jupanakax manqhatpach yatiqanipxi.", "hypothesis": "Centrox aka markan pisin jakirinakaruw yanapañ muni.", "label": "neutral"}
+{"premise": "Walja kunayman lurañanakaw Indianapolis uksanx utji, ukhamarus Teatro Cívico ukjamax janiw utjkiti.", "hypothesis": "Teatro Cívico ukax Indianápolis chikawjankiwa.", "label": "neutral"}
+{"premise": "Walja kunayman lurañanakaw Indianapolis uksanx utji, ukhamarus Teatro Cívico ukjamax janiw utjkiti.", "hypothesis": "Teatro Cívico ukax Indianápolis ukawjankiwa.", "label": "entailment"}
+{"premise": "Walja kunayman lurañanakaw Indianapolis uksanx utji, ukhamarus Teatro Cívico ukjamax janiw utjkiti.", "hypothesis": "Teatro Civic ukax Tampankiwa.", "label": "contradiction"}
+{"premise": "Sutima jan ukax yaqha qillqayasitamas uka placa ukan qillqataniwa.", "hypothesis": "Uka placanx janiw kuna sutinikis ukhamarak kuna yatiyäwinikisa.", "label": "contradiction"}
+{"premise": "Sutima jan ukax yaqha qillqayasitamas uka placa ukan qillqataniwa.", "hypothesis": "Ukhamatix 100 ch'uxña qullqi churataxa, sutimax mä placan qillqantataniwa.", "label": "neutral"}
+{"premise": "Sutima jan ukax yaqha qillqayasitamas uka placa ukan qillqataniwa.", "hypothesis": "Uka placanx sutimachini jan ukasti mä yatiyäwiw uchasini.", "label": "entailment"}
+{"premise": "…. Laram q'ala alaxpachanx walja kunayman urpunakawa.", "hypothesis": "Alaxpachax wali q'alakipuniwa, urpux aksan uksan urpuntatawa.", "label": "entailment"}
+{"premise": "…. Laram q'ala alaxpachanx walja kunayman urpunakawa.", "hypothesis": "Alaxpachax wali q'alakipuniwa, janipuniw kuna urpus utjkiti.", "label": "contradiction"}
+{"premise": "…. Laram q'ala alaxpachanx walja kunayman urpunakawa.", "hypothesis": "Tata intix mä wank'ur uñtat urpu qhipaxankaskiwa.", "label": "neutral"}
+{"premise": "Taqi kunayman waythapiwinakatakix sapürutjam jikxataskixa, Markachirinakaw walpun yanapt'aniwayapxi.", "hypothesis": "Markachirinakax kunatix maynit maynikam waythapitak ukanx yanapiwa.", "label": "entailment"}
+{"premise": "Taqi kunayman waythapiwinakatakix sapürutjam jikxataskixa, Markachirinakaw walpun yanapt'aniwayapxi.", "hypothesis": "Markachirinakax janiw kuns jaqinakampix uñjañapakiti.", "label": "contradiction"}
+{"premise": "Taqi kunayman waythapiwinakatakix sapürutjam jikxataskixa, Markachirinakaw walpun yanapt'aniwayapxi.", "hypothesis": "Markachirinakax khitinakatix aka jamuqanak k'achachapki ukanak jikxatañanx yanaparakiwa.", "label": "neutral"}
+{"premise": "P.S.: IMAr inak churañax nawiraranx wali wakiskiripuniwa.", "hypothesis": "Ukham ina churañax mayxar churañax janiw wali wakiskirikit akham wakichäwinakanxa.", "label": "contradiction"}
+{"premise": "P.S.: IMAr inak churañax nawiraranx wali wakiskiripuniwa.", "hypothesis": "Mä inak churañax akham phuñchaw urunakans wali ancha wakiskiripunispawa.", "label": "entailment"}
+{"premise": "Jichhapach uñsta yänakax, inas wali wakiskirinakachi, kunjamtix lusax jaltki ukhamaruw tukuyapxstu.", "hypothesis": "Jichhapach uñsta yänakax walpun kunayman yatiyäwinak apthapiñanx yanapt'aniwayapxstu.", "label": "neutral"}
+{"premise": "Jichhapach uñsta yänakax, inas wali wakiskirinakachi, kunjamtix lusax jaltki ukhamaruw tukuyapxstu.", "hypothesis": "Jichhapach uñsta yänakax yanapt'aniwayapxstuwa.", "label": "entailment"}
+{"premise": "Jichhapach uñsta yänakax, inas wali wakiskirinakachi, kunjamtix lusax jaltki ukhamaruw tukuyapxstu.", "hypothesis": "Jichha uñsta yänakax janiw kuns yanapapkstuti.", "label": "contradiction"}
+{"premise": "I.U. Indianápolis ukan Kamachinakxat Yatxatañ utat tukuyatanakax wali suma kamachinakat yatxatataw tukuyawayapxi.", "hypothesis": "IU ukan Kamachinakxat Yatxatañ jach'a tamax 1000 yatiqirinakaniwa.", "label": "neutral"}
+{"premise": "I.U. Indianápolis ukan Kamachinakxat Yatxatañ utat tukuyatanakax wali suma kamachinakat yatxatataw tukuyawayapxi.", "hypothesis": "IU ukan Kamichanakxat Yatxatañ jach'a tamax walja arxatirinak yatichawayi.", "label": "entailment"}
+{"premise": "I.U. Indianápolis ukan Kamachinakxat Yatxatañ utat tukuyatanakax wali suma kamachinakat yatxatataw tukuyawayapxi.", "hypothesis": "IU ukan Kamichanakxat Yatxatañ jach'a tamax walja maranakaxiw jist'antasitapaxa.", "label": "contradiction"}
+{"premise": "Teatro Cívico de Indianápolis uka utax 82 maranx uñtirinakapatakix wali suma wakichat sarnaqäwinak ukhamarak jayllinak uñacht'ayawayi. Ukapachparaki, aka markan wali suma yatsut wakcihäwinak uñacht'ayaniwayaraki.", "hypothesis": "Teatro Civis Indianapolis 80 jila maranakaw uñacht'äwinak wakichaniwayi.", "label": "entailment"}
+{"premise": "Teatro Cívico de Indianápolis uka utax 82 maranx uñtirinakapatakix wali suma wakichat sarnaqäwinak ukhamarak jayllinak uñacht'ayawayi. Ukapachparaki, aka markan wali suma yatsut wakcihäwinak uñacht'ayaniwayaraki.", "hypothesis": "Indy Civic Theatre ukax aka 80 maranakanx 120 uñacht'awinak wakichawayi.", "label": "neutral"}
+{"premise": "Teatro Cívico de Indianápolis uka utax 82 maranx uñtirinakapatakix wali suma wakichat sarnaqäwinak ukhamarak jayllinak uñacht'ayawayi. Ukapachparaki, aka markan wali suma yatsut wakcihäwinak uñacht'ayaniwayaraki.", "hypothesis": "Teatro Indy Civic ukax utax pä marakiw jist'aratäski.", "label": "contradiction"}
+{"premise": "Jichha mara ukhamarak jutir maraxa, kamachinakat yatiqañ utax qullqi khuchuqawinakarjamaw uñakipapxañapa, ukhamarak uka qullayasiñ qullqitsa, taqpachax 400 000 jila ch'uxña qullqiniwa.", "hypothesis": "Uka kamachinakat yatxatat tamax uka qullqi khuchuqäwinakat amuykipasipkiwa.", "label": "entailment"}
+{"premise": "Jichha mara ukhamarak jutir maraxa, kamachinakat yatiqañ utax qullqi khuchuqawinakarjamaw uñakipapxañapa, ukhamarak uka qullayasiñ qullqitsa, taqpachax 400 000 jila ch'uxña qullqiniwa.", "hypothesis": "Kamachinakat yatiqañ tamax 1 waranqhan waranqhap qullq katuqaski.", "label": "contradiction"}
+{"premise": "Jichha mara ukhamarak jutir maraxa, kamachinakat yatiqañ utax qullqi khuchuqawinakarjamaw uñakipapxañapa, ukhamarak uka qullayasiñ qullqitsa, taqpachax 400 000 jila ch'uxña qullqiniwa.", "hypothesis": "Kamachinakat yatiqañ tamaw nayraqat qullqichäwit khuchuqat uñjasiwayi.", "label": "neutral"}
+{"premise": "Juk'ampis, irnaqañan masinakax uka suma taripayañat wali amtayatasipkiwa.", "hypothesis": "Taqinir yatiyañ ukak taripäwimatx amtasipki.", "label": "contradiction"}
+{"premise": "Juk'ampis, irnaqañan masinakax uka suma taripayañat wali amtayatasipkiwa.", "hypothesis": "Irnaqir masinakamax uka taripayañam munasipki.", "label": "neutral"}
+{"premise": "Juk'ampis, irnaqañan masinakax uka suma taripayañat wali amtayatasipkiwa.", "hypothesis": "Irnaqir masinakaparux taripayañampix sarantasipkakpan mayitawa.", "label": "entailment"}

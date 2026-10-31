@@ -87,9 +87,26 @@ Lectura honesta:
   - **Las exactitudes de 13–16 / 30 no son una mejora real.** Un clasificador que responda siempre «no respaldada» acierta 10 / 30. Los modelos que suben a 15–16 lo hacen sobre todo acertando más neutras, no reconociendo verdaderas. Además se probaron 8 modelos sobre los mismos 30 pares: con tantas pruebas, un valor aislado como p = 0,02 (deepseek) no resiste una corrección por comparaciones múltiples.
   - La regla de cita textual anuló solo 1 respuesta «respaldada» (en gemma). No explica estos resultados.
 
+### Qué se intentó para mejorar el aymara (y qué pasó)
+
+Todo reproducible con `python -m benchmark.run --lote anli --anli-modo <modo>` y `python scripts/comparar_modelos_anli.py`.
+
+1. **Regla de negación aymara** (`consta/revisor_reglas_ay.py`). Si la afirmación trae `jani / janiw / janiwa…` y la fuente no, se marca contradicha. Se derivó y midió en las **713 filas de AmericasNLI que no están en el lote de prueba** (`scripts/medir_regla_ay.py`): dispara en el 35 % de las contradicciones, 2 % de las implicaciones y 5 % de las neutras, precisión 82 %. En los 30 pares de prueba atrapa 3 de 10 contradicciones con 2 falsos positivos (precisión 60 %, muestra chica). Es la única pieza de aymara que no depende de un modelo.
+2. **Prompt que sabe aymara** (modo `aymara`): el prompt original decía al modelo que la fuente era «un documento oficial en español». Al decirle que ambos textos están en aymara y definir las etiquetas como implicación/contradicción/neutral: gpt-oss sube de 10 a 15 / 30; gemma de 15 a 16 / 30.
+3. **Ejemplos resueltos en el prompt** (modo `ejemplos`, 4 por etiqueta, tomados de las 713 filas de fuera del test): gemma 17 / 30, gpt-oss 15 / 30. Con **10 por etiqueta** (30 ejemplos), gemma sigue en 17 / 30. Techo.
+4. **Traducir primero y juzgar en español** (modo `traducido`, el flujo real del producto): gemma baja a 13 / 30. La causa se ve en `results/cache/puente/`: las traducciones dejan la mayoría de las palabras entre corchetes (sin reconocer). Coincide con el artículo: translate-test fue el peor método.
+5. **Voto entre modelos y abstención** (`scripts/voto_y_abstencion_anli.py`): la mayoría de las tres mejores corridas da 17 / 30, igual que gemma sola. Exigir unanimidad hace que el sistema hable en 11–16 de 30 pares y acierte 62–64 % de esas veces, casi todas neutras. No produce una zona de confianza útil.
+
+| mejor configuración | exactitud | verdaderas reconocidas | verde falso |
+|---|---|---|---|
+| gemma-4-31b-it + prompt aymara + 4 ejemplos + regla de negación | 17 / 30 | 3 / 10 | 1 / 20 |
+
+De 10 / 30 a 17 / 30 es real pero insuficiente: sigue sin reconocer lo verdadero (3 de 10). Por eso **el producto, en aymara, no da verde ni rojo**: muestra la traducción de trabajo, cuántas palabras no reconoció y la opinión del juez como pista (`combinar.no_verificable`, color gris). Lo que sí haría falta y no cabe en seis horas: un traductor entrenado para aymara (NLLB-200 soporta `ayr_Latn`; trabajos de 2025 lo llevan de 33 a 56 chrF++ con 35 000 pares) o ajuste fino con datos en aymara, y en ambos casos una persona hablante que valide.
+
 ## Límites
 
 - Set pequeño: ~20 ítems en español (12 al momento de escribir esto).
 - Aymara: sin hablante en el equipo, solo se mide con AmericasNLI (30 pares). Ahí la premisa es el documento y la hipótesis la afirmación, que no es lo mismo que verificar contra una ley de 15 páginas. No se midió aymara contra la Ley 453.
-- El aymara pasa por una traducción de trabajo antes de buscar en el PDF; el error puede venir de ahí y no del verificador.
+- El aymara pasa por una traducción de trabajo antes de buscar en el PDF; medido: la traducción deja la mayoría de las palabras sin reconocer, así que en aymara el producto se abstiene.
+- Se probaron 8 modelos y 4 modos sobre los mismos 30 pares. Cualquier «mejor configuración» elegida después de ver esos 30 está optimista; el número que vale es el de la regla de negación, medido en 713 filas aparte.
 - El corte en afirmaciones es por oración; una oración con dos hechos se juzga junta.

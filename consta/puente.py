@@ -19,7 +19,8 @@ class Afirmacion:
 
 
 PROMPT_PUENTE = (
-    "Traduce al español, de forma literal y sin agregar información, la siguiente oración en aymara. "
+    "Traduce al español, de forma literal y sin agregar información, la siguiente oración en aymara (aymar aru). "
+    "Cuida las negaciones: jani / janiw / janiwa significan 'no', y el sufijo -ti al final del verbo acompaña a la negación. "
     "Si una palabra no la conoces, déjala tal cual entre corchetes. Responde solo con la traducción.\n\n{texto}"
 )
 

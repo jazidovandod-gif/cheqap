@@ -11,13 +11,19 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from consta.pipeline import Cheqap  # noqa: E402
 
-COLORES = {"verde": "#1b7f3b", "ambar": "#b7791f", "rojo": "#b42318"}
+COLORES = {"verde": "#1b7f3b", "ambar": "#b7791f", "rojo": "#b42318", "gris": "#6b7280"}
 
 st.set_page_config(page_title="Cheqap", layout="wide")
 st.title("Cheqap")
 st.caption("Cada afirmación del asistente, contrastada con el PDF. Una cita solo vale si existe textual en la fuente.")
 
 lengua = st.radio("Lengua de la respuesta", ["es", "ay"], horizontal=True, format_func=lambda x: {"es": "Español", "ay": "Aymara"}[x])
+if lengua == "ay":
+    st.info(
+        "En aymara Cheqap no da verde ni rojo: en el benchmark (AmericasNLI, 30 pares, 8 modelos) ningún modelo "
+        "pasa de 17/30 con azar en 10, y la traducción de trabajo no reconoce la mayoría de las palabras. "
+        "Se muestra la traducción, las palabras sin reconocer y la opinión del juez solo como pista."
+    )
 respuesta = st.text_area("Pega la respuesta del asistente", height=160)
 
 if st.button("Verificar", type="primary") and respuesta.strip():

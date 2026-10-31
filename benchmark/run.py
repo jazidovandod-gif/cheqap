@@ -17,6 +17,7 @@ Métricas por lote y columna:
 
 import argparse
 import json
+import os
 from collections import defaultdict
 from pathlib import Path
 
@@ -74,11 +75,50 @@ def correr_lote_pdf(items: list[dict], parrafos: list[Parrafo], texto_norm: str,
     return filas
 
 
-def correr_lote_anli(items: list[dict], sin_juez: bool) -> list[dict]:
+def _ejemplos_ay(k_por_etiqueta: int) -> list[dict]:
+    """Ejemplos resueltos para el prompt, tomados de las filas que NO están en el lote de prueba."""
+    import random
+
+    resto = _leer(DATOS / "americasnli_aym_resto.jsonl")
+    random.Random(7).shuffle(resto)
+    out: list[dict] = []
+    for lab in ("entailment", "contradiction", "neutral"):
+        out += [r for r in resto if r["label"] == lab][:k_por_etiqueta]
+    random.Random(8).shuffle(out)
+    return out
+
+
+def correr_lote_anli(items: list[dict], sin_juez: bool, modo: str = "directo") -> list[dict]:
+    """modo:
+    directo    prompt en español que cree que la fuente es un documento en español (como estaba al inicio)
+    aymara     prompt que sabe que ambos textos están en aymara + regla de negación aymara
+    ejemplos   igual que aymara + 4 ejemplos resueltos por etiqueta (de fuera del lote de prueba)
+    traducido  puente traduce premisa y afirmación al español y se juzga en español + regla aymara sobre el original
+    """
+    from consta import puente, revisor_reglas_ay
+
+    ejemplos = _ejemplos_ay(int(os.getenv("EJEMPLOS_POR_ETIQUETA", "4"))) if modo == "ejemplos" else None
     filas = []
     for it in items:
         p = Parrafo(it["id"], 0, it["premise"], normalizar(it["premise"]))
-        col = _columnas(it["hypothesis"], [p], p.texto_norm, sin_juez)
+        if modo == "directo":
+            col = _columnas(it["hypothesis"], [p], p.texto_norm, sin_juez)
+        else:
+            reglas = revisor_reglas_ay.revisar(it["hypothesis"], [p])
+            col = {"baseline": etiqueta_baseline(it["hypothesis"], [p]), "reglas": reglas[0] or "respaldada"}
+            if sin_juez:
+                col["juez"] = col["juntos"] = "sin_correr"
+            elif modo == "traducido":
+                prem_es = puente.preparar(it["premise"], "ay", revisor_juez.llamar_modelo).trabajo
+                hip_es = puente.preparar(it["hypothesis"], "ay", revisor_juez.llamar_modelo).trabajo
+                p_es = Parrafo(it["id"], 0, prem_es, normalizar(prem_es))
+                juez = revisor_juez.juzgar(hip_es, [p_es], p_es.texto_norm)
+                col["juez"] = juez.etiqueta
+                col["juntos"] = combinar.combinar(hip_es, reglas, juez).etiqueta
+            else:
+                juez = revisor_juez.juzgar(it["hypothesis"], [p], p.texto_norm, lengua="ay", ejemplos=ejemplos)
+                col["juez"] = juez.etiqueta
+                col["juntos"] = combinar.combinar(it["hypothesis"], reglas, juez).etiqueta
         filas.append({"lote": "anli", "id": it["id"], "afirmacion": it["hypothesis"], "esperada": MAPA_ANLI[it["label"]], **col})
     return filas
 
@@ -124,6 +164,7 @@ def main():
     ap.add_argument("--lote", choices=["es", "ay", "anli", "todos"], default="todos")
     ap.add_argument("--sin-juez", action="store_true")
     ap.add_argument("--por-etiqueta", type=int, default=0, help="AmericasNLI: usar solo K pares por etiqueta (0 = todos)")
+    ap.add_argument("--anli-modo", choices=["directo", "aymara", "ejemplos", "traducido"], default="directo")
     ap.add_argument("--sufijo", default="", help="guarda en results/tabla_<sufijo>.md para no pisar otra corrida")
     args = ap.parse_args()
 
@@ -144,7 +185,7 @@ def main():
                     vistos[it["label"]] += 1
                     recortados.append(it)
             items_anli = recortados
-        filas += correr_lote_anli(items_anli, args.sin_juez)
+        filas += correr_lote_anli(items_anli, args.sin_juez, args.anli_modo)
 
     res = resumir(filas)
     md = tabla_md(res)
