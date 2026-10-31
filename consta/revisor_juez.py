@@ -79,16 +79,35 @@ class Veredicto:
     pagina: int | None
 
 
+_claves_openai: list[str] = []
+_idx_clave = 0
+
+
+def _claves() -> list[str]:
+    """OPENAI_API_KEY, OPENAI_API_KEY_2, OPENAI_API_KEY_3: claves del mismo proveedor para rotar ante 429."""
+    global _claves_openai
+    if not _claves_openai:
+        _claves_openai = [k for k in (os.getenv("OPENAI_API_KEY"), os.getenv("OPENAI_API_KEY_2"), os.getenv("OPENAI_API_KEY_3")) if k]
+    return _claves_openai
+
+
 def llamar_modelo(prompt: str) -> str:
-    """Llama al modelo con reintentos ante errores temporales (503 alta demanda, 429 límite)."""
+    """Llama al modelo con reintentos ante errores temporales (503 alta demanda, 429 límite).
+    Con varias claves OpenAI/Groq, un 429 cambia de clave antes de esperar."""
+    global _idx_clave
     espera = 4.0
-    for intento in range(6):
+    for intento in range(8):
         try:
             return _llamar_una_vez(prompt)
         except Exception as e:  # noqa: BLE001 - se re-lanza si no es temporal
-            temporal = any(c in str(e) for c in ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "504", "timed out", "Timeout"))
-            if not temporal or intento == 5:
+            texto = str(e)
+            temporal = any(c in texto for c in ("503", "429", "500", "UNAVAILABLE", "RESOURCE_EXHAUSTED", "504", "timed out", "Timeout"))
+            if not temporal or intento == 7:
                 raise
+            if "429" in texto and len(_claves()) > 1:
+                _idx_clave += 1
+                time.sleep(1.0)
+                continue
             time.sleep(espera)
             espera *= 2
     raise RuntimeError("inalcanzable")
@@ -110,8 +129,12 @@ def _llamar_una_vez(prompt: str) -> str:
     if proveedor == "openai":
         from openai import OpenAI
 
-        cliente = OpenAI()
-        r = cliente.chat.completions.create(model=modelo, messages=[{"role": "user", "content": prompt}], temperature=0)
+        claves = _claves()
+        cliente = OpenAI(api_key=claves[_idx_clave % len(claves)]) if claves else OpenAI()
+        extra = {}
+        if os.getenv("JUEZ_RAZONAMIENTO"):  # low | medium | high (gpt-oss en Groq)
+            extra["reasoning_effort"] = os.getenv("JUEZ_RAZONAMIENTO")
+        r = cliente.chat.completions.create(model=modelo, messages=[{"role": "user", "content": prompt}], temperature=0, **extra)
         return r.choices[0].message.content or ""
     raise ValueError(f"JUEZ_PROVEEDOR desconocido: {proveedor}")
 

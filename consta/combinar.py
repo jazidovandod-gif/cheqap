@@ -38,6 +38,20 @@ def combinar(afirmacion: str, reglas: tuple, juez: Veredicto) -> Resultado:
     return Resultado(afirmacion, "no_respaldada", "ambar", None, None, None, juez.motivo or "sin respaldo en la fuente", "juez")
 
 
+def combinar_ay(afirmacion: str, reglas: tuple, juez: Veredicto) -> Resultado:
+    """Aymara. Igual que `combinar`, más una vía al verde por la regla de solapamiento de raíces
+    (precisión 70 % en 713 filas aparte) cuando el juez no vio contradicción. El juez en aymara
+    reconoce lo verdadero 3 de 10 veces; la regla cubre parte de ese hueco."""
+    r_et, r_tramo, r_motivo = reglas
+    if r_et == "contradicha" or juez.etiqueta == "contradicha":
+        return combinar(afirmacion, reglas, juez)
+    if juez.etiqueta == "respaldada" and juez.cita_valida:
+        return combinar(afirmacion, reglas, juez)
+    if r_et == "respaldada":
+        return Resultado(afirmacion, "respaldada", "verde", None, None, None, r_motivo, "reglas")
+    return combinar(afirmacion, reglas, juez)
+
+
 def no_verificable(afirmacion: str, traduccion: str, desconocidas: int, total: int, pista: Resultado) -> Resultado:
     """Aymara: el benchmark (AmericasNLI, 30 pares, 8 modelos) no pasa de 17/30 con azar en 10, y la
     traducción de trabajo deja la mayoría de las palabras sin reconocer. Cheqap no da verde ni rojo;

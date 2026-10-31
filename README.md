@@ -25,6 +25,8 @@ El aporte de este sprint es el banco sobre una fuente boliviana, la regla de cit
 
 ## Cómo correrlo
 
+Repositorio: https://github.com/jazidovandod-gif/cheqap
+
 ```bash
 pip install -r requirements.txt
 cp .env.example .env            # poner la clave del juez
@@ -96,10 +98,17 @@ Todo reproducible con `python -m benchmark.run --lote anli --anli-modo <modo>` y
 3. **Ejemplos resueltos en el prompt** (modo `ejemplos`, 4 por etiqueta, tomados de las 713 filas de fuera del test): gemma 17 / 30, gpt-oss 15 / 30. Con **10 por etiqueta** (30 ejemplos), gemma sigue en 17 / 30. Techo.
 4. **Traducir primero y juzgar en español** (modo `traducido`, el flujo real del producto): gemma baja a 13 / 30. La causa se ve en `results/cache/puente/`: las traducciones dejan la mayoría de las palabras entre corchetes (sin reconocer). Coincide con el artículo: translate-test fue el peor método.
 5. **Voto entre modelos y abstención** (`scripts/voto_y_abstencion_anli.py`): la mayoría de las tres mejores corridas da 17 / 30, igual que gemma sola. Exigir unanimidad hace que el sistema hable en 11–16 de 30 pares y acierte 62–64 % de esas veces, casi todas neutras. No produce una zona de confianza útil.
+6. **Regla de solapamiento de raíces** (`revisor_reglas_ay.py`, `scripts/medir_factores_ay.py`). El aymara es aglutinante, así que se comparan los primeros 5 caracteres de cada palabra. En las 713 filas aparte, el solapamiento medio es 0,40 en implicaciones frente a 0,26 en neutras y contradicciones; con umbral 0,6 disparan 71 filas y el 70 % son implicaciones (cobertura 21 %). El umbral se fijó ahí **antes** de mirar el test. En los 30 de prueba dispara 4 veces: 2 aciertos y 2 verdes falsos. Con la regla de negación, las reglas solas opinan en 9 de 30 pares y aciertan 5. `combinar_ay` deja pasar al verde por esta regla cuando el juez no vio contradicción; en el modo traducido sube `juntos` de 13 a 15 / 30 y en los demás no cambia nada.
+7. **Ejemplos elegidos por similitud** (modo `similares`): en vez de 4 ejemplos al azar por etiqueta, los 9 de las 713 filas con más raíces en común con el par a juzgar. Se excluyen las 57 filas que comparten premisa con algún par de prueba (AmericasNLI trae 3 hipótesis por premisa; ver la misma fuente ya etiquetada sería una ventaja que el producto no tendría). El banco de ejemplos al azar también quedó sin esas 57 y se repitió la corrida: gemma sigue en 17 / 30. Resultado por similitud: gemma 17 / 30, **qwen3.8-27b sube de 9 a 16 / 30**. Mismo techo.
+8. **Segunda clave de Groq y `reasoning_effort=high`**: el juez rota de clave ante un 429, pero las dos claves pertenecen a la misma organización y el límite de Groq (200 000 tokens por día y modelo) es por organización, así que no sirvió. Las corridas de gpt-oss con 30 ejemplos, con ejemplos similares y con razonamiento alto no se pudieron completar por ese límite.
 
-| mejor configuración | exactitud | verdaderas reconocidas | verde falso |
+| configuración | exactitud | verdaderas reconocidas | verde falso |
 |---|---|---|---|
-| gemma-4-31b-it + prompt aymara + 4 ejemplos + regla de negación | 17 / 30 | 3 / 10 | 1 / 20 |
+| gemma-4-31b-it, prompt aymara + 4 ejemplos al azar + reglas | 17 / 30 | 3 / 10 | 1 / 20 |
+| gemma-4-31b-it, prompt aymara + 9 ejemplos similares + reglas | 17 / 30 | 3 / 10 | 1 / 20 |
+| qwen3.8-27b, prompt aymara + 9 ejemplos similares + reglas | 16 / 30 | 2 / 10 | 1 / 20 |
+| gemma-4-31b-it, prompt original (punto de partida) | 15 / 30 | 2 / 10 | 0 / 20 |
+| gpt-oss-120b, prompt original (punto de partida) | 10 / 30 | 0 / 10 | 1 / 20 |
 
 De 10 / 30 a 17 / 30 es real pero insuficiente: sigue sin reconocer lo verdadero (3 de 10). Por eso **el producto, en aymara, no da verde ni rojo**: muestra la traducción de trabajo, cuántas palabras no reconoció y la opinión del juez como pista (`combinar.no_verificable`, color gris). Lo que sí haría falta y no cabe en seis horas: un traductor entrenado para aymara (NLLB-200 soporta `ayr_Latn`; trabajos de 2025 lo llevan de 33 a 56 chrF++ con 35 000 pares) o ajuste fino con datos en aymara, y en ambos casos una persona hablante que valide.
 

@@ -14,7 +14,9 @@ RAIZ = Path(__file__).resolve().parent.parent / "results" / "cache"
 
 def etiqueta_modelo() -> str:
     """Proveedor y modelo activos. Van en la clave: cambiar de modelo nunca reutiliza respuestas de otro."""
-    return f"{os.getenv('JUEZ_PROVEEDOR', 'gemini')}|{os.getenv('JUEZ_MODELO', 'gemini-3.5-flash')}"
+    base = f"{os.getenv('JUEZ_PROVEEDOR', 'gemini')}|{os.getenv('JUEZ_MODELO', 'gemini-3.5-flash')}"
+    razonamiento = os.getenv("JUEZ_RAZONAMIENTO")
+    return f"{base}|{razonamiento}" if razonamiento else base
 
 
 def _ruta(espacio: str, entrada: str, etiqueta: str | None = None) -> Path:

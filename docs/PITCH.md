@@ -24,8 +24,8 @@ Tabla por lote (es / AmericasNLI aymara) y por columna (palabras / reglas / juez
 - Errores inyectados detectados (español, Ley 453): palabras compartidas 0 de 11; reglas 4 de 11; juez con cita textual 10 de 11.
 - Afirmaciones verdaderas marcadas mal: 0 de 25.
 - El error que se escapa: una negación («no podrán realizar el corte»).
-- Aymara (AmericasNLI, 30 pares, etiquetas de terceros): el primer modelo dio 10 de 30, igual que el azar. Probamos 8 modelos y 4 formas de preguntar; lo mejor llegó a 17 de 30, y sigue sin reconocer lo verdadero (3 de 10). Traducir primero fue peor: el traductor no conoce las palabras.
-- Lo único que sí funciona en aymara sin modelo: una regla de negación (jani / janiw) medida en 713 frases aparte, 82 % de precisión.
+- Aymara (AmericasNLI, 30 pares, etiquetas de terceros): el primer modelo dio 10 de 30, igual que el azar. Probamos 8 modelos, 5 formas de preguntar y 2 reglas sin modelo, con 3 proveedores; lo mejor llegó a 17 de 30 con tres configuraciones distintas, y sigue sin reconocer lo verdadero (3 de 10). Traducir primero fue peor: el traductor no conoce las palabras.
+- Lo que sí funciona en aymara sin modelo: una regla de negación (jani / janiw) con 82 % de precisión y una de raíces compartidas con 70 %, las dos medidas en 713 frases aparte, antes de tocar el test.
 - Por eso en aymara Cheqap no da verde ni rojo: dice «no verificable», muestra la traducción y cuántas palabras no entendió. Un verificador que inventa un veredicto es peor que uno que se calla.
 - Modelo del español: gpt-oss-120b en Groq. Del aymara: gemma-4-31b-it en Adaption.
 
