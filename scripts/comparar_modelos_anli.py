@@ -22,6 +22,8 @@ MODELOS = {
     "detalle_gptoss10": "gpt-oss-120b 10 ej/etiq (Groq)",
     "detalle_gptossalto": "gpt-oss-120b razon. alto (Groq)",
     "detalle_ad_gemma431bit10": "gemma-4-31b 10 ej/etiq (Adaption)",
+    "detalle_ad_gemma431bit10limpio": "gemma-4-31b 10 ej/etiq, banco limpio",
+    "detalle_qwen10": "qwen3.8-27b 10 ej/etiq (Groq)",
     "detalle_qwen": "qwen3.8-27b (Groq)",
     "detalle_gemini35lite": "gemini-3.5-flash-lite",
     "detalle_ad_qwen35397b": "qwen3.5-397b (Adaption)",
