@@ -23,3 +23,34 @@ La tabla compara cuatro lecturas: palabras compartidas, un revisor de números y
 - [RAGTruth](https://github.com/ParticleMedia/RAGTruth), marcar el tramo exacto del error.
 
 El aporte de este sprint es el banco sobre una fuente boliviana, la regla de cita textual y la fila en aymara.
+
+## Cómo correrlo
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env            # poner la clave del juez
+python -m consta.fuente data/fuente/fuente.pdf       # genera data/fuente/fuente.json
+python -m benchmark.descargar_anli                   # 30 pares aym de AmericasNLI
+python -m benchmark.run                              # tabla en results/tabla.md
+python -m benchmark.run --sin-juez                   # solo baseline + reglas, sin red
+streamlit run app/streamlit_app.py                   # pantalla de demo
+pytest                                               # cita textual y revisor de reglas
+```
+
+Las llamadas al modelo se guardan en `results/cache/`. Con el cache versionado, `benchmark.run` reproduce la tabla sin red.
+
+## Estructura
+
+- `consta/`: fuente, claims, puente (aymara a español de trabajo), buscar, revisor de reglas, juez con cita, combinar.
+- `benchmark/`: línea de base, corredor de las cuatro columnas, descarga de AmericasNLI.
+- `app/`: pantalla Streamlit.
+- `data/benchmark/`: ítems etiquetados; esquema en su README.
+- `docs/`: plan, pitch y declaración de material previo.
+
+## Límites
+
+Completar al cierre con los que aparezcan de verdad.
+
+- Set pequeño: ~20 ítems en español y ~8 en aymara.
+- El aymara pasa por una traducción de trabajo antes de buscar en el PDF; el error puede venir de ahí y no del verificador.
+- El corte en afirmaciones es por oración; una oración con dos hechos se juzga junta.
