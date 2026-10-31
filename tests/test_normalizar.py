@@ -7,6 +7,11 @@ def test_cita_textual_existe_aunque_cambien_tildes_y_espacios():
     assert cita_existe("plazo maximo de   treinta (30) dias", FUENTE)
 
 
+def test_grado_y_ordinal_valen_igual():
+    fuente = normalizar("establecidas en el Decreto Supremo N° 27172 de 15 de septiembre de 2003")
+    assert cita_existe("Decreto Supremo Nº 27172 de 15 de septiembre de 2003", fuente)
+
+
 def test_cita_inventada_no_existe():
     assert not cita_existe("plazo máximo de quince (15) días hábiles", FUENTE)
 

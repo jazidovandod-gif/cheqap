@@ -15,9 +15,9 @@ from .fuente import Parrafo
 from .normalizar import normalizar
 
 _NUM = re.compile(r"\b\d+(?:[.,]\d+)?\b")
-_MODALES = {"debe", "debera", "deberan", "puede", "podra", "podran", "obligatorio", "opcional"}
-_GRUPO_OBLIGA = {"debe", "debera", "deberan", "obligatorio"}
-_GRUPO_PERMITE = {"puede", "podra", "podran", "opcional"}
+_MODALES = {"debe", "deben", "debera", "deberan", "puede", "pueden", "podra", "podran", "obligatorio", "opcional"}
+_GRUPO_OBLIGA = {"debe", "deben", "debera", "deberan", "obligatorio"}
+_GRUPO_PERMITE = {"puede", "pueden", "podra", "podran", "opcional"}
 
 
 def _numeros(texto_norm: str) -> set[str]:

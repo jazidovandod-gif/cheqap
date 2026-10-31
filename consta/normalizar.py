@@ -13,6 +13,8 @@ def normalizar(texto: str) -> str:
     texto = unicodedata.normalize("NFKD", texto)
     texto = "".join(c for c in texto if not unicodedata.combining(c))
     texto = texto.lower()
+    # "N°" (grado) y "Nº" (ordinal) se escriben indistintamente en los PDF oficiales.
+    texto = texto.replace("°", "o").replace("º", "o")
     texto = texto.replace("“", '"').replace("”", '"').replace("’", "'")
     texto = re.sub(r"\s+", " ", texto)
     return texto.strip()

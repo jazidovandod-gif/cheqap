@@ -23,6 +23,13 @@ def test_modal_invertido_es_contradicha():
     assert tramo == "debe"
 
 
+def test_modal_plural_invertido_es_contradicha():
+    fuente = [_p("Los usuarios podrán presentar su reclamo por escrito.")]
+    et, tramo, _ = revisar("Los usuarios deben presentar su reclamo por escrito.", fuente)
+    assert et == "contradicha"
+    assert tramo == "deben"
+
+
 def test_sin_senal_no_opina():
     et, _, _ = revisar("La ley protege a usuarias y usuarios.", FUENTE)
     assert et is None

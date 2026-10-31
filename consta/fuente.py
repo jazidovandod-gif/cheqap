@@ -8,6 +8,7 @@ Responsable: A. Listo a las 12:00.
 """
 
 import json
+import re
 import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
@@ -23,25 +24,54 @@ class Parrafo:
     texto_norm: str
 
 
-def extraer_parrafos(ruta_pdf: Path) -> list[Parrafo]:
-    """Lee el PDF página por página y corta en párrafos por línea en blanco.
+MAX_CARACTERES = 700
 
-    Párrafos de menos de 40 caracteres se pegan al anterior (títulos, numeración suelta).
+# Inicio de bloque: "Artículo 14." o inciso "a." / numeral romano "II." / numeral "3." al comienzo de línea.
+_INICIO_ARTICULO = re.compile(r"^\s*Art[ií]culo\s+\d+", re.IGNORECASE)
+_INICIO_BLOQUE = re.compile(r"\n(?=\s*(?:Art[ií]culo\s+\d+|[a-z]\.\s|[IVX]{1,4}\.\s|\d{1,2}\.\s))")
+
+
+def _limpiar_pagina(texto: str) -> str:
+    """Quita el número de página de la primera línea y une las palabras cortadas con guion."""
+    lineas = texto.split("\n")
+    if lineas and lineas[0].strip().isdigit():
+        lineas = lineas[1:]
+    texto = "\n".join(lineas)
+    return re.sub(r"(\w)-\n\s*(\w)", r"\1\2", texto)
+
+
+def _fragmentos_de_pagina(texto: str) -> list[str]:
+    """Un fragmento por artículo; los artículos largos se parten por inciso hasta MAX_CARACTERES."""
+    bloques = [re.sub(r"\s+", " ", b).strip() for b in _INICIO_BLOQUE.split(texto)]
+    bloques = [b for b in bloques if b]
+    fragmentos: list[str] = []
+    actual = ""
+    for b in bloques:
+        abre_articulo = bool(_INICIO_ARTICULO.match(b))
+        if actual and (abre_articulo or len(actual) + len(b) > MAX_CARACTERES) and len(actual) >= 40:
+            fragmentos.append(actual)
+            actual = b
+        else:
+            actual = f"{actual} {b}".strip()
+    if actual:
+        fragmentos.append(actual)
+    return fragmentos
+
+
+def extraer_parrafos(ruta_pdf: Path) -> list[Parrafo]:
+    """Lee el PDF página por página y devuelve fragmentos con su número de página.
+
+    Un fragmento nunca cruza de página: así la cita siempre apunta a una página concreta.
     """
     from pypdf import PdfReader
 
     lector = PdfReader(str(ruta_pdf))
     parrafos: list[Parrafo] = []
     for num, pagina in enumerate(lector.pages, start=1):
-        texto = pagina.extract_text() or ""
-        bloques = [b.strip() for b in texto.split("\n\n") if b.strip()]
-        for bloque in bloques:
-            if parrafos and len(bloque) < 40 and parrafos[-1].pagina == num:
-                parrafos[-1].texto += " " + bloque
-                parrafos[-1].texto_norm = normalizar(parrafos[-1].texto)
-                continue
+        texto = _limpiar_pagina(pagina.extract_text() or "")
+        for frag in _fragmentos_de_pagina(texto):
             pid = f"p{num}-{len(parrafos):03d}"
-            parrafos.append(Parrafo(pid, num, bloque, normalizar(bloque)))
+            parrafos.append(Parrafo(pid, num, frag, normalizar(frag)))
     return parrafos
 
 
