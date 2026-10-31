@@ -1,4 +1,4 @@
-# Plan de construcción — Consta
+# Plan de construcción — Cheqap
 
 Entrega: sábado 31 de octubre de 2026, 16:00, portal de equipos de Cursor Bolivia. Pitch a las 17:00, 3 minutos más una pregunta.
 

@@ -8,7 +8,7 @@ from .fuente import cargar_fuente, texto_completo_norm
 RUTA_FUENTE = Path(__file__).resolve().parent.parent / "data" / "fuente" / "fuente.json"
 
 
-class Consta:
+class Cheqap:
     def __init__(self, ruta_fuente: Path = RUTA_FUENTE):
         self.parrafos = cargar_fuente(ruta_fuente)
         self.texto_norm = texto_completo_norm(self.parrafos)

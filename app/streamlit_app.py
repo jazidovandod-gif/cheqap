@@ -9,20 +9,20 @@ from pathlib import Path
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from consta.pipeline import Consta  # noqa: E402
+from consta.pipeline import Cheqap  # noqa: E402
 
 COLORES = {"verde": "#1b7f3b", "ambar": "#b7791f", "rojo": "#b42318"}
 
-st.set_page_config(page_title="Consta", layout="wide")
-st.title("Consta")
+st.set_page_config(page_title="Cheqap", layout="wide")
+st.title("Cheqap")
 st.caption("Cada afirmación del asistente, contrastada con el PDF. Una cita solo vale si existe textual en la fuente.")
 
 lengua = st.radio("Lengua de la respuesta", ["es", "ay"], horizontal=True, format_func=lambda x: {"es": "Español", "ay": "Aymara"}[x])
 respuesta = st.text_area("Pega la respuesta del asistente", height=160)
 
 if st.button("Verificar", type="primary") and respuesta.strip():
-    consta = Consta()
-    resultados = consta.verificar_respuesta(respuesta, lengua)
+    cheqap = Cheqap()
+    resultados = cheqap.verificar_respuesta(respuesta, lengua)
     izq, der = st.columns([1, 1])
     with izq:
         st.subheader("Respuesta")
