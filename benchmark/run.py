@@ -84,7 +84,7 @@ def correr_lote_anli(items: list[dict], sin_juez: bool) -> list[dict]:
 
 
 def resumir(filas: list[dict]) -> dict:
-    res: dict = defaultdict(lambda: {c: {"detectados": 0, "falsos_pos": 0, "corridas": 0} for c in COLUMNAS} | {"total_errores": 0, "total_verdad": 0})
+    res: dict = defaultdict(lambda: {c: {"detectados": 0, "falsos_pos": 0, "exactos": 0, "corridas": 0} for c in COLUMNAS} | {"total_errores": 0, "total_verdad": 0})
     for f in filas:
         r = res[f["lote"]]
         if _es_error(f["esperada"]):
@@ -95,6 +95,8 @@ def resumir(filas: list[dict]) -> dict:
             if f[c] == "sin_correr":
                 continue
             r[c]["corridas"] += 1
+            if f[c] == f["esperada"]:
+                r[c]["exactos"] += 1
             if _es_error(f["esperada"]) and _es_error(f[c]):
                 r[c]["detectados"] += 1
             if not _es_error(f["esperada"]) and _es_error(f[c]):
@@ -103,13 +105,17 @@ def resumir(filas: list[dict]) -> dict:
 
 
 def tabla_md(res: dict) -> str:
-    out = ["| lote | columna | errores detectados | falsos positivos |", "|---|---|---|---|"]
+    out = ["| lote | columna | errores detectados | falsos positivos | exactitud (3 clases) |", "|---|---|---|---|---|"]
     for lote, r in res.items():
         for c in COLUMNAS:
             if r[c]["corridas"] == 0:
-                out.append(f"| {lote} | {c} | sin correr | sin correr |")
+                out.append(f"| {lote} | {c} | sin correr | sin correr | sin correr |")
                 continue
-            out.append(f"| {lote} | {c} | {r[c]['detectados']} / {r['total_errores']} | {r[c]['falsos_pos']} / {r['total_verdad']} |")
+            total = r["total_errores"] + r["total_verdad"]
+            out.append(
+                f"| {lote} | {c} | {r[c]['detectados']} / {r['total_errores']} "
+                f"| {r[c]['falsos_pos']} / {r['total_verdad']} | {r[c]['exactos']} / {total} |"
+            )
     return "\n".join(out)
 
 

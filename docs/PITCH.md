@@ -15,19 +15,21 @@ Métricas de respaldo documental (Ragas) y un chequeo por palabras compartidas. 
 1. Pegar una respuesta con una mentira sutil.
 2. La frase falsa queda en rojo. Al lado, el párrafo real del PDF, la página y la palabra que cambió.
 3. Una frase verdadera queda en verde: no pinta todo de rojo.
-4. Pegar una afirmación en aymara tomada de AmericasNLI. Mostrar qué pasa, sin prometer más de lo medido.
+4. Pegar una afirmación en aymara tomada de AmericasNLI y mostrar que el verificador no la resuelve bien. Decirlo de frente: es el resultado, y es la razón por la que el benchmark existe.
 
 ## 2:10–2:40 · Evidencia
 
 Tabla por lote (es / AmericasNLI aymara) y por columna (palabras / reglas / juez / juntos):
 
-- Errores inyectados detectados: __ de __ (es). Aymara: __ de 30 pares de AmericasNLI (control con etiquetas de terceros; no tenemos hablante propio).
-- Afirmaciones verdaderas marcadas mal: __.
-- Errores que se le escaparon a la línea de base y los dos revisores atraparon: __.
+- Errores inyectados detectados (español, Ley 453): palabras compartidas 0 de 11; reglas 4 de 11; juez con cita textual 10 de 11.
+- Afirmaciones verdaderas marcadas mal: 0 de 25.
+- El error que se escapa: una negación («no podrán realizar el corte»).
+- Aymara (AmericasNLI, 30 pares, etiquetas de terceros): 10 de 30 aciertos, igual que el azar. Con este modelo el verificador no funciona en aymara. Eso es lo que mide el benchmark.
+- Modelo: gpt-oss-120b en Groq.
 
 ## 2:40–3:00 · Límites y siguiente paso
 
-- Límite real: __ (el aymara se mide solo con datos de terceros, no con la ley; y el tipo de error que todavía se escapa).
+- Límite real: 12 ítems en español, una sola ley, un solo modelo; el aymara se mide solo con datos de terceros y no con la ley; las negaciones se escapan.
 - Siguiente paso: no publicar una respuesta del asistente mientras una afirmación siga en rojo.
 
 ## Pregunta probable del jurado

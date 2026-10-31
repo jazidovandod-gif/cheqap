@@ -5,6 +5,7 @@ Flujo: fuente -> claims -> (puente si aymara) -> buscar -> revisor_reglas + revi
 
 from dotenv import load_dotenv
 
-load_dotenv()  # lee .env (clave del juez) para el benchmark y la pantalla
+# Lee .env (clave del juez). utf-8-sig tolera el BOM que algunos editores de Windows añaden.
+load_dotenv(encoding="utf-8-sig")
 
 ETIQUETAS = ("respaldada", "no_respaldada", "contradicha")
