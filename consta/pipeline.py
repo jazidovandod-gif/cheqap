@@ -2,10 +2,32 @@
 
 from pathlib import Path
 
-from . import buscar, claims, combinar, puente, revisor_juez, revisor_reglas
+from dataclasses import dataclass
+
+from . import buscar, claims, combinar, puente, redactar, revisor_juez, revisor_reglas
 from .fuente import cargar_fuente, texto_completo_norm
+from .redactar import Borrador
 
 RUTA_FUENTE = Path(__file__).resolve().parent.parent / "data" / "fuente" / "fuente.json"
+
+
+@dataclass
+class Respuesta:
+    """Borrador del redactor más el veredicto de cada frase. El borrador siempre está en español."""
+
+    pregunta: str
+    trabajo: str
+    borrador: Borrador
+    resultados: list[combinar.Resultado]
+    lengua: str
+
+    @property
+    def publicadas(self) -> list[combinar.Resultado]:
+        return redactar.publicar(self.resultados)
+
+    @property
+    def retenidas(self) -> list[combinar.Resultado]:
+        return [r for r in self.resultados if r.color == "rojo"]
 
 
 class Cheqap:
@@ -29,3 +51,12 @@ class Cheqap:
 
     def verificar_respuesta(self, respuesta: str, lengua: str = "es") -> list[combinar.Resultado]:
         return [self.verificar_afirmacion(a, lengua) for a in claims.partir_en_afirmaciones(respuesta)]
+
+    def responder(self, pregunta: str, lengua: str = "es") -> Respuesta:
+        """Recupera fragmentos, redacta en español y verifica ese borrador contra la ley.
+
+        La verificación va en español aunque la pregunta venga en aymara: el borrador se escribe
+        en español. Generar la respuesta en aymara no alcanza fiabilidad medible.
+        """
+        borrador = redactar.redactar(pregunta, lengua, self.parrafos)
+        return Respuesta(pregunta, borrador.trabajo, borrador, self.verificar_respuesta(borrador.texto, "es"), lengua)

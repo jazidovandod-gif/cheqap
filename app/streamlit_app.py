@@ -38,9 +38,14 @@ SIN_CITA = {
 }
 
 NOTA_AYMARA = (
-    "En aymara Cheqap no da verde ni rojo: en el benchmark (AmericasNLI, 30 pares, 8 modelos) ningún modelo "
+    "En aymara Cheqap no da verde ni rojo: en el benchmark (AmericasNLI, 30 pares, 6 modelos medidos) ningún modelo "
     "pasa de 17/30 con azar en 10, y la traducción de trabajo no reconoce la mayoría de las palabras. "
     "Se muestra la traducción, las palabras sin reconocer y la opinión del juez solo como pista."
+)
+
+NOTA_PREGUNTA_AY = (
+    "La pregunta se traduce al español para buscar en la ley. La respuesta se redacta y se verifica en español: "
+    "generarla en aymara no alcanza fiabilidad medible."
 )
 
 ESTILOS = """
@@ -130,6 +135,9 @@ ESTILOS = """
 .cq-cita { font-family: var(--cq-serif); font-size: 1.25rem; line-height: 1.6; margin: 0; }
 .cq-dudosa, .cq-dudosa + .cq-cita { color: var(--cq-tenue); }
 .cq-sin-cita { font-size: 0.9375rem; line-height: 1.5; color: var(--cq-tenue); margin: 0; }
+.cq-publicada { max-width: 44rem; margin: 2rem 0 0; }
+.cq-publicada h2 { font-size: 1.375rem; line-height: 1.3; font-weight: 700; margin: 0 0 0.75rem; }
+.cq-publicada .cq-frase { font-size: 1.1875rem; line-height: 1.55; margin: 0 0 0.625rem; padding-left: 0.875rem; border-left: 5px solid var(--c); }
 
 @media (max-width: 760px) {
   .cq-cab { display: none; }
@@ -247,7 +255,40 @@ def fila(i: int, r) -> str:
     )
 
 
-def html_resultados(resultados: list) -> str:
+def html_publicada(respuesta) -> str:
+    """Texto que sí se entrega: verde y ámbar. El rojo no entra aquí."""
+    frases = [
+        f'<p class="cq-frase cq-v-{r.color}">{html.escape(r.afirmacion)}</p>' for r in respuesta.publicadas
+    ]
+    if frases:
+        cuerpo = "".join(frases)
+    elif respuesta.retenidas:
+        cuerpo = '<p class="cq-aviso">Ninguna frase se publica: todas contradicen la ley.</p>'
+    else:
+        cuerpo = '<p class="cq-aviso">El redactor no produjo oraciones revisables.</p>'
+    n = len(respuesta.retenidas)
+    aviso = ""
+    if n:
+        aviso = (
+            f'<p class="cq-nota cq-v-rojo">{n} {"frase contradice" if n == 1 else "frases contradicen"} '
+            "la ley y no se publican. Quedan abajo, en el detalle.</p>"
+        )
+    paginas = ", ".join(str(p) for p in dict.fromkeys(respuesta.borrador.paginas))
+    traduccion = ""
+    if respuesta.lengua == "ay" and respuesta.trabajo.strip() != respuesta.pregunta.strip():
+        traduccion = (
+            f'<p class="cq-motivo">Traducción de trabajo: «{html.escape(respuesta.trabajo.strip())}».</p>'
+        )
+    return (
+        '<section class="cq-publicada">'
+        "<h2>Respuesta publicada</h2>"
+        f"{traduccion}{aviso}{cuerpo}"
+        f'<p class="cq-fuente">Fragmentos usados: páginas {html.escape(paginas)}.</p>'
+        "</section>"
+    )
+
+
+def html_resultados(resultados: list, titulo_dicho: str = "Lo que dijo el asistente") -> str:
     tira = "".join(
         f'<a class="cq-seg cq-v-{r.color}" href="#cq-af-{i}" style="--i:{i}" '
         f'title="{i}. {VEREDICTOS[r.color][0]}" aria-label="Afirmación {i}: {VEREDICTOS[r.color][0]}"></a>'
@@ -258,7 +299,7 @@ def html_resultados(resultados: list) -> str:
         '<section class="cq-resultado">'
         f'<p class="cq-veredicto">{resumen(resultados)}</p>'
         f'<nav class="cq-tira" aria-label="Afirmaciones en orden">{tira}</nav>'
-        '<div class="cq-cab"><span></span><span>Lo que dijo el asistente</span><span>Lo que dice la ley</span></div>'
+        f'<div class="cq-cab"><span></span><span>{html.escape(titulo_dicho)}</span><span>Lo que dice la ley</span></div>'
         f"{filas}</section>"
     )
 
@@ -283,46 +324,89 @@ except Exception:  # noqa: BLE001 - la fuente se vuelve a cargar al verificar y 
 
 st.html(
     '<header class="cq-cabeza"><h1 class="cq-marca">Cheqap</h1>'
-    '<p class="cq-bajada">Contrasta cada afirmación de un asistente con el texto de la ley y muestra el pasaje '
-    "que la respalda o la contradice. Una cita solo cuenta si aparece tal cual en el PDF.</p>"
+    '<p class="cq-bajada">Pregunta sobre la ley, o pega una respuesta ya hecha. Cheqap redacta con los artículos '
+    "recuperados y no publica una frase que los contradiga. Una cita solo cuenta si aparece tal cual en el PDF.</p>"
     f'<p class="cq-fuente">Fuente: {FUENTE}{paginas}.</p></header>'
 )
 
-lengua = st.radio(
-    "Lengua de la respuesta", ["es", "ay"], horizontal=True, format_func=lambda x: {"es": "Español", "ay": "Aymara"}[x]
+modo = st.radio(
+    "Qué hacer",
+    ["preguntar", "verificar"],
+    horizontal=True,
+    format_func=lambda x: {"preguntar": "Preguntar a la ley", "verificar": "Verificar una respuesta"}[x],
 )
-if lengua == "ay":
+lengua = st.radio(
+    "Lengua",
+    ["es", "ay"],
+    horizontal=True,
+    format_func=lambda x: {"es": "Español", "ay": "Aymara"}[x],
+)
+if lengua == "ay" and modo == "verificar":
     st.html(f'<p class="cq-nota cq-v-gris">{NOTA_AYMARA}</p>')
+elif lengua == "ay":
+    st.html(f'<p class="cq-nota cq-v-gris">{NOTA_PREGUNTA_AY}</p>')
 
-with st.form("verificar", border=False):
-    respuesta = st.text_area(
-        "Respuesta del asistente",
-        height=180,
-        placeholder="Pega aquí la respuesta del asistente. Cheqap la parte en oraciones y revisa cada una contra la ley.",
-    )
-    enviar = st.form_submit_button("Verificar respuesta", type="primary")
-
-if enviar:
-    st.session_state.pop("ultimo", None)
-    if not respuesta.strip():
-        st.html('<p class="cq-aviso">Pega primero la respuesta del asistente.</p>')
-    else:
-        try:
-            with st.spinner("Contrastando cada afirmación con la ley…"):
-                st.session_state.ultimo = (respuesta, lengua, cargar_cheqap().verificar_respuesta(respuesta, lengua))
-        except Exception as e:  # noqa: BLE001
-            st.html(
-                f'<p class="cq-aviso cq-v-rojo">No se pudo completar la verificación ({type(e).__name__}: '
-                f"{html.escape(str(e))}). Revisa la clave del juez en .env o vuelve a intentar en un minuto.</p>"
-            )
-
-# Cambiar de modo vuelve a correr el script; el último resultado sigue en pantalla mientras no cambien texto ni lengua.
-ultimo = st.session_state.get("ultimo")
-if ultimo and ultimo[:2] == (respuesta, lengua):
-    if ultimo[2]:
-        st.html(html_resultados(ultimo[2]))
-    else:
-        st.html(
-            '<p class="cq-aviso">No hay afirmaciones que revisar. Cheqap revisa oraciones completas '
-            "de al menos cuatro palabras; pega la respuesta tal como la dio el asistente.</p>"
+if modo == "preguntar":
+    with st.form("preguntar", border=False):
+        pregunta = st.text_area(
+            "Pregunta",
+            height=120,
+            placeholder="¿En qué plazo debe el Órgano Ejecutivo reglamentar la ley?",
         )
+        enviar_p = st.form_submit_button("Preguntar", type="primary")
+    if enviar_p:
+        st.session_state.pop("ultima_pregunta", None)
+        if not pregunta.strip():
+            st.html('<p class="cq-aviso">Escribe primero la pregunta.</p>')
+        else:
+            try:
+                with st.spinner("Buscando en la ley, redactando y revisando cada frase…"):
+                    st.session_state.ultima_pregunta = (pregunta, lengua, cargar_cheqap().responder(pregunta, lengua))
+            except Exception as e:  # noqa: BLE001
+                st.html(
+                    f'<p class="cq-aviso cq-v-rojo">No se pudo responder ({type(e).__name__}: '
+                    f"{html.escape(str(e))}). Revisa la clave del juez en .env o vuelve a intentar en un minuto.</p>"
+                )
+    ultima = st.session_state.get("ultima_pregunta")
+    if ultima and ultima[:2] == (pregunta, lengua):
+        resp = ultima[2]
+        st.html(html_publicada(resp))
+        if resp.resultados:
+            st.html(html_resultados(resp.resultados, "Lo que redactó Cheqap"))
+        else:
+            st.html(
+                '<p class="cq-aviso">El redactor no produjo oraciones de al menos cuatro palabras. '
+                f"Borrador: «{html.escape(resp.borrador.texto[:400])}».</p>"
+            )
+else:
+    with st.form("verificar", border=False):
+        respuesta = st.text_area(
+            "Respuesta del asistente",
+            height=180,
+            placeholder="Pega aquí la respuesta del asistente. Cheqap la parte en oraciones y revisa cada una contra la ley.",
+        )
+        enviar = st.form_submit_button("Verificar respuesta", type="primary")
+
+    if enviar:
+        st.session_state.pop("ultimo", None)
+        if not respuesta.strip():
+            st.html('<p class="cq-aviso">Pega primero la respuesta del asistente.</p>')
+        else:
+            try:
+                with st.spinner("Contrastando cada afirmación con la ley…"):
+                    st.session_state.ultimo = (respuesta, lengua, cargar_cheqap().verificar_respuesta(respuesta, lengua))
+            except Exception as e:  # noqa: BLE001
+                st.html(
+                    f'<p class="cq-aviso cq-v-rojo">No se pudo completar la verificación ({type(e).__name__}: '
+                    f"{html.escape(str(e))}). Revisa la clave del juez en .env o vuelve a intentar en un minuto.</p>"
+                )
+
+    ultimo = st.session_state.get("ultimo")
+    if ultimo and ultimo[:2] == (respuesta, lengua):
+        if ultimo[2]:
+            st.html(html_resultados(ultimo[2]))
+        else:
+            st.html(
+                '<p class="cq-aviso">No hay afirmaciones que revisar. Cheqap revisa oraciones completas '
+                "de al menos cuatro palabras; pega la respuesta tal como la dio el asistente.</p>"
+            )
